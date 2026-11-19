@@ -28,6 +28,12 @@ jobs:
       - run: npm test -- --watch=false
       - run: npm run build
 
+      - name: Inject Web3Forms access key
+        if: github.event_name != 'pull_request'
+        env:
+          WEB3FORMS_ACCESS_KEY: ${{ secrets.WEB3FORMS_ACCESS_KEY }}
+        run: node scripts/inject-form-key.mjs dist/optimalpower-web/browser/content/contact.json
+
       # GitHub Pages has no SPA rewrites; serving index.html as 404 lets the router handle deep links.
       - name: Add SPA fallback
         run: cp dist/optimalpower-web/browser/index.html dist/optimalpower-web/browser/404.html

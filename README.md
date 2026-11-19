@@ -62,9 +62,11 @@ The form is sent through [Web3Forms](https://web3forms.com) and protected by hCa
 Web3Forms verifies server side. One-time setup:
 
 1. Create an access key on web3forms.com for the address that should receive messages.
-2. Put it in `form.accessKey` in `public/content/contact.json` (the key is public by design).
-3. In the Web3Forms dashboard enable hCaptcha for the key. `form.captchaSiteKey` already holds
-   Web3Forms' shared hCaptcha site key.
+2. Save it as the repository secret `WEB3FORMS_ACCESS_KEY` (Settings → Secrets and variables →
+   Actions). CI writes it into the built `content/contact.json`; the repository copy stays empty.
+   For a local test, put the key into `form.accessKey` temporarily and don't commit it.
+3. Put your hCaptcha site key in `form.captchaSiteKey` and add the matching hCaptcha secret to the
+   key's settings in the Web3Forms dashboard, so Web3Forms can verify the token.
 
 ## CI/CD
 

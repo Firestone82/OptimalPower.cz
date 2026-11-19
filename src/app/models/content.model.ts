@@ -118,7 +118,10 @@ export interface TeamMemberContent {
 export interface ContactFormConfig {
   /** Web3Forms submit URL. */
   endpoint: string;
-  /** Public Web3Forms access key; messages are delivered to the e-mail it was created for. */
+  /**
+   * Web3Forms access key. Kept empty in the repository; CI fills it from the
+   * `WEB3FORMS_ACCESS_KEY` secret when building (see `scripts/inject-form-key.mjs`).
+   */
   accessKey: string;
   /** hCaptcha site key; the token is verified by Web3Forms. */
   captchaSiteKey: string;
