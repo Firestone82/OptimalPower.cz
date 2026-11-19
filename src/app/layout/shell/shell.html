@@ -17,3 +17,7 @@
     <app-footer [company]="company" [content]="footer" />
   }
 }
+
+@if (consent.required() && consent.bannerOpen()) {
+  <app-cookie-banner (accept)="consent.decide('granted')" (reject)="consent.decide('denied')" />
+}

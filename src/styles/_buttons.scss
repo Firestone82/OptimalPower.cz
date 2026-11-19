@@ -45,3 +45,14 @@
     color: #fff;
   }
 }
+
+.button-outline {
+  border-color: var(--color-border-strong);
+  background: transparent;
+  color: var(--color-text);
+
+  &:hover {
+    border-color: var(--color-brand);
+    color: var(--color-brand-strong);
+  }
+}

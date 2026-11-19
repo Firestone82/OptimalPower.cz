@@ -11,3 +11,17 @@
   padding-block: 1.25rem;
   font-size: 0.875rem;
 }
+
+.cookie-settings {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-brand);
+  }
+}

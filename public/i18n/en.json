@@ -95,5 +95,13 @@
   "legal": {
     "effectiveFrom": "Effective from",
     "contents": "Contents"
+  },
+  "cookies": {
+    "title": "We use cookies",
+    "text": "We would like to use Google Analytics to understand how you use our website so we can improve it. We only store analytics cookies with your consent.",
+    "more": "More information",
+    "accept": "Accept all",
+    "reject": "Necessary only",
+    "settings": "Cookie settings"
   }
 }

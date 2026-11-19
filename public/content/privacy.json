@@ -101,6 +101,10 @@
         {
           "cs": "Zveřejnění fotografií Vaší instalace v referencích a fotogalerii: pouze s Vaším souhlasem, čl. 6 odst. 1 písm. a) GDPR.",
           "en": "Publishing photos of your installation among our references and in the gallery: only with your consent, Art. 6(1)(a) GDPR."
+        },
+        {
+          "cs": "Měření návštěvnosti webu pomocí Google Analytics: pouze s Vaším souhlasem, čl. 6 odst. 1 písm. a) GDPR.",
+          "en": "Measuring website traffic with Google Analytics: only with your consent, Art. 6(1)(a) GDPR."
         }
       ]
     },
@@ -135,6 +139,10 @@
         {
           "cs": "Účetní a daňové doklady po dobu stanovenou zákonem, zpravidla 10 let.",
           "en": "Accounting and tax documents: for the period set by law, usually 10 years."
+        },
+        {
+          "cs": "Statistiky návštěvnosti v Google Analytics nejdéle 14 měsíců.",
+          "en": "Traffic statistics in Google Analytics: at most 14 months."
         },
         {
           "cs": "Údaje zpracovávané na základě souhlasu do jeho odvolání.",
@@ -172,8 +180,8 @@
           "en": "our external accountant and tax adviser,"
         },
         {
-          "cs": "poskytovatelé IT služeb: hosting webu (GitHub Pages), doručování formulářů (Web3Forms) a ochrana proti spamu (hCaptcha),",
-          "en": "IT service providers: website hosting (GitHub Pages), form delivery (Web3Forms) and spam protection (hCaptcha),"
+          "cs": "poskytovatelé IT služeb: hosting webu (GitHub Pages), doručování formulářů (Web3Forms), ochrana proti spamu (hCaptcha) a měření návštěvnosti (Google Analytics),",
+          "en": "IT service providers: website hosting (GitHub Pages), form delivery (Web3Forms), spam protection (hCaptcha) and traffic measurement (Google Analytics),"
         },
         {
           "cs": "státní úřady a instituce, které mají na údaje ze zákona právo.",
@@ -202,8 +210,22 @@
       },
       "paragraphs": [
         {
-          "cs": "Náš web nepoužívá reklamní ani analytické cookies. Při načtení kontaktního formuláře může služba hCaptcha uložit technické cookies nezbytné pro ochranu proti spamu.",
-          "en": "Our website does not use advertising or analytics cookies. When the contact form loads, the hCaptcha service may store technical cookies needed for spam protection."
+          "cs": "Cookies jsou malé soubory, které web ukládá do Vašeho prohlížeče. Nepoužíváme žádné reklamní cookies.",
+          "en": "Cookies are small files a website stores in your browser. We do not use any advertising cookies."
+        },
+        {
+          "cs": "Při první návštěvě se Vás zeptáme, zda smíme používat analytické cookies. Svou volbu můžete kdykoli změnit odkazem Nastavení cookies v patičce webu. Volbu si pamatujeme v úložišti Vašeho prohlížeče.",
+          "en": "On your first visit we ask whether we may use analytics cookies. You can change your choice at any time with the Cookie settings link in the footer. We remember your choice in your browser's storage."
+        }
+      ],
+      "items": [
+        {
+          "cs": "Nezbytné: hCaptcha může při načtení kontaktního formuláře uložit technické cookies potřebné pro ochranu proti spamu. Ty nevyžadují souhlas.",
+          "en": "Necessary: when the contact form loads, hCaptcha may store technical cookies needed for spam protection. These do not require consent."
+        },
+        {
+          "cs": "Analytické: Google Analytics (cookies _ga a _ga_*, platnost až 2 roky) nám ukazuje, které stránky navštěvujete a odkud přicházíte. Skript Google se načte až po Vašem souhlasu, IP adresy služba v EU neukládá. Pokud souhlas odvoláte, cookies smažeme.",
+          "en": "Analytics: Google Analytics (cookies _ga and _ga_*, valid for up to 2 years) shows us which pages you visit and where you come from. The Google script only loads after you consent, and the service does not store IP addresses in the EU. If you withdraw consent, we delete these cookies."
         }
       ]
     },
