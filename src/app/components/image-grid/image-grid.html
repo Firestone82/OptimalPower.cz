@@ -1,8 +1,8 @@
 <ul class="image-grid">
   @for (image of images(); track image.src) {
-    <li>
+    <li appReveal>
       <button type="button" class="image-grid-item" (click)="opened.emit($index)">
-        <img [src]="image.src" [alt]="image.alt | localize" loading="lazy" />
+        <app-lazy-image [src]="image.src" [alt]="image.alt | localize" />
       </button>
     </li>
   }
