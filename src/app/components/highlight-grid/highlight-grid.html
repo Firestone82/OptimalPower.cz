@@ -2,6 +2,6 @@
 
 <div class="highlight-grid">
   @for (item of items(); track $index) {
-    <app-highlight-card [title]="item.title | localize" [image]="item.image" />
+    <app-highlight-card appReveal [title]="item.title | localize" [image]="item.image" />
   }
 </div>

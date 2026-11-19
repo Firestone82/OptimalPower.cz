@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { RevealDirective } from '../../directives/reveal.directive';
 import { HighlightContent } from '../../models/content.model';
 import { LocalizePipe } from '../../pipes/localize.pipe';
 import { SectionHeading } from '../section-heading/section-heading';
@@ -12,7 +13,7 @@ import { HighlightCard } from './highlight-card/highlight-card';
  */
 @Component({
   selector: 'app-highlight-grid',
-  imports: [SectionHeading, HighlightCard, LocalizePipe],
+  imports: [SectionHeading, HighlightCard, LocalizePipe, RevealDirective],
   templateUrl: './highlight-grid.html',
   styleUrl: './highlight-grid.scss',
 })

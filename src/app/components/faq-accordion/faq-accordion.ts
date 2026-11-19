@@ -1,4 +1,5 @@
 import { Component, input, signal } from '@angular/core';
+import { RevealDirective } from '../../directives/reveal.directive';
 import { FaqItemContent } from '../../models/content.model';
 import { FaqItem } from './faq-item/faq-item';
 
@@ -9,7 +10,7 @@ import { FaqItem } from './faq-item/faq-item';
  */
 @Component({
   selector: 'app-faq-accordion',
-  imports: [FaqItem],
+  imports: [FaqItem, RevealDirective],
   templateUrl: './faq-accordion.html',
   styleUrl: './faq-accordion.scss',
 })

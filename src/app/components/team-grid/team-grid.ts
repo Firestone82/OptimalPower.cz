@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { RevealDirective } from '../../directives/reveal.directive';
 import { TeamMemberContent } from '../../models/content.model';
 import { TeamMemberCard } from './team-member-card/team-member-card';
 
@@ -9,7 +10,7 @@ import { TeamMemberCard } from './team-member-card/team-member-card';
  */
 @Component({
   selector: 'app-team-grid',
-  imports: [TeamMemberCard],
+  imports: [TeamMemberCard, RevealDirective],
   templateUrl: './team-grid.html',
   styleUrl: './team-grid.scss',
 })

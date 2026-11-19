@@ -1,0 +1,50 @@
+// Every routed page fades in when it replaces the previous one. `:where` keeps the default display
+// overridable by the page's own `:host` styles.
+:where(.shell-main > :not(router-outlet)) {
+  display: block;
+}
+
+.shell-main > :not(router-outlet) {
+  animation: page-enter 350ms ease-out;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    translate: 0 0.5rem;
+  }
+}
+
+// Scroll reveal, see `RevealDirective`. `backwards` keeps the element hidden during its delay and
+// hands its styles back afterwards, so hover transitions of the element still work.
+.reveal:not(.revealed) {
+  opacity: 0;
+}
+
+.reveal.revealed {
+  animation: reveal 600ms cubic-bezier(0.2, 0.7, 0.3, 1) var(--reveal-delay, 0ms) backwards;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    translate: 0 1.5rem;
+  }
+}
+
+@media print {
+  .reveal:not(.revealed) {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal:not(.revealed) {
+    opacity: 1;
+  }
+
+  .shell-main > *,
+  .reveal.revealed {
+    animation: none;
+  }
+}
