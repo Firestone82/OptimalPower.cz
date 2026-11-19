@@ -35,7 +35,7 @@ public/
 
 All content is loaded at runtime from `public/content/*.json`; the shape of every file is in
 `src/app/models/content.model.ts` (`ContentMap`). Text that differs per language is written as
-`{ "cs": "...", "en": "..." }`; a plain string is used for every language.
+`{ "cs": "...", "en": "...", "pl": "..." }`; a plain string is used for every language.
 
 - `company.json` – name, address, IČO/DIČ, bank account, e-mail, phone, motto
 - `navigation.json` / `footer.json` – menu, footer links, membership logos
@@ -52,14 +52,15 @@ address with `npm run encode-email -- user@optimalpower.cz`.
 
 ## Languages
 
-Routes are prefixed with the language: `/cs/...`, `/en/...`. `/` redirects to Czech. Old PHP URLs (`/kontakt`, `/reference`, …) redirect to their new Czech pages.
+Routes are prefixed with the language: `/cs/...`, `/en/...`, `/pl/...`. `/` redirects to Czech. Old PHP URLs (`/kontakt`, `/reference`, …) redirect to their new Czech pages.
 
 To add a language: add it to `SUPPORTED_LANGUAGES` in `models/language.model.ts`, create
-`public/i18n/<lang>.json` and add the key to localized content.
+`public/i18n/<lang>.json`, add its name under `languages` in every dictionary, its Open Graph
+locale to `locales` in `seo.json` and the key to localized content.
 
 ## SEO
 
-Every page is prerendered to static HTML in both languages at build time (`outputMode: "static"`,
+Every page is prerendered to static HTML in every language at build time (`outputMode: "static"`,
 server routes in `app.routes.server.ts`), and Angular hydrates it in the browser. Code that touches
 browser-only APIs must not run during prerendering (use `afterNextRender`/`afterRenderEffect` or
 check `isPlatformBrowser`).

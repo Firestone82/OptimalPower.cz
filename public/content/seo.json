@@ -4,18 +4,21 @@
     "src": "images/og-image.jpg",
     "alt": {
       "cs": "Solární panely ve slunečním světle",
-      "en": "Solar panels in sunlight"
+      "en": "Solar panels in sunlight",
+      "pl": "Panele fotowoltaiczne w słońcu"
     }
   },
   "locales": {
     "cs": "cs_CZ",
-    "en": "en_US"
+    "en": "en_US",
+    "pl": "pl_PL"
   },
   "business": {
     "type": "HomeAndConstructionBusiness",
     "description": {
       "cs": "Výstavba fotovoltaických elektráren na klíč, vyřízení dotace a připojení do sítě, tepelná čerpadla, energetické posudky a poradenství.",
-      "en": "Turnkey photovoltaic power plants including subsidies and grid connection, heat pumps, energy assessments and consulting."
+      "en": "Turnkey photovoltaic power plants including subsidies and grid connection, heat pumps, energy assessments and consulting.",
+      "pl": "Elektrownie fotowoltaiczne pod klucz wraz z obsługą dotacji i przyłączeniem do sieci, pompy ciepła, ekspertyzy energetyczne i doradztwo."
     },
     "streetAddress": "Školní 332",
     "postalCode": "749 01",
@@ -28,91 +31,110 @@
     "home": {
       "title": {
         "cs": "Fotovoltaické elektrárny na klíč",
-        "en": "Turnkey solar power plants"
+        "en": "Turnkey solar power plants",
+        "pl": "Elektrownie fotowoltaiczne pod klucz"
       },
       "description": {
         "cs": "Fotovoltaika na klíč pro rodinné domy i firmy v Moravskoslezském kraji. Návrh FVE, montáž, baterie, připojení k síti, dotace Nová zelená úsporám a servis.",
-        "en": "Turnkey solar for homes and businesses in the Moravian-Silesian Region, Czech Republic. Design, installation, batteries, grid connection, subsidies and service."
+        "en": "Turnkey solar for homes and businesses in the Moravian-Silesian Region, Czech Republic. Design, installation, batteries, grid connection, subsidies and service.",
+        "pl": "Fotowoltaika pod klucz dla domów i firm w kraju morawsko-śląskim w Czechach. Projekt, montaż, magazyny energii, przyłączenie do sieci, dotacje i serwis."
       },
       "keywords": {
         "cs": "fotovoltaika, fotovoltaická elektrárna, FVE na klíč, solární panely, bateriové úložiště, dotace Nová zelená úsporám, tepelná čerpadla, Vítkov, Opava, Moravskoslezský kraj",
-        "en": "solar power plant, photovoltaics, turnkey solar, solar panels, battery storage, solar subsidy, heat pumps, Vítkov, Opava, Czech Republic"
+        "en": "solar power plant, photovoltaics, turnkey solar, solar panels, battery storage, solar subsidy, heat pumps, Vítkov, Opava, Czech Republic",
+        "pl": "fotowoltaika, elektrownia fotowoltaiczna, fotowoltaika pod klucz, panele fotowoltaiczne, magazyn energii, dotacje na fotowoltaikę, pompy ciepła, Vítkov, Opawa, Czechy"
       }
     },
     "references": {
       "title": {
         "cs": "Reference a realizace FVE",
-        "en": "Our solar installations"
+        "en": "Our solar installations",
+        "pl": "Nasze realizacje fotowoltaiczne"
       },
       "description": {
         "cs": "Prohlédněte si fotovoltaické elektrárny, které jsme postavili v Opavě, Velopolí, Horní Suché i Bašce. Výkon, panely, střídače, baterie a hodnocení zákazníků.",
-        "en": "See the solar power plants we have built in Opava, Velopolí, Horní Suchá and Baška. Output, panels, inverters, batteries and what our customers say."
+        "en": "See the solar power plants we have built in Opava, Velopolí, Horní Suchá and Baška. Output, panels, inverters, batteries and what our customers say.",
+        "pl": "Zobacz elektrownie fotowoltaiczne, które zbudowaliśmy w miejscowościach Opawa, Velopolí, Horní Suchá i Baška. Moc, panele, falowniki, magazyny energii i opinie klientów."
       },
       "keywords": {
         "cs": "reference FVE, realizace fotovoltaiky, fotovoltaika Opava, fotovoltaika Frýdek-Místek, hodnocení zákazníků",
-        "en": "solar installations, photovoltaic references, solar Opava, customer reviews"
+        "en": "solar installations, photovoltaic references, solar Opava, customer reviews",
+        "pl": "realizacje fotowoltaiki, referencje fotowoltaika, fotowoltaika Opawa, fotowoltaika Frydek-Mistek, opinie klientów"
       }
     },
     "gallery": {
       "title": {
         "cs": "Fotogalerie realizací FVE",
-        "en": "Solar installation gallery"
+        "en": "Solar installation gallery",
+        "pl": "Galeria realizacji fotowoltaicznych"
       },
       "description": {
         "cs": "Fotografie fotovoltaických elektráren, solárních panelů na střechách a montáží, které realizovala společnost Optimal Power s.r.o. z Vítkova.",
-        "en": "Photos of photovoltaic power plants, rooftop solar panels and installations completed by Optimal Power s.r.o. from Vítkov, Czech Republic."
+        "en": "Photos of photovoltaic power plants, rooftop solar panels and installations completed by Optimal Power s.r.o. from Vítkov, Czech Republic.",
+        "pl": "Zdjęcia elektrowni fotowoltaicznych, paneli na dachach i montaży wykonanych przez Optimal Power s.r.o. z miasta Vítkov w Czechach."
       },
       "keywords": {
         "cs": "fotogalerie fotovoltaika, solární panely na střeše, montáž FVE",
-        "en": "solar gallery, rooftop solar panels, solar installation photos"
+        "en": "solar gallery, rooftop solar panels, solar installation photos",
+        "pl": "galeria fotowoltaika, panele fotowoltaiczne na dachu, zdjęcia montażu fotowoltaiki"
       }
     },
     "faq": {
       "title": {
         "cs": "Časté otázky o fotovoltaice",
-        "en": "Solar power FAQ"
+        "en": "Solar power FAQ",
+        "pl": "Fotowoltaika: najczęstsze pytania"
       },
       "description": {
         "cs": "Jak probíhá výstavba FVE, jak dlouho trvá, co si připravit na první schůzku, zda se může zvýšit cena a jak chráníme vaši střechu. Odpovědi na časté otázky.",
-        "en": "How building a solar plant works, how long it takes, what to prepare for the first visit, whether the price can change and how we protect your roof."
+        "en": "How building a solar plant works, how long it takes, what to prepare for the first visit, whether the price can change and how we protect your roof.",
+        "pl": "Jak przebiega budowa instalacji fotowoltaicznej, ile trwa, co przygotować na pierwsze spotkanie, czy cena może wzrosnąć i jak chronimy Twój dach."
       },
       "keywords": {
         "cs": "otázky fotovoltaika, jak dlouho trvá výstavba FVE, cena fotovoltaiky, montáž na střechu, smlouva o připojení",
-        "en": "solar FAQ, how long does solar installation take, solar price, roof mounting"
+        "en": "solar FAQ, how long does solar installation take, solar price, roof mounting",
+        "pl": "pytania fotowoltaika, ile trwa montaż fotowoltaiki, cena fotowoltaiki, montaż na dachu, umowa o przyłączenie"
       }
     },
     "contact": {
       "title": {
         "cs": "Kontakt a nezávazná poptávka FVE",
-        "en": "Contact and free solar quote"
+        "en": "Contact and free solar quote",
+        "pl": "Kontakt i bezpłatna wycena fotowoltaiki"
       },
       "description": {
         "cs": "Nezávazná poptávka fotovoltaiky zdarma. Napište nám nebo zavolejte na +420 606 734 911. Optimal Power s.r.o., Školní 332, 749 01 Vítkov.",
-        "en": "Ask for a free, no-obligation solar quote. Write to us or call +420 606 734 911. Optimal Power s.r.o., Školní 332, 749 01 Vítkov, Czech Republic."
+        "en": "Ask for a free, no-obligation solar quote. Write to us or call +420 606 734 911. Optimal Power s.r.o., Školní 332, 749 01 Vítkov, Czech Republic.",
+        "pl": "Bezpłatna i niezobowiązująca wycena fotowoltaiki. Napisz do nas lub zadzwoń pod numer +420 606 734 911. Optimal Power s.r.o., Školní 332, 749 01 Vítkov, Czechy."
       },
       "keywords": {
         "cs": "poptávka fotovoltaiky, cenová nabídka FVE, kontakt Optimal Power, Vítkov",
-        "en": "solar quote, contact Optimal Power, Vítkov"
+        "en": "solar quote, contact Optimal Power, Vítkov",
+        "pl": "wycena fotowoltaiki, oferta fotowoltaika, kontakt Optimal Power, Vítkov"
       }
     },
     "privacy": {
       "title": {
         "cs": "Ochrana osobních údajů",
-        "en": "Privacy policy"
+        "en": "Privacy policy",
+        "pl": "Polityka prywatności"
       },
       "description": {
         "cs": "Jak společnost Optimal Power s.r.o. zpracovává osobní údaje, k jakým účelům, jak dlouho a jaká máte práva.",
-        "en": "How Optimal Power s.r.o. processes personal data, for what purposes, for how long and what your rights are."
+        "en": "How Optimal Power s.r.o. processes personal data, for what purposes, for how long and what your rights are.",
+        "pl": "Jak Optimal Power s.r.o. przetwarza dane osobowe, w jakich celach, jak długo i jakie prawa Ci przysługują."
       }
     },
     "terms": {
       "title": {
         "cs": "Obchodní podmínky",
-        "en": "Terms and conditions"
+        "en": "Terms and conditions",
+        "pl": "Ogólne warunki handlowe"
       },
       "description": {
         "cs": "Obchodní podmínky společnosti Optimal Power s.r.o. pro dodávku a montáž fotovoltaických elektráren a souvisejících služeb.",
-        "en": "Terms and conditions of Optimal Power s.r.o. for the supply and installation of photovoltaic power plants and related services."
+        "en": "Terms and conditions of Optimal Power s.r.o. for the supply and installation of photovoltaic power plants and related services.",
+        "pl": "Ogólne warunki handlowe Optimal Power s.r.o. dotyczące dostawy i montażu elektrowni fotowoltaicznych oraz usług powiązanych."
       }
     }
   }

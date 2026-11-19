@@ -1,24 +1,28 @@
 {
   "title": {
     "cs": "Ochrana osobních údajů",
-    "en": "Privacy policy"
+    "en": "Privacy policy",
+    "pl": "Polityka prywatności"
   },
   "effectiveFrom": "2026-11-19",
   "image": {
     "src": "images/gdpr.webp",
     "alt": {
       "cs": "Ochrana osobních údajů",
-      "en": "Data protection"
+      "en": "Data protection",
+      "pl": "Ochrona danych osobowych"
     }
   },
   "intro": [
     {
       "cs": "Ochrana Vašich osobních údajů je pro nás samozřejmostí. Na této stránce najdete, jaké údaje o Vás zpracováváme, proč to děláme, jak dlouho je uchováváme a jaká práva Vám podle obecného nařízení o ochraně osobních údajů (GDPR) a zákona č. 110/2019 Sb. náleží.",
-      "en": "Protecting your personal data is a matter of course for us. This page explains what data we process about you, why we do it, how long we keep it and which rights you have under the General Data Protection Regulation (GDPR) and Czech Act No. 110/2019 Coll."
+      "en": "Protecting your personal data is a matter of course for us. This page explains what data we process about you, why we do it, how long we keep it and which rights you have under the General Data Protection Regulation (GDPR) and Czech Act No. 110/2019 Coll.",
+      "pl": "Ochrona Twoich danych osobowych jest dla nas oczywistością. Na tej stronie znajdziesz informacje o tym, jakie dane o Tobie przetwarzamy, dlaczego to robimy, jak długo je przechowujemy i jakie prawa przysługują Ci na podstawie ogólnego rozporządzenia o ochronie danych (RODO) oraz czeskiej ustawy nr 110/2019 Sb. o przetwarzaniu danych osobowych."
     },
     {
       "cs": "Ujišťujeme Vás, že spravovaná osobní data jsme v minulosti nikomu a nikdy neprodali, nepředali ani neumožnili data využívat a i v budoucnu se zachováme stejně odpovědně.",
-      "en": "We assure you that we have never sold, passed on or allowed anyone to use the personal data we manage, and we will act just as responsibly in the future."
+      "en": "We assure you that we have never sold, passed on or allowed anyone to use the personal data we manage, and we will act just as responsibly in the future.",
+      "pl": "Zapewniamy, że nigdy nikomu nie sprzedaliśmy ani nie przekazaliśmy danych osobowych, którymi zarządzamy, ani nie pozwoliliśmy ich wykorzystywać, i w przyszłości postąpimy równie odpowiedzialnie."
     }
   ],
   "sections": [
@@ -26,12 +30,14 @@
       "id": "controller",
       "title": {
         "cs": "Správce osobních údajů",
-        "en": "Data controller"
+        "en": "Data controller",
+        "pl": "Administrator danych osobowych"
       },
       "paragraphs": [
         {
           "cs": "Správcem Vašich osobních údajů je společnost Optimal Power s.r.o. Pověřenec pro ochranu osobních údajů nebyl jmenován, protože to pro naši činnost zákon nevyžaduje. Se všemi dotazy k ochraně osobních údajů se obracejte přímo na nás.",
-          "en": "The controller of your personal data is Optimal Power s.r.o. We have not appointed a data protection officer, as the law does not require one for our activities. Please direct any questions about data protection to us."
+          "en": "The controller of your personal data is Optimal Power s.r.o. We have not appointed a data protection officer, as the law does not require one for our activities. Please direct any questions about data protection to us.",
+          "pl": "Administratorem Twoich danych osobowych jest spółka Optimal Power s.r.o. Nie wyznaczyliśmy inspektora ochrony danych, ponieważ przepisy nie wymagają tego w przypadku naszej działalności. Wszelkie pytania dotyczące ochrony danych osobowych kieruj bezpośrednio do nas."
         }
       ],
       "showCompany": true
@@ -40,38 +46,46 @@
       "id": "data",
       "title": {
         "cs": "Jaké údaje zpracováváme",
-        "en": "What data we process"
+        "en": "What data we process",
+        "pl": "Jakie dane przetwarzamy"
       },
       "paragraphs": [
         {
           "cs": "Zpracováváme pouze údaje, které nám sami poskytnete nebo které nezbytně potřebujeme k přípravě nabídky a realizaci zakázky:",
-          "en": "We only process data that you give us or that we need to prepare an offer and carry out an order:"
+          "en": "We only process data that you give us or that we need to prepare an offer and carry out an order:",
+          "pl": "Przetwarzamy wyłącznie dane, które sam nam przekażesz lub które są niezbędne do przygotowania oferty i realizacji zamówienia:"
         }
       ],
       "items": [
         {
           "cs": "identifikační údaje: jméno, příjmení, u podnikatelů IČO a DIČ,",
-          "en": "identification data: first and last name, and for businesses their company and VAT numbers,"
+          "en": "identification data: first and last name, and for businesses their company and VAT numbers,",
+          "pl": "dane identyfikacyjne: imię i nazwisko, a w przypadku przedsiębiorców numer identyfikacyjny firmy i numer VAT,"
         },
         {
           "cs": "kontaktní údaje: e-mail, telefon a adresa,",
-          "en": "contact data: e-mail, phone and address,"
+          "en": "contact data: e-mail, phone and address,",
+          "pl": "dane kontaktowe: e-mail, telefon i adres,"
         },
         {
           "cs": "údaje o místě instalace: adresa nemovitosti, číslo parcely, fotografie a parametry střechy,",
-          "en": "installation site data: property address, plot number, photos and parameters of the roof,"
+          "en": "installation site data: property address, plot number, photos and parameters of the roof,",
+          "pl": "dane miejsca instalacji: adres nieruchomości, numer działki, zdjęcia i parametry dachu,"
         },
         {
           "cs": "údaje o spotřebě energie: roční spotřeba, distribuční sazba, EAN odběrného místa,",
-          "en": "energy data: annual consumption, distribution tariff, EAN of the supply point,"
+          "en": "energy data: annual consumption, distribution tariff, EAN of the supply point,",
+          "pl": "dane o zużyciu energii: roczne zużycie, taryfa dystrybucyjna, kod EAN punktu poboru,"
         },
         {
           "cs": "platební a fakturační údaje: číslo účtu, vystavené faktury a platby,",
-          "en": "payment and billing data: bank account number, invoices and payments,"
+          "en": "payment and billing data: bank account number, invoices and payments,",
+          "pl": "dane płatnicze i rozliczeniowe: numer rachunku bankowego, wystawione faktury i płatności,"
         },
         {
           "cs": "obsah zpráv, které nám pošlete přes kontaktní formulář, e-mail nebo telefon.",
-          "en": "the content of messages you send us via the contact form, e-mail or phone."
+          "en": "the content of messages you send us via the contact form, e-mail or phone.",
+          "pl": "treść wiadomości, które wysyłasz nam przez formularz kontaktowy, e-mail lub telefonicznie."
         }
       ]
     },
@@ -79,32 +93,39 @@
       "id": "purposes",
       "title": {
         "cs": "Účely a právní základ zpracování",
-        "en": "Purposes and legal basis"
+        "en": "Purposes and legal basis",
+        "pl": "Cele i podstawa prawna przetwarzania"
       },
       "items": [
         {
           "cs": "Odpověď na poptávku a příprava nabídky: provedení opatření před uzavřením smlouvy na Vaši žádost, čl. 6 odst. 1 písm. b) GDPR.",
-          "en": "Answering your inquiry and preparing an offer: steps taken at your request before entering into a contract, Art. 6(1)(b) GDPR."
+          "en": "Answering your inquiry and preparing an offer: steps taken at your request before entering into a contract, Art. 6(1)(b) GDPR.",
+          "pl": "Odpowiedź na zapytanie i przygotowanie oferty: działania podejmowane na Twoje żądanie przed zawarciem umowy, art. 6 ust. 1 lit. b RODO."
         },
         {
           "cs": "Realizace zakázky, zajištění připojení k distribuční soustavě, vyřízení dotace a servis: plnění smlouvy, čl. 6 odst. 1 písm. b) GDPR.",
-          "en": "Carrying out the order, arranging the grid connection, handling subsidies and service: performance of a contract, Art. 6(1)(b) GDPR."
+          "en": "Carrying out the order, arranging the grid connection, handling subsidies and service: performance of a contract, Art. 6(1)(b) GDPR.",
+          "pl": "Realizacja zamówienia, przyłączenie do sieci dystrybucyjnej, obsługa dotacji i serwis: wykonanie umowy, art. 6 ust. 1 lit. b RODO."
         },
         {
           "cs": "Vedení účetnictví a plnění daňových povinností: plnění právní povinnosti, čl. 6 odst. 1 písm. c) GDPR.",
-          "en": "Accounting and tax obligations: compliance with a legal obligation, Art. 6(1)(c) GDPR."
+          "en": "Accounting and tax obligations: compliance with a legal obligation, Art. 6(1)(c) GDPR.",
+          "pl": "Prowadzenie księgowości i wypełnianie obowiązków podatkowych: wypełnienie obowiązku prawnego, art. 6 ust. 1 lit. c RODO."
         },
         {
           "cs": "Ochrana našich právních nároků a vyřizování reklamací: oprávněný zájem, čl. 6 odst. 1 písm. f) GDPR.",
-          "en": "Protecting our legal claims and handling complaints: legitimate interest, Art. 6(1)(f) GDPR."
+          "en": "Protecting our legal claims and handling complaints: legitimate interest, Art. 6(1)(f) GDPR.",
+          "pl": "Ochrona naszych roszczeń prawnych i rozpatrywanie reklamacji: prawnie uzasadniony interes, art. 6 ust. 1 lit. f RODO."
         },
         {
           "cs": "Zveřejnění fotografií Vaší instalace v referencích a fotogalerii: pouze s Vaším souhlasem, čl. 6 odst. 1 písm. a) GDPR.",
-          "en": "Publishing photos of your installation among our references and in the gallery: only with your consent, Art. 6(1)(a) GDPR."
+          "en": "Publishing photos of your installation among our references and in the gallery: only with your consent, Art. 6(1)(a) GDPR.",
+          "pl": "Publikacja zdjęć Twojej instalacji w referencjach i galerii: wyłącznie za Twoją zgodą, art. 6 ust. 1 lit. a RODO."
         },
         {
           "cs": "Měření návštěvnosti webu pomocí Google Analytics: pouze s Vaším souhlasem, čl. 6 odst. 1 písm. a) GDPR.",
-          "en": "Measuring website traffic with Google Analytics: only with your consent, Art. 6(1)(a) GDPR."
+          "en": "Measuring website traffic with Google Analytics: only with your consent, Art. 6(1)(a) GDPR.",
+          "pl": "Pomiar ruchu na stronie za pomocą Google Analytics: wyłącznie za Twoją zgodą, art. 6 ust. 1 lit. a RODO."
         }
       ]
     },
@@ -112,12 +133,14 @@
       "id": "contact-form",
       "title": {
         "cs": "Kontaktní formulář",
-        "en": "Contact form"
+        "en": "Contact form",
+        "pl": "Formularz kontaktowy"
       },
       "paragraphs": [
         {
           "cs": "Zprávy z kontaktního formuláře nám doručuje služba Web3Forms. Formulář chrání služba hCaptcha, která ověřuje, že ho vyplňuje člověk, a k tomu může zpracovávat technické údaje o Vašem zařízení a prohlížeči. Údaje z formuláře použijeme jen k odpovědi na Vaši zprávu a k případné přípravě nabídky.",
-          "en": "Messages from the contact form are delivered to us by the Web3Forms service. The form is protected by hCaptcha, which checks that it is filled in by a person and may process technical data about your device and browser to do so. We only use the form data to reply to your message and, where relevant, to prepare an offer."
+          "en": "Messages from the contact form are delivered to us by the Web3Forms service. The form is protected by hCaptcha, which checks that it is filled in by a person and may process technical data about your device and browser to do so. We only use the form data to reply to your message and, where relevant, to prepare an offer.",
+          "pl": "Wiadomości z formularza kontaktowego dostarcza nam usługa Web3Forms. Formularz jest chroniony przez usługę hCaptcha, która sprawdza, czy wypełnia go człowiek, i w tym celu może przetwarzać dane techniczne o Twoim urządzeniu i przeglądarce. Dane z formularza wykorzystujemy wyłącznie do odpowiedzi na Twoją wiadomość i ewentualnie do przygotowania oferty."
         }
       ]
     },
@@ -125,28 +148,34 @@
       "id": "retention",
       "title": {
         "cs": "Jak dlouho údaje uchováváme",
-        "en": "How long we keep data"
+        "en": "How long we keep data",
+        "pl": "Jak długo przechowujemy dane"
       },
       "items": [
         {
           "cs": "Poptávky, ze kterých nevznikne zakázka, nejdéle 1 rok od posledního kontaktu.",
-          "en": "Inquiries that do not lead to an order: at most 1 year after the last contact."
+          "en": "Inquiries that do not lead to an order: at most 1 year after the last contact.",
+          "pl": "Zapytania, z których nie powstało zamówienie: najdłużej 1 rok od ostatniego kontaktu."
         },
         {
           "cs": "Smlouvy a dokumentaci k zakázce po dobu trvání smlouvy, záruční doby a promlčecích lhůt.",
-          "en": "Contracts and order documentation: for the term of the contract, the warranty period and the limitation periods."
+          "en": "Contracts and order documentation: for the term of the contract, the warranty period and the limitation periods.",
+          "pl": "Umowy i dokumentacja zamówienia: przez czas trwania umowy, okres gwarancji i okresy przedawnienia."
         },
         {
           "cs": "Účetní a daňové doklady po dobu stanovenou zákonem, zpravidla 10 let.",
-          "en": "Accounting and tax documents: for the period set by law, usually 10 years."
+          "en": "Accounting and tax documents: for the period set by law, usually 10 years.",
+          "pl": "Dokumenty księgowe i podatkowe: przez okres wymagany przepisami, zwykle 10 lat."
         },
         {
           "cs": "Statistiky návštěvnosti v Google Analytics nejdéle 14 měsíců.",
-          "en": "Traffic statistics in Google Analytics: at most 14 months."
+          "en": "Traffic statistics in Google Analytics: at most 14 months.",
+          "pl": "Statystyki odwiedzin w Google Analytics: najdłużej 14 miesięcy."
         },
         {
           "cs": "Údaje zpracovávané na základě souhlasu do jeho odvolání.",
-          "en": "Data processed on the basis of consent: until you withdraw it."
+          "en": "Data processed on the basis of consent: until you withdraw it.",
+          "pl": "Dane przetwarzane na podstawie zgody: do czasu jej wycofania."
         }
       ]
     },
@@ -154,38 +183,46 @@
       "id": "recipients",
       "title": {
         "cs": "Komu údaje předáváme",
-        "en": "Who receives your data"
+        "en": "Who receives your data",
+        "pl": "Komu przekazujemy dane"
       },
       "paragraphs": [
         {
           "cs": "Údaje předáváme jen tehdy, je-li to nutné k realizaci zakázky, nebo nám to ukládá zákon. Příjemci mohou být:",
-          "en": "We only pass on data when it is needed to carry out the order or required by law. Recipients may include:"
+          "en": "We only pass on data when it is needed to carry out the order or required by law. Recipients may include:",
+          "pl": "Dane przekazujemy tylko wtedy, gdy jest to konieczne do realizacji zamówienia lub gdy wymaga tego prawo. Odbiorcami mogą być:"
         }
       ],
       "items": [
         {
           "cs": "provozovatel distribuční soustavy, kvůli připojení elektrárny k síti,",
-          "en": "the distribution system operator, for connecting the power plant to the grid,"
+          "en": "the distribution system operator, for connecting the power plant to the grid,",
+          "pl": "operator systemu dystrybucyjnego, w związku z przyłączeniem elektrowni do sieci,"
         },
         {
           "cs": "poskytovatel dotace, například Státní fond životního prostředí ČR v programu Nová zelená úsporám,",
-          "en": "the subsidy provider, for example the State Environmental Fund in the New Green Savings programme,"
+          "en": "the subsidy provider, for example the State Environmental Fund in the New Green Savings programme,",
+          "pl": "podmiot udzielający dotacji, na przykład czeski Państwowy Fundusz Środowiska (Státní fond životního prostředí ČR) w programie Nová zelená úsporám,"
         },
         {
           "cs": "naši subdodavatelé, projektanti a revizní technici,",
-          "en": "our subcontractors, designers and inspection technicians,"
+          "en": "our subcontractors, designers and inspection technicians,",
+          "pl": "nasi podwykonawcy, projektanci i technicy wykonujący przeglądy,"
         },
         {
           "cs": "externí účetní a daňový poradce,",
-          "en": "our external accountant and tax adviser,"
+          "en": "our external accountant and tax adviser,",
+          "pl": "zewnętrzny księgowy i doradca podatkowy,"
         },
         {
           "cs": "poskytovatelé IT služeb: hosting webu (GitHub Pages), doručování formulářů (Web3Forms), ochrana proti spamu (hCaptcha) a měření návštěvnosti (Google Analytics),",
-          "en": "IT service providers: website hosting (GitHub Pages), form delivery (Web3Forms), spam protection (hCaptcha) and traffic measurement (Google Analytics),"
+          "en": "IT service providers: website hosting (GitHub Pages), form delivery (Web3Forms), spam protection (hCaptcha) and traffic measurement (Google Analytics),",
+          "pl": "dostawcy usług IT: hosting strony (GitHub Pages), dostarczanie formularzy (Web3Forms), ochrona przed spamem (hCaptcha) i pomiar ruchu (Google Analytics),"
         },
         {
           "cs": "státní úřady a instituce, které mají na údaje ze zákona právo.",
-          "en": "state authorities and institutions that are entitled to the data by law."
+          "en": "state authorities and institutions that are entitled to the data by law.",
+          "pl": "organy i instytucje państwowe, którym przysługuje prawo do danych na mocy przepisów."
         }
       ]
     },
@@ -193,12 +230,14 @@
       "id": "transfers",
       "title": {
         "cs": "Předávání mimo EU",
-        "en": "Transfers outside the EU"
+        "en": "Transfers outside the EU",
+        "pl": "Przekazywanie danych poza UE"
       },
       "paragraphs": [
         {
           "cs": "Někteří poskytovatelé IT služeb mohou údaje zpracovávat i mimo Evropskou unii, zejména v USA. V takovém případě se předání opírá o rozhodnutí Evropské komise o odpovídající ochraně (EU-U.S. Data Privacy Framework) nebo o standardní smluvní doložky.",
-          "en": "Some IT service providers may process data outside the European Union, mainly in the USA. In that case the transfer relies on the European Commission's adequacy decision (EU-U.S. Data Privacy Framework) or on standard contractual clauses."
+          "en": "Some IT service providers may process data outside the European Union, mainly in the USA. In that case the transfer relies on the European Commission's adequacy decision (EU-U.S. Data Privacy Framework) or on standard contractual clauses.",
+          "pl": "Niektórzy dostawcy usług IT mogą przetwarzać dane również poza Unią Europejską, zwłaszcza w USA. W takim przypadku przekazanie opiera się na decyzji Komisji Europejskiej stwierdzającej odpowiedni stopień ochrony (EU-U.S. Data Privacy Framework) lub na standardowych klauzulach umownych."
         }
       ]
     },
@@ -206,26 +245,31 @@
       "id": "cookies",
       "title": {
         "cs": "Cookies",
-        "en": "Cookies"
+        "en": "Cookies",
+        "pl": "Pliki cookies"
       },
       "paragraphs": [
         {
           "cs": "Cookies jsou malé soubory, které web ukládá do Vašeho prohlížeče. Nepoužíváme žádné reklamní cookies.",
-          "en": "Cookies are small files a website stores in your browser. We do not use any advertising cookies."
+          "en": "Cookies are small files a website stores in your browser. We do not use any advertising cookies.",
+          "pl": "Pliki cookies to małe pliki, które strona zapisuje w Twojej przeglądarce. Nie używamy żadnych reklamowych plików cookies."
         },
         {
           "cs": "Při první návštěvě se Vás zeptáme, zda smíme používat analytické cookies. Svou volbu můžete kdykoli změnit odkazem Nastavení cookies v patičce webu. Volbu si pamatujeme v úložišti Vašeho prohlížeče.",
-          "en": "On your first visit we ask whether we may use analytics cookies. You can change your choice at any time with the Cookie settings link in the footer. We remember your choice in your browser's storage."
+          "en": "On your first visit we ask whether we may use analytics cookies. You can change your choice at any time with the Cookie settings link in the footer. We remember your choice in your browser's storage.",
+          "pl": "Podczas pierwszej wizyty zapytamy, czy możemy używać analitycznych plików cookies. Swój wybór możesz w każdej chwili zmienić za pomocą odnośnika Ustawienia cookies w stopce strony. Twój wybór zapamiętujemy w pamięci przeglądarki."
         }
       ],
       "items": [
         {
           "cs": "Nezbytné: hCaptcha může při načtení kontaktního formuláře uložit technické cookies potřebné pro ochranu proti spamu. Ty nevyžadují souhlas.",
-          "en": "Necessary: when the contact form loads, hCaptcha may store technical cookies needed for spam protection. These do not require consent."
+          "en": "Necessary: when the contact form loads, hCaptcha may store technical cookies needed for spam protection. These do not require consent.",
+          "pl": "Niezbędne: po załadowaniu formularza kontaktowego hCaptcha może zapisać techniczne pliki cookies potrzebne do ochrony przed spamem. Nie wymagają one zgody."
         },
         {
           "cs": "Analytické: Google Analytics (cookies _ga a _ga_*, platnost až 2 roky) nám ukazuje, které stránky navštěvujete a odkud přicházíte. Skript Google se načte až po Vašem souhlasu, IP adresy služba v EU neukládá. Pokud souhlas odvoláte, cookies smažeme.",
-          "en": "Analytics: Google Analytics (cookies _ga and _ga_*, valid for up to 2 years) shows us which pages you visit and where you come from. The Google script only loads after you consent, and the service does not store IP addresses in the EU. If you withdraw consent, we delete these cookies."
+          "en": "Analytics: Google Analytics (cookies _ga and _ga_*, valid for up to 2 years) shows us which pages you visit and where you come from. The Google script only loads after you consent, and the service does not store IP addresses in the EU. If you withdraw consent, we delete these cookies.",
+          "pl": "Analityczne: Google Analytics (pliki cookies _ga i _ga_*, ważne do 2 lat) pokazuje nam, które strony odwiedzasz i skąd przychodzisz. Skrypt Google ładuje się dopiero po wyrażeniu przez Ciebie zgody, a usługa nie przechowuje adresów IP w UE. Jeśli wycofasz zgodę, usuniemy te pliki cookies."
         }
       ]
     },
@@ -233,42 +277,51 @@
       "id": "rights",
       "title": {
         "cs": "Vaše práva",
-        "en": "Your rights"
+        "en": "Your rights",
+        "pl": "Twoje prawa"
       },
       "paragraphs": [
         {
           "cs": "V souvislosti se zpracováním osobních údajů máte právo:",
-          "en": "In connection with the processing of your personal data you have the right to:"
+          "en": "In connection with the processing of your personal data you have the right to:",
+          "pl": "W związku z przetwarzaniem danych osobowych masz prawo do:"
         }
       ],
       "items": [
         {
           "cs": "na přístup ke svým údajům a na jejich kopii,",
-          "en": "access your data and receive a copy of it,"
+          "en": "access your data and receive a copy of it,",
+          "pl": "dostępu do swoich danych i otrzymania ich kopii,"
         },
         {
           "cs": "na opravu nepřesných nebo doplnění neúplných údajů,",
-          "en": "have inaccurate data corrected or incomplete data completed,"
+          "en": "have inaccurate data corrected or incomplete data completed,",
+          "pl": "sprostowania nieprawidłowych lub uzupełnienia niekompletnych danych,"
         },
         {
           "cs": "na výmaz údajů, pokud již nejsou potřeba nebo je zpracováváme neoprávněně,",
-          "en": "have your data erased if it is no longer needed or is processed unlawfully,"
+          "en": "have your data erased if it is no longer needed or is processed unlawfully,",
+          "pl": "usunięcia danych, jeśli nie są już potrzebne lub przetwarzamy je niezgodnie z prawem,"
         },
         {
           "cs": "na omezení zpracování,",
-          "en": "restrict the processing,"
+          "en": "restrict the processing,",
+          "pl": "ograniczenia przetwarzania,"
         },
         {
           "cs": "na přenositelnost údajů,",
-          "en": "data portability,"
+          "en": "data portability,",
+          "pl": "przenoszenia danych,"
         },
         {
           "cs": "vznést námitku proti zpracování založenému na oprávněném zájmu,",
-          "en": "object to processing based on legitimate interest,"
+          "en": "object to processing based on legitimate interest,",
+          "pl": "wniesienia sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie,"
         },
         {
           "cs": "kdykoli odvolat udělený souhlas, aniž by tím byla dotčena zákonnost dřívějšího zpracování.",
-          "en": "withdraw your consent at any time, without affecting the lawfulness of earlier processing."
+          "en": "withdraw your consent at any time, without affecting the lawfulness of earlier processing.",
+          "pl": "wycofania udzielonej zgody w dowolnym momencie, bez wpływu na zgodność z prawem wcześniejszego przetwarzania."
         }
       ]
     },
@@ -276,16 +329,19 @@
       "id": "exercise",
       "title": {
         "cs": "Jak práva uplatnit a kam si stěžovat",
-        "en": "How to exercise your rights and where to complain"
+        "en": "How to exercise your rights and where to complain",
+        "pl": "Jak skorzystać z praw i gdzie złożyć skargę"
       },
       "paragraphs": [
         {
           "cs": "Svá práva uplatníte e-mailem, telefonicky nebo dopisem na kontaktech uvedených výše. Na žádost odpovíme bez zbytečného odkladu, nejpozději do jednoho měsíce.",
-          "en": "You can exercise your rights by e-mail, phone or letter using the contacts above. We will respond without undue delay and within one month at the latest."
+          "en": "You can exercise your rights by e-mail, phone or letter using the contacts above. We will respond without undue delay and within one month at the latest.",
+          "pl": "Ze swoich praw możesz skorzystać e-mailowo, telefonicznie lub listownie, korzystając z danych kontaktowych podanych powyżej. Na wniosek odpowiemy bez zbędnej zwłoki, najpóźniej w ciągu miesiąca."
         },
         {
           "cs": "Pokud se domníváte, že s Vašimi údaji nezacházíme v souladu se zákonem, můžete podat stížnost u Úřadu pro ochranu osobních údajů, Pplk. Sochora 27, 170 00 Praha 7, www.uoou.gov.cz.",
-          "en": "If you believe that we do not handle your data in accordance with the law, you can lodge a complaint with the Czech Office for Personal Data Protection, Pplk. Sochora 27, 170 00 Prague 7, www.uoou.gov.cz."
+          "en": "If you believe that we do not handle your data in accordance with the law, you can lodge a complaint with the Czech Office for Personal Data Protection, Pplk. Sochora 27, 170 00 Prague 7, www.uoou.gov.cz.",
+          "pl": "Jeśli uważasz, że przetwarzamy Twoje dane niezgodnie z prawem, możesz złożyć skargę do czeskiego organu nadzorczego, Urzędu Ochrony Danych Osobowych (Úřad pro ochranu osobních údajů, ÚOOÚ), Pplk. Sochora 27, 170 00 Praga 7, www.uoou.gov.cz. Jako mieszkaniec innego państwa UE, na przykład Polski, możesz też złożyć skargę do organu nadzorczego w swoim kraju."
         }
       ]
     }

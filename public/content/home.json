@@ -2,11 +2,13 @@
   "hero": {
     "title": {
       "cs": "Fotovoltaické elektrárny na klíč",
-      "en": "Turnkey photovoltaic power plants"
+      "en": "Turnkey photovoltaic power plants",
+      "pl": "Elektrownie fotowoltaiczne pod klucz"
     },
     "subtitle": {
       "cs": "Navrhneme, postavíme a připojíme vaši FVE. Vyřídíme i dotaci a postaráme se o servis.",
-      "en": "We design, build and connect your solar plant, handle the subsidy paperwork and take care of service."
+      "en": "We design, build and connect your solar plant, handle the subsidy paperwork and take care of service.",
+      "pl": "Zaprojektujemy, zbudujemy i przyłączymy Twoją instalację fotowoltaiczną. Załatwimy też dotację i zadbamy o serwis."
     },
     "image": "images/hero.webp",
     "imageSrcset": "images/hero-800.webp 800w, images/hero.webp 1600w",
@@ -25,92 +27,108 @@
     {
       "title": {
         "cs": "O nás",
-        "en": "About us"
+        "en": "About us",
+        "pl": "O nas"
       },
       "image": {
         "src": "images/about.webp",
         "srcset": "images/about-800.webp 800w, images/about.webp 1600w",
         "alt": {
           "cs": "Rodinný dům s naší fotovoltaikou ve Velopolí",
-          "en": "Family house with our solar installation in Velopolí"
+          "en": "Family house with our solar installation in Velopolí",
+          "pl": "Dom jednorodzinny z naszą instalacją fotowoltaiczną w Velopolí"
         }
       },
       "paragraphs": [
         {
           "cs": "Jsme společností disponující dostatkem zkušeností a odborných znalostí, což je zárukou kvalitních a vysoce profesionálních služeb našim zákazníkům, investorům do fotovoltaických elektráren. Jsme společností s dostatečným kapitálovým zázemím, které nám umožňuje investovat nemalé prostředky nejen do rozvoje společnosti, ale také do vlastních projektů výstavby fotovoltaických elektráren, čímž dáváme investorům osobní příklad.",
-          "en": "We are a company with plenty of experience and expertise, which guarantees high-quality, professional service to our customers, investors in photovoltaic power plants. Our solid capital base lets us invest not only in growing the company but also in our own photovoltaic projects, setting a personal example for investors."
+          "en": "We are a company with plenty of experience and expertise, which guarantees high-quality, professional service to our customers, investors in photovoltaic power plants. Our solid capital base lets us invest not only in growing the company but also in our own photovoltaic projects, setting a personal example for investors.",
+          "pl": "Jesteśmy firmą z bogatym doświadczeniem i wiedzą specjalistyczną, co gwarantuje wysoką jakość i profesjonalizm usług dla naszych klientów, inwestorów w elektrownie fotowoltaiczne. Solidne zaplecze kapitałowe pozwala nam inwestować znaczne środki nie tylko w rozwój firmy, ale również we własne projekty budowy elektrowni fotowoltaicznych. W ten sposób dajemy inwestorom osobisty przykład."
         },
         {
           "cs": "Dokazujeme tím, že investice do fotovoltaických systémů nepovažujeme pouze za módní vlnu, ale považujeme je za dlouhodobou konzervativní investici s minimálním rizikem a nadprůměrným výnosem.",
-          "en": "It shows that we do not see photovoltaics as a passing trend, but as a long-term, conservative investment with minimal risk and above-average returns."
+          "en": "It shows that we do not see photovoltaics as a passing trend, but as a long-term, conservative investment with minimal risk and above-average returns.",
+          "pl": "Pokazujemy tym, że inwestycji w systemy fotowoltaiczne nie traktujemy jako przemijającej mody, lecz jako długoterminową, konserwatywną inwestycję o minimalnym ryzyku i ponadprzeciętnej stopie zwrotu."
         }
       ]
     },
     {
       "title": {
         "cs": "Co nabízíme",
-        "en": "What we offer"
+        "en": "What we offer",
+        "pl": "Co oferujemy"
       },
       "image": {
         "src": "images/offer.webp",
         "srcset": "images/offer-800.webp 800w, images/offer.webp 1600w",
         "alt": {
           "cs": "Montáž fotovoltaiky",
-          "en": "Solar panel installation"
+          "en": "Solar panel installation",
+          "pl": "Montaż paneli fotowoltaicznych"
         }
       },
       "offer": [
         {
           "title": {
             "cs": "Výstavba fotovoltaických elektráren FVE „na klíč“",
-            "en": "Turnkey construction of photovoltaic power plants"
+            "en": "Turnkey construction of photovoltaic power plants",
+            "pl": "Budowa elektrowni fotowoltaicznych „pod klucz”"
           },
           "children": [
             {
               "cs": "V režimu mikrozdroje",
-              "en": "As a micro-source"
+              "en": "As a micro-source",
+              "pl": "Jako mikroinstalacja (bez koncesji)"
             },
             {
               "cs": "V režimu s licencí",
-              "en": "As a licensed source"
+              "en": "As a licensed source",
+              "pl": "Z koncesją na wytwarzanie energii"
             }
           ]
         },
         {
           "title": {
             "cs": "Zpracování energetických posudků pro",
-            "en": "Energy assessments for"
+            "en": "Energy assessments for",
+            "pl": "Opracowanie ekspertyz energetycznych dla"
           },
           "children": [
             {
               "cs": "FVE",
-              "en": "Photovoltaic plants"
+              "en": "Photovoltaic plants",
+              "pl": "Elektrowni fotowoltaicznych"
             },
             {
               "cs": "Výstavbu nemovitostí",
-              "en": "Building construction"
+              "en": "Building construction",
+              "pl": "Budowy nieruchomości"
             }
           ]
         },
         {
           "title": {
             "cs": "Dodávku a instalaci tepelných čerpadel IVT, klimatizací LG",
-            "en": "Supply and installation of IVT heat pumps and LG air conditioning"
+            "en": "Supply and installation of IVT heat pumps and LG air conditioning",
+            "pl": "Dostawę i montaż pomp ciepła IVT oraz klimatyzacji LG"
           }
         },
         {
           "title": {
             "cs": "Energetické poradenství v oblasti",
-            "en": "Energy consulting on"
+            "en": "Energy consulting on",
+            "pl": "Doradztwo energetyczne w zakresie"
           },
           "children": [
             {
               "cs": "Energetická legislativa",
-              "en": "Energy legislation"
+              "en": "Energy legislation",
+              "pl": "Przepisów prawa energetycznego"
             },
             {
               "cs": "Technická řešení v oblasti vytápění objektů",
-              "en": "Technical solutions for building heating"
+              "en": "Technical solutions for building heating",
+              "pl": "Rozwiązań technicznych ogrzewania budynków"
             }
           ]
         }
@@ -119,24 +137,28 @@
     {
       "title": {
         "cs": "Servis a naše komponenty",
-        "en": "Service and components"
+        "en": "Service and components",
+        "pl": "Serwis i nasze komponenty"
       },
       "image": {
         "src": "images/service.webp",
         "srcset": "images/service-800.webp 800w, images/service.webp 1600w",
         "alt": {
           "cs": "Servis FVE",
-          "en": "Solar plant service"
+          "en": "Solar plant service",
+          "pl": "Serwis instalacji fotowoltaicznej"
         }
       },
       "paragraphs": [
         {
           "cs": "Výstavbou samozřejmě naše péče o zákazníky nekončí. V případě požadavku na servis řešíme vše osobně, pokud si nevíme rady, obracíme se na servisní základnu, kterou poskytuje náš dodavatel dílů GBC Solino.",
-          "en": "Our care doesn't end with construction. We handle service requests in person, and for anything beyond us we rely on the service centre of our parts supplier, GBC Solino."
+          "en": "Our care doesn't end with construction. We handle service requests in person, and for anything beyond us we rely on the service centre of our parts supplier, GBC Solino.",
+          "pl": "Nasza opieka nad klientem oczywiście nie kończy się na budowie. Zgłoszenia serwisowe obsługujemy osobiście, a w sprawach wykraczających poza nasze możliwości korzystamy z zaplecza serwisowego naszego dostawcy części, firmy GBC Solino."
         },
         {
           "cs": "Komponenty nakupujeme ve velkoskladu GBC Solino, vše tedy, co nabízí tento velkosklad, můžete mít. Montážní systém upevnění panelů na střechu používáme od renomované firmy Renusol.",
-          "en": "We buy components from the GBC Solino wholesaler, so anything they stock is available to you. For roof mounting we use systems from the renowned manufacturer Renusol."
+          "en": "We buy components from the GBC Solino wholesaler, so anything they stock is available to you. For roof mounting we use systems from the renowned manufacturer Renusol.",
+          "pl": "Komponenty kupujemy w hurtowni GBC Solino, więc możesz mieć wszystko, co jest w jej ofercie. Do mocowania paneli na dachu stosujemy systemy montażowe renomowanego producenta Renusol."
         }
       ],
       "links": [
@@ -153,48 +175,55 @@
   ],
   "highlightsTitle": {
     "cs": "Zajistíme",
-    "en": "We take care of"
+    "en": "We take care of",
+    "pl": "Zapewniamy"
   },
   "highlights": [
     {
       "title": {
         "cs": "Technické řešení na míru",
-        "en": "Tailored technical design"
+        "en": "Tailored technical design",
+        "pl": "Rozwiązanie techniczne szyte na miarę"
       },
       "icon": "idea"
     },
     {
       "title": {
         "cs": "Připojení FVE do distribuční sítě",
-        "en": "Grid connection of your plant"
+        "en": "Grid connection of your plant",
+        "pl": "Przyłączenie instalacji do sieci dystrybucyjnej"
       },
       "icon": "electric-tower"
     },
     {
       "title": {
         "cs": "Vyřízení dotace pro FVE",
-        "en": "Subsidy application"
+        "en": "Subsidy application",
+        "pl": "Obsługę wniosku o dotację"
       },
       "icon": "savings"
     },
     {
       "title": {
         "cs": "Bateriové úložiště",
-        "en": "Battery storage"
+        "en": "Battery storage",
+        "pl": "Magazyn energii"
       },
       "icon": "battery"
     },
     {
       "title": {
         "cs": "Wallbox pro elektromobil",
-        "en": "EV charger"
+        "en": "EV charger",
+        "pl": "Ładowarkę do samochodu elektrycznego"
       },
       "icon": "ev-charger"
     },
     {
       "title": {
         "cs": "Servis a revize FVE",
-        "en": "Service and inspections"
+        "en": "Service and inspections",
+        "pl": "Serwis i przeglądy instalacji"
       },
       "icon": "power-service"
     }
