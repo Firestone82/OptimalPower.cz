@@ -6,9 +6,11 @@ import {
   provideRouter,
   withComponentInputBinding,
   withInMemoryScrolling,
+  withPreloading,
 } from '@angular/router';
 import { routes } from './app.routes';
 import { loadingInterceptor } from './interceptors/loading.interceptor';
+import { PagePreloadingStrategy } from './services/page-preloading.strategy';
 import { PageTitleStrategy } from './services/page-title.strategy';
 
 export const appConfig: ApplicationConfig = {
@@ -21,6 +23,7 @@ export const appConfig: ApplicationConfig = {
       routes,
       withComponentInputBinding(),
       withInMemoryScrolling({ scrollPositionRestoration: 'top', anchorScrolling: 'enabled' }),
+      withPreloading(PagePreloadingStrategy),
     ),
     { provide: TitleStrategy, useClass: PageTitleStrategy },
   ],
