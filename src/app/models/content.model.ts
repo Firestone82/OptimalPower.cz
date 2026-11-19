@@ -159,6 +159,8 @@ export interface SeoPageContent {
   title: LocalizedText;
   /** Search result snippet, ideally 120–160 characters. */
   description: LocalizedText;
+  /** Comma separated; Google ignores them, Seznam still reads them. */
+  keywords?: LocalizedText;
 }
 
 /** Company details for search engines, published as schema.org `LocalBusiness` data. */

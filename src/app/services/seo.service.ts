@@ -84,6 +84,7 @@ export class SeoService {
     this.addLink({ rel: 'alternate', hreflang: 'x-default', href: defaultHref });
 
     this.meta.updateTag({ name: 'description', content: description });
+    this.addMeta('keywords', this.i18n.localize(pageSeo.keywords), 'name');
     this.addMeta('og:type', 'website');
     this.addMeta('og:site_name', siteName);
     this.addMeta('og:title', pageTitle || siteName);
