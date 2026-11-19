@@ -65,8 +65,9 @@ Web3Forms verifies server side. One-time setup:
 2. Save it as the repository secret `WEB3FORMS_ACCESS_KEY` (Settings → Secrets and variables →
    Actions). CI writes it into the built `content/contact.json`; the repository copy stays empty.
    For a local test, put the key into `form.accessKey` temporarily and don't commit it.
-3. Put your hCaptcha site key in `form.captchaSiteKey` and add the matching hCaptcha secret to the
-   key's settings in the Web3Forms dashboard, so Web3Forms can verify the token.
+3. In the Web3Forms dashboard, enable hCaptcha as the spam protection for the form.
+   `form.captchaSiteKey` holds Web3Forms' shared hCaptcha site key (free plan). Your own site
+   key only works on a paid plan, with its hCaptcha secret set in the Web3Forms dashboard.
 
 ## CI/CD
 
