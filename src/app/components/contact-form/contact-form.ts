@@ -1,4 +1,15 @@
-import { Component, effect, inject, input, output, signal, viewChild } from '@angular/core';
+import {
+  Component,
+  DestroyRef,
+  ElementRef,
+  afterNextRender,
+  effect,
+  inject,
+  input,
+  output,
+  signal,
+  viewChild,
+} from '@angular/core';
 import { NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { Icon } from '../icon/icon';
@@ -46,7 +57,10 @@ export class ContactForm {
   readonly submitted = output<ContactFormSubmission>();
 
   private readonly captcha = viewChild(Captcha);
-  /** Set once the visitor starts filling in the form; the captcha loads only then. */
+  /**
+   * Set once the form comes near the viewport or the visitor starts filling it in. The captcha
+   * script loads only then, so it doesn't slow down the rest of the page.
+   */
   protected readonly engaged = signal(false);
 
   protected readonly form = inject(NonNullableFormBuilder).group({
@@ -60,6 +74,7 @@ export class ContactForm {
   });
 
   constructor() {
+    this.engageWhenVisible();
     effect(() => {
       if (this.status() === 'error') this.captcha()?.reset();
     });
@@ -85,5 +100,26 @@ export class ContactForm {
     }
     const { consent: _consent, captcha, ...message } = this.form.getRawValue();
     this.submitted.emit({ message, captchaToken: captcha });
+  }
+
+  private engageWhenVisible(): void {
+    const element = inject<ElementRef<Element>>(ElementRef).nativeElement;
+    const destroyRef = inject(DestroyRef);
+    afterNextRender(() => {
+      if (typeof IntersectionObserver === 'undefined') {
+        this.engaged.set(true);
+        return;
+      }
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          this.engaged.set(true);
+          observer.disconnect();
+        },
+        { rootMargin: '300px' },
+      );
+      observer.observe(element);
+      destroyRef.onDestroy(() => observer.disconnect());
+    });
   }
 }
