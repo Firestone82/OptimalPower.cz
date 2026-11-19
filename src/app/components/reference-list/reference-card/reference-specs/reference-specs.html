@@ -1,0 +1,14 @@
+<dl class="specs">
+  @for (spec of specs(); track spec.type) {
+    <div class="spec" [class.highlight]="spec.type === 'power'">
+      <dt>{{ 'references.specs.' + spec.type | t }}</dt>
+      <dd>
+        @if (spec.url) {
+          <a [href]="spec.url" target="_blank" rel="noopener">{{ spec.value }}</a>
+        } @else {
+          {{ spec.value }}
+        }
+      </dd>
+    </div>
+  }
+</dl>

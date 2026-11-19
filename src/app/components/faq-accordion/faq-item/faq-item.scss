@@ -1,0 +1,94 @@
+:host {
+  display: block;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  transition: border-color 200ms ease;
+}
+
+:host(.expanded) {
+  border-color: var(--color-brand);
+}
+
+.faq-question {
+  margin: 0;
+  font-size: 1.05rem;
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 0;
+    background: transparent;
+    color: var(--color-text);
+    font: inherit;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+  }
+}
+
+.faq-number {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--color-brand-soft);
+  color: var(--color-brand-strong);
+  font-size: 0.9rem;
+}
+
+.faq-text {
+  flex: 1;
+}
+
+.faq-chevron {
+  flex: none;
+  color: var(--color-text-muted);
+  transition: rotate 200ms ease;
+
+  :host(.expanded) & {
+    rotate: 180deg;
+  }
+}
+
+// Animates to the content height without measuring it in JS.
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 250ms ease;
+
+  :host(.expanded) & {
+    grid-template-rows: 1fr;
+  }
+}
+
+.faq-answer-inner {
+  overflow: hidden;
+}
+
+.faq-answer-content {
+  padding: 0 1.25rem 1.25rem 4.25rem;
+  color: var(--color-text-muted);
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+
+  @media (max-width: 560px) {
+    padding-left: 1.25rem;
+  }
+}

@@ -1,0 +1,7 @@
+<app-section-heading [text]="title()" [centered]="true" />
+
+<div class="highlight-grid">
+  @for (item of items(); track $index) {
+    <app-highlight-card [title]="item.title | localize" [image]="item.image" />
+  }
+</div>

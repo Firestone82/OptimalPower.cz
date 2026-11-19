@@ -1,0 +1,29 @@
+<div class="feature-text">
+  @if (headingLevel() === 1) {
+    <h1 class="feature-title">{{ feature().title | localize }}</h1>
+  } @else {
+    <h2 class="feature-title">{{ feature().title | localize }}</h2>
+  }
+
+  @for (paragraph of feature().paragraphs; track $index) {
+    <p>{{ paragraph | localize }}</p>
+  }
+
+  @if (feature().offer; as offer) {
+    <app-offer-list [items]="offer" />
+  }
+
+  @if (feature().links?.length) {
+    <ul class="feature-links">
+      @for (link of feature().links; track link.url) {
+        <li>
+          <a [href]="link.url" target="_blank" rel="noopener">{{ link.label | localize }}</a>
+        </li>
+      }
+    </ul>
+  }
+</div>
+
+<figure class="feature-image">
+  <img [src]="feature().image.src" [alt]="feature().image.alt | localize" loading="lazy" />
+</figure>

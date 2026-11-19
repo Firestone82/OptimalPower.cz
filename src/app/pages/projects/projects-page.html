@@ -1,0 +1,21 @@
+<section class="container page">
+  <div class="page-header">
+    <app-section-heading [text]="'projects.title' | t" [level]="1" />
+    @if (years().length > 1) {
+      <app-year-tabs
+        [years]="years()"
+        [label]="'projects.yearLabel' | t"
+        [(selected)]="selectedYear"
+      />
+    }
+  </div>
+
+  <p class="lead">{{ 'projects.intro' | t }}</p>
+
+  @if (selectedMap(); as map) {
+    <button type="button" class="map" (click)="lightboxIndex.set(0)">
+      <img [src]="map.image.src" [alt]="map.image.alt | localize" />
+    </button>
+    <app-lightbox [images]="[map.image]" [(index)]="lightboxIndex" />
+  }
+</section>

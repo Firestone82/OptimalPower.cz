@@ -1,0 +1,75 @@
+{
+  "site": { "name": "Optimal Power" },
+  "a11y": { "skipToContent": "Přejít na obsah" },
+  "languages": { "cs": "Čeština", "en": "English" },
+  "nav": {
+    "home": "Domů",
+    "projects": "Mapa realizací",
+    "references": "Reference",
+    "gallery": "Fotogalerie",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "privacy": "Ochrana osobních údajů",
+    "language": "Jazyk",
+    "openMenu": "Otevřít menu",
+    "closeMenu": "Zavřít menu"
+  },
+  "home": { "ctaContact": "Nezávazná poptávka", "ctaReferences": "Naše realizace" },
+  "projects": {
+    "title": "Mapa realizací",
+    "intro": "Kde všude už vyrábí elektřinu naše fotovoltaické elektrárny.",
+    "yearLabel": "Rok"
+  },
+  "references": {
+    "title": "Reference",
+    "intro": "Výběr z elektráren, které jsme postavili.",
+    "photos": "{{count}} fotky",
+    "specs": { "power": "Výkon", "panels": "Panely", "inverter": "Střídač", "battery": "Baterie" }
+  },
+  "gallery": { "title": "Fotogalerie" },
+  "faq": { "title": "Časté otázky a odpovědi" },
+  "contact": {
+    "detailsTitle": "Kontaktní informace",
+    "formTitle": "Napište nám",
+    "teamTitle": "Náš tým",
+    "details": {
+      "company": "Společnost",
+      "address": "Adresa",
+      "ico": "IČO",
+      "dic": "DIČ",
+      "bank": "Bankovní účet",
+      "email": "E-mail",
+      "phone": "Telefon"
+    },
+    "form": {
+      "firstName": "Jméno",
+      "lastName": "Příjmení",
+      "phone": "Telefonní číslo",
+      "email": "E-mail",
+      "message": "Vaše očekávání, požadavky nebo dotazy",
+      "consent": "Souhlasím se zpracováním svých osobních údajů podle",
+      "consentLink": "těchto podmínek",
+      "submit": "Odeslat",
+      "sending": "Odesílám…",
+      "sent": "Děkujeme, zprávu jsme přijali. Brzy se vám ozveme.",
+      "error": "Zprávu se nepodařilo odeslat. Zkuste to prosím znovu nebo nám zavolejte.",
+      "errors": {
+        "required": "Toto pole je povinné.",
+        "email": "Zadejte platný e-mail.",
+        "pattern": "Zadejte platné telefonní číslo."
+      }
+    }
+  },
+  "lightbox": { "close": "Zavřít", "previous": "Předchozí", "next": "Další" },
+  "footer": {
+    "contact": "Kontakt",
+    "links": "Odkazy",
+    "memberships": "Jsme členy",
+    "madeBy": "Vytvořil {{author}}"
+  },
+  "notFound": {
+    "title": "Stránka nenalezena",
+    "text": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta.",
+    "back": "Zpět na úvod"
+  }
+}

@@ -1,0 +1,8 @@
+<h2 class="footer-title">{{ 'footer.memberships' | t }}</h2>
+<div class="memberships">
+  @for (membership of memberships(); track membership.url) {
+    <a class="membership" [href]="membership.url" target="_blank" rel="noopener">
+      <img [src]="membership.logo" [alt]="membership.label | localize" loading="lazy" />
+    </a>
+  }
+</div>

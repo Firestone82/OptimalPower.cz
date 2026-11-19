@@ -1,0 +1,18 @@
+{
+  "maps": [
+    {
+      "year": 2020,
+      "image": {
+        "src": "images/maps/2020.webp",
+        "alt": { "cs": "Mapa realizací 2020", "en": "Installations map 2020" }
+      }
+    },
+    {
+      "year": 2021,
+      "image": {
+        "src": "images/maps/2021.webp",
+        "alt": { "cs": "Mapa realizací 2021", "en": "Installations map 2021" }
+      }
+    }
+  ]
+}

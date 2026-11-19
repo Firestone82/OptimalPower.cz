@@ -1,0 +1,26 @@
+{
+  "formEndpoint": "",
+  "team": [
+    {
+      "name": "Mgr. Zdeněk Štoček",
+      "position": { "cs": "Jednatel", "en": "Managing director" },
+      "phone": "+420 606 734 911",
+      "email": "zdenek.stocek@optimalpower.cz"
+    },
+    {
+      "name": "Ing. Hynek Vyhnálek",
+      "position": { "cs": "Jednatel", "en": "Managing director" },
+      "phone": "+420 602 734 789",
+      "email": "hynek.vyhnalek@optimalpower.cz"
+    },
+    {
+      "name": "Ing. Martin Mikula",
+      "phone": "+420 736 721 614",
+      "email": "martin.mikula@optimalpower.cz"
+    },
+    {
+      "name": "Tomáš Klos",
+      "phone": "+420 606 777 961"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<button
+  type="button"
+  class="menu-toggle"
+  aria-controls="main-menu"
+  [attr.aria-expanded]="open()"
+  [attr.aria-label]="(open() ? 'nav.closeMenu' : 'nav.openMenu') | t"
+  (click)="toggled.emit()"
+>
+  <ng-icon [name]="open() ? 'lucideX' : 'lucideMenu'" size="1.75rem" />
+</button>

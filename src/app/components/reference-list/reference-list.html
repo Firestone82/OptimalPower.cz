@@ -1,0 +1,11 @@
+<div class="reference-list">
+  @for (reference of items(); track reference.id) {
+    <app-reference-card [reference]="reference" (imageOpened)="open(reference, $event)" />
+  }
+</div>
+
+<app-lightbox
+  [images]="openedImages()"
+  [index]="opened()?.index ?? null"
+  (indexChange)="onIndexChange($event)"
+/>

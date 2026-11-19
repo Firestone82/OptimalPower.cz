@@ -1,0 +1,50 @@
+@if (current(); as image) {
+  <div class="lightbox" role="dialog" aria-modal="true" [attr.aria-label]="image.alt | localize">
+    <button
+      type="button"
+      class="lightbox-backdrop"
+      tabindex="-1"
+      aria-hidden="true"
+      (click)="close()"
+    ></button>
+
+    <figure class="lightbox-figure">
+      <img [src]="image.src" [alt]="image.alt | localize" />
+      <figcaption>
+        {{ image.alt | localize }}
+        @if (images().length > 1) {
+          <span class="lightbox-counter">{{ index()! + 1 }} / {{ images().length }}</span>
+        }
+      </figcaption>
+    </figure>
+
+    <button
+      #closeButton
+      type="button"
+      class="lightbox-button close"
+      [attr.aria-label]="'lightbox.close' | t"
+      (click)="close()"
+    >
+      <ng-icon name="lucideX" size="1.5rem" />
+    </button>
+
+    @if (images().length > 1) {
+      <button
+        type="button"
+        class="lightbox-button prev"
+        [attr.aria-label]="'lightbox.previous' | t"
+        (click)="step(-1)"
+      >
+        <ng-icon name="lucideChevronLeft" size="2rem" />
+      </button>
+      <button
+        type="button"
+        class="lightbox-button next"
+        [attr.aria-label]="'lightbox.next' | t"
+        (click)="step(1)"
+      >
+        <ng-icon name="lucideChevronRight" size="2rem" />
+      </button>
+    }
+  </div>
+}

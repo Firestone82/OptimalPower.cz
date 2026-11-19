@@ -1,0 +1,19 @@
+.offer-list {
+  margin: 0;
+  padding-left: 1.25rem;
+
+  > li {
+    margin-bottom: 0.6rem;
+
+    &::marker {
+      color: var(--color-brand);
+      font-weight: 700;
+    }
+  }
+
+  ol {
+    margin: 0.25rem 0 0;
+    padding-left: 1.25rem;
+    color: var(--color-text-muted);
+  }
+}

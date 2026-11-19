@@ -1,0 +1,17 @@
+<section class="hero" [style.--hero-image]="'url(' + content().image + ')'">
+  <div class="container hero-content">
+    <h1 class="hero-title">{{ content().title | localize }}</h1>
+    <p class="hero-subtitle">{{ content().subtitle | localize }}</p>
+
+    <div class="hero-actions">
+      <a class="button button-primary" [routerLink]="content().primaryAction.path | languageLink">
+        {{ content().primaryAction.labelKey | t }}
+        <ng-icon [name]="content().primaryAction.icon" />
+      </a>
+      <a class="button button-ghost" [routerLink]="content().secondaryAction.path | languageLink">
+        {{ content().secondaryAction.labelKey | t }}
+        <ng-icon [name]="content().secondaryAction.icon" />
+      </a>
+    </div>
+  </div>
+</section>

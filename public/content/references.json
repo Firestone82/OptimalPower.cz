@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "opava",
+      "location": "Opava",
+      "images": [
+        {
+          "src": "images/references/opava/1.webp",
+          "alt": { "cs": "Realizace Opava", "en": "Installation in Opava" }
+        },
+        {
+          "src": "images/references/opava/2.webp",
+          "alt": { "cs": "Realizace Opava", "en": "Installation in Opava" }
+        }
+      ],
+      "specs": [
+        { "type": "power", "value": "9.3 kWp" },
+        { "type": "panels", "value": "V-SUN 305Wp Mono – Full Black" },
+        { "type": "inverter", "value": "SOLAX X3-MIC-10.0" }
+      ]
+    },
+    {
+      "id": "baska",
+      "location": "Baška u Frýdku-Místku",
+      "images": [
+        {
+          "src": "images/references/baska/1.webp",
+          "alt": { "cs": "Realizace Baška", "en": "Installation in Baška" }
+        }
+      ],
+      "specs": [
+        { "type": "power", "value": "4.96 kWp" },
+        { "type": "panels", "value": "HT SAAE 310Wp Mono – Full Black" },
+        { "type": "inverter", "value": "SOLAX X3-MIC-5.0" }
+      ]
+    },
+    {
+      "id": "horni-sucha",
+      "location": "Horní Suchá",
+      "images": [
+        {
+          "src": "images/references/horni-sucha/1.webp",
+          "alt": { "cs": "Realizace Horní Suchá", "en": "Installation in Horní Suchá" }
+        }
+      ],
+      "specs": [
+        { "type": "power", "value": "3.0 kWp" },
+        { "type": "panels", "value": "SUNTECH STP 300-60/Wfh – Poly" },
+        { "type": "inverter", "value": "SOLAX X1-AIR-3.0" }
+      ]
+    },
+    {
+      "id": "velopoli-1",
+      "location": "Velopolí",
+      "images": [
+        {
+          "src": "images/references/velopoli-1/1.webp",
+          "alt": { "cs": "Realizace Velopolí", "en": "Installation in Velopolí" }
+        }
+      ],
+      "specs": [
+        { "type": "power", "value": "3.6 kWp" },
+        { "type": "panels", "value": "STP 360S-B60/Wnhb – Mono" },
+        { "type": "inverter", "value": "SOLAX X1 Hybrid 3.7" },
+        { "type": "battery", "value": "SOLAX Triple Power – LFP 5.8 kWh" }
+      ]
+    },
+    {
+      "id": "velopoli-2",
+      "location": "Velopolí",
+      "images": [
+        {
+          "src": "images/references/velopoli-2/1.webp",
+          "alt": { "cs": "Realizace Velopolí", "en": "Installation in Velopolí" }
+        }
+      ],
+      "specs": [
+        { "type": "power", "value": "4.27 kWp" },
+        { "type": "panels", "value": "V-SUN 305Wp Mono – Full Black" },
+        { "type": "inverter", "value": "SOLAX X3-MIC-5.0" }
+      ]
+    }
+  ]
+}

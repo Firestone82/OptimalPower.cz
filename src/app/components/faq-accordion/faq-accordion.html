@@ -1,0 +1,10 @@
+<div class="faq-accordion">
+  @for (item of items(); track $index) {
+    <app-faq-item
+      [item]="item"
+      [number]="$index + 1"
+      [expanded]="expanded().has($index)"
+      (expandedChange)="setExpanded($index, $event)"
+    />
+  }
+</div>

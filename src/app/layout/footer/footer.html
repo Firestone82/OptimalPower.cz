@@ -1,0 +1,18 @@
+<footer class="footer">
+  <div class="container footer-grid">
+    <app-footer-brand
+      [logo]="company().logo"
+      [companyName]="company().name"
+      [motto]="company().motto"
+    />
+    <app-footer-contact [company]="company()" />
+    <app-footer-links [links]="content().links" />
+    <app-footer-memberships [memberships]="content().memberships" />
+  </div>
+
+  <app-footer-bottom
+    [companyName]="company().name"
+    [foundedYear]="company().foundedYear"
+    [author]="company().author"
+  />
+</footer>
