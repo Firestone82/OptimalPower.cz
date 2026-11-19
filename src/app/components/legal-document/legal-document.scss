@@ -3,8 +3,25 @@
 }
 
 .legal-header {
-  max-width: 70ch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: clamp(1.5rem, 4vw, 3rem);
   margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.legal-heading {
+  max-width: 70ch;
+}
+
+.legal-image {
+  flex: none;
+  width: clamp(7rem, 14vw, 11rem);
+  height: auto;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .legal-effective {

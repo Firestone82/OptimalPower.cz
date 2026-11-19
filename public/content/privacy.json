@@ -4,6 +4,13 @@
     "en": "Privacy policy"
   },
   "effectiveFrom": "2026-11-19",
+  "image": {
+    "src": "images/gdpr.webp",
+    "alt": {
+      "cs": "Ochrana osobních údajů",
+      "en": "Data protection"
+    }
+  },
   "intro": [
     {
       "cs": "Ochrana Vašich osobních údajů je pro nás samozřejmostí. Na této stránce najdete, jaké údaje o Vás zpracováváme, proč to děláme, jak dlouho je uchováváme a jaká práva Vám podle obecného nařízení o ochraně osobních údajů (GDPR) a zákona č. 110/2019 Sb. náleží.",

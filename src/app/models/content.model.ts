@@ -147,6 +147,8 @@ export interface LegalDocumentContent {
   title: LocalizedText;
   /** ISO date the current wording took effect. */
   effectiveFrom: string;
+  /** Small illustration shown in the top right corner of the header. */
+  image?: ImageRef;
   intro: LocalizedText[];
   sections: LegalSectionContent[];
 }
