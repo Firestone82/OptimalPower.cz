@@ -71,7 +71,8 @@ check `isPlatformBrowser`).
 - Canonical URLs end with `/`, the form GitHub Pages serves the prerendered `…/index.html` under.
 - `npm run build` runs `scripts/generate-sitemap.mjs` afterwards, which writes `sitemap.xml` from
   the prerendered pages. `public/robots.txt` points crawlers to it.
-- Old PHP URLs are prerendered as small pages that forward to the new ones.
+- `/` and old PHP URLs are prerendered as blank pages that forward to the new ones before the first
+  paint (`scripts/rewrite-redirects.mjs`, also run by `postbuild`).
 
 ## Contact form
 
