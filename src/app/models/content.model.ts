@@ -153,6 +153,42 @@ export interface LegalDocumentContent {
   sections: LegalSectionContent[];
 }
 
+/** Search title and description of one page. */
+export interface SeoPageContent {
+  /** Shown in search results and the browser tab, followed by ` | <site name>`. */
+  title: LocalizedText;
+  /** Search result snippet, ideally 120–160 characters. */
+  description: LocalizedText;
+}
+
+/** Company details for search engines, published as schema.org `LocalBusiness` data. */
+export interface SeoBusinessContent {
+  /** schema.org type, e.g. `LocalBusiness` or a subtype such as `HomeAndConstructionBusiness`. */
+  type: string;
+  description: LocalizedText;
+  streetAddress: string;
+  postalCode: string;
+  addressLocality: string;
+  /** ISO 3166-1 alpha-2 country code. */
+  addressCountry: string;
+  /** Regions the company works in. */
+  areaServed: string[];
+  /** Profiles on other sites, such as Facebook or Google Maps. */
+  sameAs: string[];
+}
+
+export interface SeoContent {
+  /** Origin the site is served from, without a trailing slash. */
+  siteUrl: string;
+  /** Default share image (1200 × 630) for Open Graph and Twitter cards. */
+  image: ImageRef;
+  /** Open Graph locale per language, e.g. `cs_CZ`. */
+  locales: Record<string, string>;
+  business: SeoBusinessContent;
+  /** Keyed by the `data.seo` value of a route, see `app.routes.ts`. */
+  pages: Record<string, SeoPageContent>;
+}
+
 /** Maps every file in `public/content` to its shape. */
 export interface ContentMap {
   company: CompanyContent;
@@ -165,4 +201,5 @@ export interface ContentMap {
   contact: ContactContent;
   privacy: LegalDocumentContent;
   terms: LegalDocumentContent;
+  seo: SeoContent;
 }

@@ -1,25 +1,26 @@
-import { Injectable, effect, inject, signal } from '@angular/core';
-import { Title } from '@angular/platform-browser';
-import { RouterStateSnapshot, TitleStrategy } from '@angular/router';
-import { I18nService } from './i18n.service';
+import { Injectable, Injector, inject } from '@angular/core';
+import { ActivatedRouteSnapshot, RouterStateSnapshot, TitleStrategy } from '@angular/router';
+import { SeoService } from './seo.service';
 
-/** Treats route `title` values as translation keys and re-translates them on language change. */
+/**
+ * Passes each finished navigation to `SeoService`, which sets the title and meta tags.
+ * Route `title` values are translation keys, used when the page has no entry in `seo.json`.
+ */
 @Injectable()
 export class PageTitleStrategy extends TitleStrategy {
-  private readonly title = inject(Title);
-  private readonly i18n = inject(I18nService);
-  private readonly titleKey = signal<string | undefined>(undefined);
-
-  constructor() {
-    super();
-    effect(() => {
-      const siteName = this.i18n.translate('site.name');
-      const key = this.titleKey();
-      this.title.setTitle(key ? `${this.i18n.translate(key)} | ${siteName}` : siteName);
-    });
-  }
+  private readonly injector = inject(Injector);
 
   override updateTitle(snapshot: RouterStateSnapshot): void {
-    this.titleKey.set(this.buildTitle(snapshot));
+    // Resolved lazily: SeoService loads content over HTTP, whose interceptor needs the Router,
+    // which is still being created when this strategy is.
+    this.injector.get(SeoService).setPage({
+      url: snapshot.url,
+      titleKey: this.buildTitle(snapshot),
+      seoKey: deepestChild(snapshot.root).data['seo'],
+    });
   }
+}
+
+function deepestChild(route: ActivatedRouteSnapshot): ActivatedRouteSnapshot {
+  return route.firstChild ? deepestChild(route.firstChild) : route;
 }

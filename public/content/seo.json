@@ -1,0 +1,99 @@
+{
+  "siteUrl": "https://optimalpower.cz",
+  "image": {
+    "src": "images/og-image.jpg",
+    "alt": {
+      "cs": "Solární panely ve slunečním světle",
+      "en": "Solar panels in sunlight"
+    }
+  },
+  "locales": {
+    "cs": "cs_CZ",
+    "en": "en_US"
+  },
+  "business": {
+    "type": "HomeAndConstructionBusiness",
+    "description": {
+      "cs": "Výstavba fotovoltaických elektráren na klíč, vyřízení dotace a připojení do sítě, tepelná čerpadla, energetické posudky a poradenství.",
+      "en": "Turnkey photovoltaic power plants including subsidies and grid connection, heat pumps, energy assessments and consulting."
+    },
+    "streetAddress": "Školní 332",
+    "postalCode": "749 01",
+    "addressLocality": "Vítkov",
+    "addressCountry": "CZ",
+    "areaServed": ["Moravskoslezský kraj"],
+    "sameAs": []
+  },
+  "pages": {
+    "home": {
+      "title": {
+        "cs": "Fotovoltaické elektrárny na klíč",
+        "en": "Turnkey solar power plants"
+      },
+      "description": {
+        "cs": "Fotovoltaické elektrárny na klíč z Vítkova pro celý Moravskoslezský kraj. Návrh, montáž, připojení do sítě, vyřízení dotace i servis. Nezávazná poptávka zdarma.",
+        "en": "Turnkey photovoltaic power plants from Vítkov, Czech Republic. Design, installation, grid connection, subsidy paperwork and service. Free, no-obligation quote."
+      }
+    },
+    "references": {
+      "title": {
+        "cs": "Reference a realizace FVE",
+        "en": "Our solar installations"
+      },
+      "description": {
+        "cs": "Fotovoltaické elektrárny, které jsme postavili v Opavě, Velopolí, Horní Suché a okolí. Výkon, panely, střídače, baterie a hodnocení zákazníků.",
+        "en": "Solar power plants we have built in Opava, Velopolí, Horní Suchá and nearby. Output, panels, inverters, batteries and customer reviews."
+      }
+    },
+    "gallery": {
+      "title": {
+        "cs": "Fotogalerie realizací",
+        "en": "Photo gallery"
+      },
+      "description": {
+        "cs": "Fotografie fotovoltaických elektráren a montáží, které realizovala společnost Optimal Power s.r.o.",
+        "en": "Photos of the photovoltaic power plants and installations completed by Optimal Power s.r.o."
+      }
+    },
+    "faq": {
+      "title": {
+        "cs": "Časté otázky o fotovoltaice",
+        "en": "Solar power FAQ"
+      },
+      "description": {
+        "cs": "Jak probíhá výstavba FVE, jak dlouho trvá, co si připravit, zda se může zvýšit cena a jak chráníme vaši střechu. Odpovědi na nejčastější otázky.",
+        "en": "How building a solar plant works, how long it takes, what to prepare, whether the price can change and how we protect your roof."
+      }
+    },
+    "contact": {
+      "title": {
+        "cs": "Kontakt a nezávazná poptávka",
+        "en": "Contact and free quote"
+      },
+      "description": {
+        "cs": "Napište nám nebo zavolejte na +420 606 734 911. Optimal Power s.r.o., Školní 332, Vítkov. Nezávazná poptávka fotovoltaiky zdarma.",
+        "en": "Write to us or call +420 606 734 911. Optimal Power s.r.o., Školní 332, Vítkov, Czech Republic. Ask for a free solar quote."
+      }
+    },
+    "privacy": {
+      "title": {
+        "cs": "Ochrana osobních údajů",
+        "en": "Privacy policy"
+      },
+      "description": {
+        "cs": "Jak společnost Optimal Power s.r.o. zpracovává osobní údaje, k jakým účelům, jak dlouho a jaká máte práva.",
+        "en": "How Optimal Power s.r.o. processes personal data, for what purposes, for how long and what your rights are."
+      }
+    },
+    "terms": {
+      "title": {
+        "cs": "Obchodní podmínky",
+        "en": "Terms and conditions"
+      },
+      "description": {
+        "cs": "Obchodní podmínky společnosti Optimal Power s.r.o. pro dodávku a montáž fotovoltaických elektráren a souvisejících služeb.",
+        "en": "Terms and conditions of Optimal Power s.r.o. for the supply and installation of photovoltaic power plants and related services."
+      }
+    }
+  }
+}
