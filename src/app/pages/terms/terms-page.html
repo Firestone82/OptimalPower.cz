@@ -1,0 +1,5 @@
+<section class="container page">
+  @if (content(); as content) {
+    <app-legal-document [document]="content" [company]="company()" />
+  }
+</section>

@@ -6,6 +6,11 @@
       "icon": "shield"
     },
     {
+      "path": "terms",
+      "labelKey": "nav.terms",
+      "icon": "document"
+    },
+    {
       "path": "faq",
       "labelKey": "nav.faq",
       "icon": "help"

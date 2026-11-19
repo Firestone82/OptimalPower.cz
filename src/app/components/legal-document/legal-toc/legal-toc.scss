@@ -1,0 +1,55 @@
+:host {
+  display: block;
+  position: sticky;
+  top: 6rem;
+
+  @media (max-width: 900px) {
+    position: static;
+  }
+}
+
+.toc {
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.toc-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  cursor: pointer;
+
+  @media (min-width: 901px) {
+    pointer-events: none;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+}
+
+.toc-list {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+
+  li::marker {
+    color: var(--color-brand-strong);
+    font-weight: 700;
+  }
+
+  a {
+    color: var(--color-text);
+
+    &:hover {
+      color: var(--color-brand-strong);
+    }
+  }
+}

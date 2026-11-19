@@ -1,5 +1,5 @@
 <section class="container page">
   @if (content(); as content) {
-    <app-feature-block [feature]="content.feature" [headingLevel]="1" />
+    <app-legal-document [document]="content" [company]="company()" />
   }
 </section>

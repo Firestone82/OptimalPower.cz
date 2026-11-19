@@ -1,0 +1,213 @@
+{
+  "title": {
+    "cs": "Obchodní podmínky",
+    "en": "Terms and conditions"
+  },
+  "effectiveFrom": "2026-11-19",
+  "intro": [
+    {
+      "cs": "Tyto obchodní podmínky upravují vztah mezi společností Optimal Power s.r.o. a jejími zákazníky při poptávce, dodávce a montáži fotovoltaických elektráren, bateriových úložišť a souvisejících služeb.",
+      "en": "These terms and conditions govern the relationship between Optimal Power s.r.o. and its customers when requesting, supplying and installing photovoltaic power plants, battery storage and related services."
+    }
+  ],
+  "sections": [
+    {
+      "id": "introduction",
+      "title": {
+        "cs": "Úvodní ustanovení",
+        "en": "Introductory provisions"
+      },
+      "paragraphs": [
+        {
+          "cs": "Zhotovitelem je společnost Optimal Power s.r.o. Zákazníkem je fyzická nebo právnická osoba, která s námi uzavře smlouvu. Je-li zákazník spotřebitelem, má navíc práva, která mu přiznávají předpisy na ochranu spotřebitele.",
+          "en": "The contractor is Optimal Power s.r.o. The customer is any natural or legal person who enters into a contract with us. If the customer is a consumer, they also have the rights granted by consumer protection law."
+        },
+        {
+          "cs": "Vztahy neupravené těmito podmínkami ani smlouvou se řídí právním řádem České republiky, zejména zákonem č. 89/2012 Sb., občanským zákoníkem.",
+          "en": "Matters not covered by these terms or the contract are governed by Czech law, in particular Act No. 89/2012 Coll., the Civil Code."
+        }
+      ],
+      "showCompany": true
+    },
+    {
+      "id": "offer",
+      "title": {
+        "cs": "Poptávka a nabídka",
+        "en": "Inquiry and offer"
+      },
+      "paragraphs": [
+        {
+          "cs": "Poptávka je zdarma a nezávazná. Na jejím základě připravíme návrh řešení a cenovou nabídku, případně po prohlídce místa instalace.",
+          "en": "An inquiry is free and non-binding. Based on it we prepare a proposed solution and a price offer, after a site visit where needed."
+        },
+        {
+          "cs": "Nabídka platí po dobu v ní uvedenou, jinak 30 dní od jejího odeslání. Ceny komponent se mohou měnit podle situace na trhu, proto platí cena potvrzená ve smlouvě.",
+          "en": "An offer is valid for the period stated in it, otherwise 30 days from when it was sent. Component prices may change with the market, so the price confirmed in the contract applies."
+        }
+      ]
+    },
+    {
+      "id": "contract",
+      "title": {
+        "cs": "Uzavření smlouvy",
+        "en": "Concluding the contract"
+      },
+      "paragraphs": [
+        {
+          "cs": "Smlouva vzniká podpisem smlouvy o dílo oběma stranami. Smlouva určuje rozsah díla, cenu, termín a platební podmínky. Ujednání ve smlouvě mají přednost před těmito obchodními podmínkami.",
+          "en": "The contract is concluded when both parties sign the contract for work. It sets out the scope of work, price, schedule and payment terms. Provisions of the contract take precedence over these terms."
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "title": {
+        "cs": "Cena a platební podmínky",
+        "en": "Price and payment"
+      },
+      "items": [
+        {
+          "cs": "Cena je uvedena ve smlouvě včetně DPH v zákonné výši.",
+          "en": "The price is stated in the contract including VAT at the statutory rate."
+        },
+        {
+          "cs": "Smlouva může stanovit zálohu na nákup komponent, zbytek ceny je splatný po předání díla.",
+          "en": "The contract may require an advance payment for components, with the rest due after handover."
+        },
+        {
+          "cs": "Faktury jsou splatné do 14 dní od vystavení, pokud smlouva neurčí jinak. Platí se převodem na náš bankovní účet.",
+          "en": "Invoices are due within 14 days of issue unless the contract says otherwise. Payment is made by bank transfer to our account."
+        },
+        {
+          "cs": "Je-li zakázka financována z dotace, nemá to vliv na povinnost zákazníka zaplatit sjednanou cenu včas.",
+          "en": "If the order is funded by a subsidy, this does not affect the customer's obligation to pay the agreed price on time."
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "title": {
+        "cs": "Provedení díla a součinnost",
+        "en": "Carrying out the work and cooperation"
+      },
+      "paragraphs": [
+        {
+          "cs": "Dílo provedeme v termínu dle smlouvy. Termín se přiměřeně prodlužuje o dobu, kdy nelze pracovat kvůli nepříznivému počasí, prodlení dodavatelů nebo čekání na vyjádření provozovatele distribuční soustavy.",
+          "en": "We carry out the work by the date in the contract. The date is extended reasonably by any time when work is not possible due to bad weather, supplier delays or waiting for the distribution system operator."
+        },
+        {
+          "cs": "Zákazník nám zajistí:",
+          "en": "The customer will provide us with:"
+        }
+      ],
+      "items": [
+        {
+          "cs": "přístup na místo instalace a ke stávající elektroinstalaci,",
+          "en": "access to the installation site and the existing electrical installation,"
+        },
+        {
+          "cs": "informace o stavu střechy a konstrukce, které jsou mu známy,",
+          "en": "any information they know about the condition of the roof and structure,"
+        },
+        {
+          "cs": "podklady a podpisy potřebné pro připojení k síti a pro žádost o dotaci.",
+          "en": "the documents and signatures needed for the grid connection and the subsidy application."
+        }
+      ]
+    },
+    {
+      "id": "handover",
+      "title": {
+        "cs": "Předání díla",
+        "en": "Handover"
+      },
+      "paragraphs": [
+        {
+          "cs": "Dílo předáme protokolem spolu s revizní zprávou elektroinstalace a návodem k obsluze. Drobné vady, které nebrání užívání, nejsou důvodem k odmítnutí převzetí. Odstraníme je v dohodnutém termínu.",
+          "en": "We hand over the work with a handover protocol, an electrical inspection report and operating instructions. Minor defects that do not prevent use are not a reason to refuse handover. We fix them by an agreed date."
+        }
+      ]
+    },
+    {
+      "id": "warranty",
+      "title": {
+        "cs": "Záruka a reklamace",
+        "en": "Warranty and complaints"
+      },
+      "paragraphs": [
+        {
+          "cs": "Na montážní práce poskytujeme záruku v délce uvedené ve smlouvě. Na panely, střídače, baterie a další komponenty platí záruka jejich výrobců, se kterou Vám rádi pomůžeme.",
+          "en": "We provide a warranty on installation work for the period stated in the contract. Panels, inverters, batteries and other components carry their manufacturers' warranties, which we are happy to help you claim."
+        },
+        {
+          "cs": "Reklamaci uplatněte e-mailem nebo telefonicky s popisem vady. Ozveme se do 3 pracovních dnů a reklamaci vyřídíme bez zbytečného odkladu, u spotřebitelů nejpozději do 30 dnů.",
+          "en": "Report a complaint by e-mail or phone with a description of the defect. We will get back to you within 3 working days and resolve it without undue delay, and for consumers within 30 days at the latest."
+        },
+        {
+          "cs": "Záruka se nevztahuje na vady způsobené neodborným zásahem, nesprávným užíváním, mechanickým poškozením nebo živelní událostí.",
+          "en": "The warranty does not cover defects caused by unqualified intervention, improper use, mechanical damage or natural disasters."
+        }
+      ]
+    },
+    {
+      "id": "withdrawal",
+      "title": {
+        "cs": "Odstoupení od smlouvy",
+        "en": "Withdrawing from the contract"
+      },
+      "paragraphs": [
+        {
+          "cs": "Spotřebitel, který uzavřel smlouvu mimo naše prostory nebo na dálku, může od ní odstoupit bez udání důvodu do 14 dnů od jejího uzavření. Požádá-li výslovně o zahájení prací před uplynutím této lhůty, uhradí při odstoupení poměrnou část ceny za již provedené práce a komponenty pořízené na míru.",
+          "en": "A consumer who concluded the contract off our premises or at a distance may withdraw without giving a reason within 14 days of concluding it. If they explicitly asked for work to start before this period ends, they will pay a proportionate part of the price for work already done and components ordered specifically for them."
+        },
+        {
+          "cs": "Jinak lze od smlouvy odstoupit z důvodů stanovených smlouvou nebo zákonem.",
+          "en": "Otherwise the contract may be withdrawn from for reasons set out in the contract or by law."
+        }
+      ]
+    },
+    {
+      "id": "disputes",
+      "title": {
+        "cs": "Řešení sporů",
+        "en": "Disputes"
+      },
+      "paragraphs": [
+        {
+          "cs": "Případné spory se snažíme vyřešit dohodou. Spotřebitel může využít mimosoudní řešení sporu u České obchodní inspekce, www.coi.cz.",
+          "en": "We try to resolve any disputes by agreement. A consumer may use out-of-court dispute resolution at the Czech Trade Inspection Authority, www.coi.cz."
+        }
+      ]
+    },
+    {
+      "id": "website",
+      "title": {
+        "cs": "Užívání webu",
+        "en": "Use of the website"
+      },
+      "paragraphs": [
+        {
+          "cs": "Texty, fotografie a další obsah tohoto webu jsou chráněny autorským právem. Bez našeho souhlasu je nelze dále šířit. Informace na webu mají informativní charakter a nejsou nabídkou k uzavření smlouvy.",
+          "en": "Texts, photos and other content on this website are protected by copyright and may not be redistributed without our consent. Information on the website is for guidance only and is not an offer to conclude a contract."
+        }
+      ]
+    },
+    {
+      "id": "final",
+      "title": {
+        "cs": "Závěrečná ustanovení",
+        "en": "Final provisions"
+      },
+      "paragraphs": [
+        {
+          "cs": "Tyto obchodní podmínky jsou platné od data uvedeného výše. Můžeme je přiměřeně měnit. Na uzavřené smlouvy se vztahuje znění platné v den jejich uzavření.",
+          "en": "These terms are effective from the date shown above. We may amend them reasonably. Contracts already concluded are governed by the version in force on the day they were concluded."
+        },
+        {
+          "cs": "Zpracování osobních údajů popisuje stránka Ochrana osobních údajů.",
+          "en": "The processing of personal data is described on the Privacy policy page."
+        }
+      ]
+    }
+  ]
+}

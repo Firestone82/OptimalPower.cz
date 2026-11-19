@@ -16,6 +16,7 @@
     "faq": "FAQ",
     "contact": "Contact",
     "privacy": "Privacy policy",
+    "terms": "Terms and conditions",
     "language": "Language",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
@@ -90,5 +91,9 @@
     "title": "Page not found",
     "text": "The page you are looking for doesn't exist or has moved.",
     "back": "Back to home"
+  },
+  "legal": {
+    "effectiveFrom": "Effective from",
+    "contents": "Contents"
   }
 }
