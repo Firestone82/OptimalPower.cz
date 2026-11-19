@@ -12,18 +12,27 @@
     "primaryAction": {
       "path": "contact",
       "labelKey": "home.ctaContact",
-      "icon": "lucideArrowRight"
+      "icon": "arrow-right"
     },
     "secondaryAction": {
       "path": "references",
       "labelKey": "home.ctaReferences",
-      "icon": "lucideSolarPanel"
+      "icon": "solar-panel"
     }
   },
   "features": [
     {
-      "title": { "cs": "O nás", "en": "About us" },
-      "image": { "src": "images/team.webp", "alt": { "cs": "Náš tým", "en": "Our team" } },
+      "title": {
+        "cs": "O nás",
+        "en": "About us"
+      },
+      "image": {
+        "src": "images/about.webp",
+        "alt": {
+          "cs": "Rodinný dům s naší fotovoltaikou ve Velopolí",
+          "en": "Family house with our solar installation in Velopolí"
+        }
+      },
       "paragraphs": [
         {
           "cs": "Jsme společností disponující dostatkem zkušeností a odborných znalostí, což je zárukou kvalitních a vysoce profesionálních služeb našim zákazníkům, investorům do fotovoltaických elektráren. Jsme společností s dostatečným kapitálovým zázemím, které nám umožňuje investovat nemalé prostředky nejen do rozvoje společnosti, ale také do vlastních projektů výstavby fotovoltaických elektráren, čímž dáváme investorům osobní příklad.",
@@ -36,10 +45,16 @@
       ]
     },
     {
-      "title": { "cs": "Co nabízíme", "en": "What we offer" },
+      "title": {
+        "cs": "Co nabízíme",
+        "en": "What we offer"
+      },
       "image": {
         "src": "images/offer.webp",
-        "alt": { "cs": "Montáž fotovoltaiky", "en": "Solar panel installation" }
+        "alt": {
+          "cs": "Montáž fotovoltaiky",
+          "en": "Solar panel installation"
+        }
       },
       "offer": [
         {
@@ -48,15 +63,30 @@
             "en": "Turnkey construction of photovoltaic power plants"
           },
           "children": [
-            { "cs": "V režimu mikrozdroje", "en": "As a micro-source" },
-            { "cs": "V režimu s licencí", "en": "As a licensed source" }
+            {
+              "cs": "V režimu mikrozdroje",
+              "en": "As a micro-source"
+            },
+            {
+              "cs": "V režimu s licencí",
+              "en": "As a licensed source"
+            }
           ]
         },
         {
-          "title": { "cs": "Zpracování energetických posudků pro", "en": "Energy assessments for" },
+          "title": {
+            "cs": "Zpracování energetických posudků pro",
+            "en": "Energy assessments for"
+          },
           "children": [
-            { "cs": "FVE", "en": "Photovoltaic plants" },
-            { "cs": "Výstavbu nemovitostí", "en": "Building construction" }
+            {
+              "cs": "FVE",
+              "en": "Photovoltaic plants"
+            },
+            {
+              "cs": "Výstavbu nemovitostí",
+              "en": "Building construction"
+            }
           ]
         },
         {
@@ -66,9 +96,15 @@
           }
         },
         {
-          "title": { "cs": "Energetické poradenství v oblasti", "en": "Energy consulting on" },
+          "title": {
+            "cs": "Energetické poradenství v oblasti",
+            "en": "Energy consulting on"
+          },
           "children": [
-            { "cs": "Energetická legislativa", "en": "Energy legislation" },
+            {
+              "cs": "Energetická legislativa",
+              "en": "Energy legislation"
+            },
             {
               "cs": "Technická řešení v oblasti vytápění objektů",
               "en": "Technical solutions for building heating"
@@ -78,10 +114,16 @@
       ]
     },
     {
-      "title": { "cs": "Servis a naše komponenty", "en": "Service and components" },
+      "title": {
+        "cs": "Servis a naše komponenty",
+        "en": "Service and components"
+      },
       "image": {
         "src": "images/service.webp",
-        "alt": { "cs": "Servis FVE", "en": "Solar plant service" }
+        "alt": {
+          "cs": "Servis FVE",
+          "en": "Solar plant service"
+        }
       },
       "paragraphs": [
         {
@@ -94,23 +136,41 @@
         }
       ],
       "links": [
-        { "label": "gbc-solino.cz", "url": "https://gbc-solino.cz/" },
-        { "label": "renusol.com", "url": "https://renusol.com/en/" }
+        {
+          "label": "gbc-solino.cz",
+          "url": "https://gbc-solino.cz/"
+        },
+        {
+          "label": "renusol.com",
+          "url": "https://renusol.com/en/"
+        }
       ]
     }
   ],
-  "highlightsTitle": { "cs": "Zajistíme", "en": "We take care of" },
+  "highlightsTitle": {
+    "cs": "Zajistíme",
+    "en": "We take care of"
+  },
   "highlights": [
     {
-      "title": { "cs": "Technické řešení na míru", "en": "Tailored technical design" },
+      "title": {
+        "cs": "Technické řešení na míru",
+        "en": "Tailored technical design"
+      },
       "image": "images/icons/bulb.webp"
     },
     {
-      "title": { "cs": "Připojení FVE do distribuční sítě", "en": "Grid connection of your plant" },
+      "title": {
+        "cs": "Připojení FVE do distribuční sítě",
+        "en": "Grid connection of your plant"
+      },
       "image": "images/icons/connection.webp"
     },
     {
-      "title": { "cs": "Vyřízení dotace pro FVE", "en": "Subsidy application" },
+      "title": {
+        "cs": "Vyřízení dotace pro FVE",
+        "en": "Subsidy application"
+      },
       "image": "images/icons/dotation.webp"
     }
   ]

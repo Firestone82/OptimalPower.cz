@@ -1,5 +1,5 @@
 import { Component, input, model } from '@angular/core';
-import { NgIcon } from '@ng-icons/core';
+import { Icon } from '../../icon/icon';
 import { FaqItemContent } from '../../../models/content.model';
 import { LocalizePipe } from '../../../pipes/localize.pipe';
 
@@ -12,7 +12,7 @@ import { LocalizePipe } from '../../../pipes/localize.pipe';
  */
 @Component({
   selector: 'app-faq-item',
-  imports: [NgIcon, LocalizePipe],
+  imports: [Icon, LocalizePipe],
   templateUrl: './faq-item.html',
   styleUrl: './faq-item.scss',
   host: { '[class.expanded]': 'expanded()' },

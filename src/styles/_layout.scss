@@ -10,7 +10,8 @@
 }
 
 .page {
-  padding-top: clamp(2.5rem, 6vw, 4rem);
+  // Clears the logo tab hanging below the navbar.
+  padding-top: clamp(4rem, 8vw, 5.5rem);
 }
 
 .lead {
@@ -40,6 +41,7 @@
     display: flex;
     align-items: center;
     gap: 0.6rem;
+    white-space: nowrap;
   }
 
   a {

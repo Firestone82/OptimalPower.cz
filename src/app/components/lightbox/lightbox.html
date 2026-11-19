@@ -25,7 +25,7 @@
       [attr.aria-label]="'lightbox.close' | t"
       (click)="close()"
     >
-      <ng-icon name="lucideX" size="1.5rem" />
+      <app-icon name="close" [size]="24" />
     </button>
 
     @if (images().length > 1) {
@@ -35,7 +35,7 @@
         [attr.aria-label]="'lightbox.previous' | t"
         (click)="step(-1)"
       >
-        <ng-icon name="lucideChevronLeft" size="2rem" />
+        <app-icon name="chevron-left" [size]="32" />
       </button>
       <button
         type="button"
@@ -43,7 +43,7 @@
         [attr.aria-label]="'lightbox.next' | t"
         (click)="step(1)"
       >
-        <ng-icon name="lucideChevronRight" size="2rem" />
+        <app-icon name="chevron-right" [size]="32" />
       </button>
     }
   </div>

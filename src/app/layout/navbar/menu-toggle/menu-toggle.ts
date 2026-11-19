@@ -1,5 +1,5 @@
 import { Component, input, output } from '@angular/core';
-import { NgIcon } from '@ng-icons/core';
+import { Icon } from '../../../components/icon/icon';
 import { TranslatePipe } from '../../../pipes/translate.pipe';
 
 /**
@@ -10,7 +10,7 @@ import { TranslatePipe } from '../../../pipes/translate.pipe';
  */
 @Component({
   selector: 'app-menu-toggle',
-  imports: [NgIcon, TranslatePipe],
+  imports: [Icon, TranslatePipe],
   templateUrl: './menu-toggle.html',
   styleUrl: './menu-toggle.scss',
 })

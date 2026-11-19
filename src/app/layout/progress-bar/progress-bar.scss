@@ -1,0 +1,32 @@
+:host {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 200;
+  height: 3px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+}
+
+:host(.active) {
+  opacity: 1;
+  transition-delay: 150ms;
+}
+
+.progress-bar {
+  width: 40%;
+  height: 100%;
+  background: var(--color-brand);
+  animation: slide 1s ease-in-out infinite;
+}
+
+@keyframes slide {
+  from {
+    translate: -100% 0;
+  }
+
+  to {
+    translate: 250% 0;
+  }
+}

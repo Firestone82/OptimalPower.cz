@@ -1,10 +1,16 @@
 {
-  "site": { "name": "Optimal Power" },
-  "a11y": { "skipToContent": "Skip to content" },
-  "languages": { "cs": "Čeština", "en": "English" },
+  "site": {
+    "name": "Optimal Power"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content"
+  },
+  "languages": {
+    "cs": "Čeština",
+    "en": "English"
+  },
   "nav": {
     "home": "Home",
-    "projects": "Projects map",
     "references": "References",
     "gallery": "Gallery",
     "faq": "FAQ",
@@ -14,20 +20,27 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
-  "home": { "ctaContact": "Get a free quote", "ctaReferences": "Our projects" },
-  "projects": {
-    "title": "Projects map",
-    "intro": "Everywhere our solar power plants are already producing electricity.",
-    "yearLabel": "Year"
+  "home": {
+    "ctaContact": "Get a free quote",
+    "ctaReferences": "Our projects"
   },
   "references": {
     "title": "References",
     "intro": "A selection of the power plants we have built.",
     "photos": "{{count}} photos",
-    "specs": { "power": "Output", "panels": "Panels", "inverter": "Inverter", "battery": "Battery" }
+    "specs": {
+      "power": "Output",
+      "panels": "Panels",
+      "inverter": "Inverter",
+      "battery": "Battery"
+    }
   },
-  "gallery": { "title": "Gallery" },
-  "faq": { "title": "Frequently asked questions" },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "faq": {
+    "title": "Frequently asked questions"
+  },
   "contact": {
     "detailsTitle": "Contact details",
     "formTitle": "Send us a message",
@@ -56,11 +69,17 @@
       "errors": {
         "required": "This field is required.",
         "email": "Enter a valid e-mail.",
-        "pattern": "Enter a valid phone number."
-      }
+        "pattern": "Enter a valid phone number.",
+        "captcha": "Please confirm you are not a robot."
+      },
+      "captchaUnavailable": "The verification could not load. Reload the page or give us a call."
     }
   },
-  "lightbox": { "close": "Close", "previous": "Previous", "next": "Next" },
+  "lightbox": {
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next"
+  },
   "footer": {
     "contact": "Contact",
     "links": "Links",

@@ -1,0 +1,12 @@
+<a
+  [attr.href]="href()"
+  (mouseenter)="reveal()"
+  (focus)="reveal()"
+  (touchstart)="reveal()"
+  tabindex="0"
+  >{{ parts().user }}<span class="decoy" aria-hidden="true">nospam</span>&#64;<span
+    class="decoy"
+    aria-hidden="true"
+    >nospam.</span
+  >{{ parts().domain }}</a
+>

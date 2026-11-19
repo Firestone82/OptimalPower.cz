@@ -1,12 +1,12 @@
 <h2 class="footer-title">{{ 'footer.contact' | t }}</h2>
 <ul class="footer-list">
-  <li><ng-icon name="lucideMapPin" /> {{ company().address }}</li>
+  <li><app-icon name="location" /> {{ company().address }}</li>
   <li>
-    <ng-icon name="lucideMail" />
-    <a [href]="toMailHref(company().email)">{{ company().email }}</a>
+    <app-icon name="mail" />
+    <app-protected-email [encoded]="company().email" />
   </li>
   <li>
-    <ng-icon name="lucidePhone" />
+    <app-icon name="phone" />
     <a [href]="toPhoneHref(company().phone)">{{ company().phone }}</a>
   </li>
 </ul>

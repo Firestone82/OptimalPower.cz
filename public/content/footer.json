@@ -1,8 +1,8 @@
 {
   "links": [
-    { "path": "privacy", "labelKey": "nav.privacy", "icon": "lucideShieldCheck" },
-    { "path": "faq", "labelKey": "nav.faq", "icon": "lucideCircleHelp" },
-    { "path": "contact", "labelKey": "nav.contact", "icon": "lucideContact" }
+    { "path": "privacy", "labelKey": "nav.privacy", "icon": "shield" },
+    { "path": "faq", "labelKey": "nav.faq", "icon": "help" },
+    { "path": "contact", "labelKey": "nav.contact", "icon": "contact" }
   ],
   "memberships": [
     {

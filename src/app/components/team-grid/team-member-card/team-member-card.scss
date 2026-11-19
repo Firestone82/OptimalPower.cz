@@ -29,6 +29,7 @@
 }
 
 .member-position {
+  min-height: 1.5em;
   margin: 0;
   color: var(--color-brand-strong);
   font-size: 0.9rem;
@@ -42,12 +43,13 @@
 
   li {
     display: flex;
+    min-height: 1.6em;
     align-items: center;
     gap: 0.5rem;
     overflow-wrap: anywhere;
   }
 
-  ng-icon {
+  app-icon {
     flex: none;
     color: var(--color-text-muted);
   }

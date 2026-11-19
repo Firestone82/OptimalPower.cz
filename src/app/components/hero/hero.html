@@ -6,11 +6,11 @@
     <div class="hero-actions">
       <a class="button button-primary" [routerLink]="content().primaryAction.path | languageLink">
         {{ content().primaryAction.labelKey | t }}
-        <ng-icon [name]="content().primaryAction.icon" />
+        <app-icon [name]="content().primaryAction.icon" />
       </a>
       <a class="button button-ghost" [routerLink]="content().secondaryAction.path | languageLink">
         {{ content().secondaryAction.labelKey | t }}
-        <ng-icon [name]="content().secondaryAction.icon" />
+        <app-icon [name]="content().secondaryAction.icon" />
       </a>
     </div>
   </div>

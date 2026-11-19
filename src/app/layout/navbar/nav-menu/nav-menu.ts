@@ -1,6 +1,6 @@
 import { Component, input, output } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { NgIcon } from '@ng-icons/core';
+import { Icon } from '../../../components/icon/icon';
 import { NavigationItem } from '../../../models/content.model';
 import { LanguageLinkPipe } from '../../../pipes/language-link.pipe';
 import { TranslatePipe } from '../../../pipes/translate.pipe';
@@ -13,7 +13,7 @@ import { TranslatePipe } from '../../../pipes/translate.pipe';
  */
 @Component({
   selector: 'app-nav-menu',
-  imports: [RouterLink, RouterLinkActive, NgIcon, TranslatePipe, LanguageLinkPipe],
+  imports: [RouterLink, RouterLinkActive, Icon, TranslatePipe, LanguageLinkPipe],
   templateUrl: './nav-menu.html',
   styleUrl: './nav-menu.scss',
 })

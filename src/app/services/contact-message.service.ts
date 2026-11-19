@@ -1,26 +1,43 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable, map, throwError } from 'rxjs';
 import { ContactMessage } from '../models/contact-message.model';
-import { toMailHref } from '../utils/contact.util';
+import { ContactFormConfig } from '../models/content.model';
 
+interface Web3FormsResponse {
+  success: boolean;
+  message: string;
+}
+
+/** Sends the contact form through Web3Forms, which also verifies the hCaptcha token. */
 @Injectable({ providedIn: 'root' })
 export class ContactMessageService {
   private readonly http = inject(HttpClient);
 
-  /** Posts to `endpoint`, or opens the visitor's mail client when no endpoint is configured. */
-  send(message: ContactMessage, endpoint: string, fallbackEmail: string): Observable<unknown> {
-    if (endpoint) {
-      return this.http.post(endpoint, message, { headers: { Accept: 'application/json' } });
+  send(message: ContactMessage, captchaToken: string, config: ContactFormConfig): Observable<void> {
+    if (!config.accessKey) {
+      return throwError(() => new Error('Contact form access key is not configured.'));
     }
 
-    const body = [
-      `${message.firstName} ${message.lastName}`,
-      `${message.phone} | ${message.email}`,
-      '',
-      message.message,
-    ].join('\n');
-    window.location.href = toMailHref(fallbackEmail, 'Poptávka z webu', body);
-    return of(null);
+    const payload = {
+      access_key: config.accessKey,
+      subject: `Poptávka z webu – ${message.firstName} ${message.lastName}`,
+      from_name: `${message.firstName} ${message.lastName}`,
+      name: `${message.firstName} ${message.lastName}`,
+      email: message.email,
+      phone: message.phone,
+      message: message.message,
+      'h-captcha-response': captchaToken,
+    };
+
+    return this.http
+      .post<Web3FormsResponse>(config.endpoint, payload, {
+        headers: { Accept: 'application/json' },
+      })
+      .pipe(
+        map((response) => {
+          if (!response.success) throw new Error(response.message);
+        }),
+      );
   }
 }

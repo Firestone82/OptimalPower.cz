@@ -2,22 +2,20 @@
 
 <div class="member">
   <h3 class="member-name">{{ member().name }}</h3>
-  @if (member().position) {
-    <p class="member-position">{{ member().position | localize }}</p>
-  }
+  <p class="member-position">{{ member().position | localize }}</p>
 
   <ul class="member-contacts">
-    @if (member().phone; as phone) {
-      <li>
-        <ng-icon name="lucidePhone" />
+    <li>
+      @if (member().phone; as phone) {
+        <app-icon name="phone" [size]="16" />
         <a [href]="toPhoneHref(phone)">{{ phone }}</a>
-      </li>
-    }
-    @if (member().email; as email) {
-      <li>
-        <ng-icon name="lucideMail" />
-        <a [href]="toMailHref(email)">{{ email }}</a>
-      </li>
-    }
+      }
+    </li>
+    <li>
+      @if (member().email; as email) {
+        <app-icon name="mail" [size]="16" />
+        <app-protected-email [encoded]="email" />
+      }
+    </li>
   </ul>
 </div>

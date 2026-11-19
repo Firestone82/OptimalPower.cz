@@ -1,17 +1,20 @@
 import { Component, computed, input } from '@angular/core';
-import { NgIcon } from '@ng-icons/core';
+import { Icon } from '../../icon/icon';
 import { TeamMemberContent } from '../../../models/content.model';
 import { LocalizePipe } from '../../../pipes/localize.pipe';
-import { toMailHref, toPhoneHref } from '../../../utils/contact.util';
+import { toPhoneHref } from '../../../utils/contact.util';
+import { ProtectedEmail } from '../../protected-email/protected-email';
 
 /**
  * Contact card of a single person.
  *
- * @input member - Name, optional position, phone and e-mail.
+ * Rows for position, phone and e-mail are always rendered so all cards align.
+ *
+ * @input member - Name, optional position, phone and encoded e-mail.
  */
 @Component({
   selector: 'app-team-member-card',
-  imports: [NgIcon, LocalizePipe],
+  imports: [Icon, LocalizePipe, ProtectedEmail],
   templateUrl: './team-member-card.html',
   styleUrl: './team-member-card.scss',
 })
@@ -28,6 +31,5 @@ export class TeamMemberCard {
       .slice(0, 2),
   );
 
-  protected readonly toMailHref = toMailHref;
   protected readonly toPhoneHref = toPhoneHref;
 }
