@@ -42,6 +42,22 @@ export class Lightbox {
     this.index.update((index) => (index === null ? null : (index + offset + count) % count));
   }
 
+  private touchStartX: number | null = null;
+
+  protected onTouchStart(event: TouchEvent): void {
+    this.touchStartX = event.touches[0]?.clientX ?? null;
+  }
+
+  /** Horizontal swipe longer than 50 px switches the image. */
+  protected onTouchEnd(event: TouchEvent): void {
+    const endX = event.changedTouches[0]?.clientX;
+    if (this.touchStartX === null || endX === undefined) return;
+
+    const distance = endX - this.touchStartX;
+    this.touchStartX = null;
+    if (Math.abs(distance) > 50) this.step(distance < 0 ? 1 : -1);
+  }
+
   protected onKeydown(event: KeyboardEvent): void {
     if (!this.current()) return;
 

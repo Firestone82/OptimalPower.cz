@@ -1,5 +1,12 @@
 @if (current(); as image) {
-  <div class="lightbox" role="dialog" aria-modal="true" [attr.aria-label]="image.alt | localize">
+  <div
+    class="lightbox"
+    role="dialog"
+    (touchstart)="onTouchStart($event)"
+    (touchend)="onTouchEnd($event)"
+    aria-modal="true"
+    [attr.aria-label]="image.alt | localize"
+  >
     <button
       type="button"
       class="lightbox-backdrop"
