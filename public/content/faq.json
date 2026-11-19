@@ -13,7 +13,10 @@
       ]
     },
     {
-      "question": { "cs": "Jak dlouho to vše trvá?", "en": "How long does it all take?" },
+      "question": {
+        "cs": "Jak dlouho to vše trvá?",
+        "en": "How long does it all take?"
+      },
       "paragraphs": [
         {
           "cs": "Přestože v ideálních podmínkách samotná výstavba FVE trvá několik dnů, celý proces zabere 4 až 6 měsíců.",
@@ -59,8 +62,14 @@
           "cs": "Souhlas spoluvlastníků objektu k výstavbě FVE",
           "en": "Consent of any co-owners of the building"
         },
-        { "cs": "Číslo bankovního účtu", "en": "Bank account number" },
-        { "cs": "Rodné číslo", "en": "Personal identification number" },
+        {
+          "cs": "Číslo bankovního účtu",
+          "en": "Bank account number"
+        },
+        {
+          "cs": "Rodné číslo",
+          "en": "Personal identification number"
+        },
         {
           "cs": "Zřízení účtu na SFŽP pomocí e-identity a předání kódu",
           "en": "Setting up an account at the State Environmental Fund via e-identity and sharing the code"
@@ -69,7 +78,10 @@
           "cs": "Potvrzení o vlastnictví bankovního účtu, na který bude později zaslána dotace",
           "en": "Proof of ownership of the bank account that will receive the subsidy"
         },
-        { "cs": "Spolupráci a součinnost při výstavbě", "en": "Cooperation during construction" },
+        {
+          "cs": "Spolupráci a součinnost při výstavbě",
+          "en": "Cooperation during construction"
+        },
         {
           "cs": "Potvrzení o skutečném uhrazení faktur (PDF výpisy z banky)",
           "en": "Proof of invoice payment (PDF bank statements)"
@@ -77,9 +89,15 @@
       ]
     },
     {
-      "question": { "cs": "Co od Vás dostanu?", "en": "What do I get from you?" },
+      "question": {
+        "cs": "Co od Vás dostanu?",
+        "en": "What do I get from you?"
+      },
       "bullets": [
-        { "cs": "Nabídku na realizaci FVE", "en": "An offer for your solar plant" },
+        {
+          "cs": "Nabídku na realizaci FVE",
+          "en": "An offer for your solar plant"
+        },
         {
           "cs": "Zajištění legislativního procesu připojení FVE do sítě distributora, a tím legalizaci FVE",
           "en": "The legal process of connecting the plant to the distribution grid"
@@ -88,12 +106,18 @@
           "cs": "Vyřízení akceptace záměru výstavby FVE na SFŽP",
           "en": "Approval of the project by the State Environmental Fund"
         },
-        { "cs": "Výstavbu FVE na klíč", "en": "Turnkey construction" },
+        {
+          "cs": "Výstavbu FVE na klíč",
+          "en": "Turnkey construction"
+        },
         {
           "cs": "Dokončení procesu prvního paralelního připojení s distributorem",
           "en": "First parallel connection with the distributor"
         },
-        { "cs": "Zpracování dokumentace skutečného stavu", "en": "As-built documentation" },
+        {
+          "cs": "Zpracování dokumentace skutečného stavu",
+          "en": "As-built documentation"
+        },
         {
           "cs": "Dokončení procesu dotace na FVE ze strany SFŽP",
           "en": "Completion of the subsidy process"
@@ -101,7 +125,10 @@
       ]
     },
     {
-      "question": { "cs": "Může se navýšit cena FVE?", "en": "Can the price go up?" },
+      "question": {
+        "cs": "Může se navýšit cena FVE?",
+        "en": "Can the price go up?"
+      },
       "paragraphs": [
         {
           "cs": "Zatím jsme vždy dodrželi rozpočet na FVE. Pokud k navýšení dojde, je to dáno vždy ze strany zákazníka. Na věty typu „chlapi, když už jste tady, předělejte ještě to a tamto“ jsme zvyklí a připravení.",

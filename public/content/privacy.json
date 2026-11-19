@@ -1,9 +1,15 @@
 {
   "feature": {
-    "title": { "cs": "Ochrana osobních údajů", "en": "Privacy policy" },
+    "title": {
+      "cs": "Ochrana osobních údajů",
+      "en": "Privacy policy"
+    },
     "image": {
       "src": "images/gdpr.webp",
-      "alt": { "cs": "Ochrana osobních údajů", "en": "Data protection" }
+      "alt": {
+        "cs": "Ochrana osobních údajů",
+        "en": "Data protection"
+      }
     },
     "paragraphs": [
       {

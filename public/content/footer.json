@@ -1,12 +1,27 @@
 {
   "links": [
-    { "path": "privacy", "labelKey": "nav.privacy", "icon": "shield" },
-    { "path": "faq", "labelKey": "nav.faq", "icon": "help" },
-    { "path": "contact", "labelKey": "nav.contact", "icon": "contact" }
+    {
+      "path": "privacy",
+      "labelKey": "nav.privacy",
+      "icon": "shield"
+    },
+    {
+      "path": "faq",
+      "labelKey": "nav.faq",
+      "icon": "help"
+    },
+    {
+      "path": "contact",
+      "labelKey": "nav.contact",
+      "icon": "contact"
+    }
   ],
   "memberships": [
     {
-      "label": { "cs": "Česká fotovoltaická asociace", "en": "Czech Photovoltaic Association" },
+      "label": {
+        "cs": "Česká fotovoltaická asociace",
+        "en": "Czech Photovoltaic Association"
+      },
       "url": "https://caft.cz/",
       "logo": "images/logos/caft.webp"
     }
