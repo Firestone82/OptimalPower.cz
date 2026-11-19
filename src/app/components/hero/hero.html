@@ -1,4 +1,6 @@
-<section class="hero" [style.--hero-image]="'url(' + content().image + ')'">
+<section class="hero">
+  <!-- A real image, not a CSS background, so the browser finds and fetches it first (LCP). -->
+  <img class="hero-image" [src]="content().image" alt="" fetchpriority="high" />
   <div class="container hero-content">
     <h1 class="hero-title">{{ content().title | localize }}</h1>
     <p class="hero-subtitle">{{ content().subtitle | localize }}</p>
