@@ -4,13 +4,13 @@ Website of Optimal Power s.r.o., built with Angular 22 (standalone components, s
 
 ## Commands
 
-| Command          | Purpose                                             |
-| ---------------- | --------------------------------------------------- |
-| `npm start`      | Dev server on http://localhost:4200                 |
-| `npm run build`  | Production build to `dist/optimalpower-web/browser` |
-| `npm test`       | Unit tests (Vitest)                                 |
-| `npm run lint`   | ESLint (angular-eslint)                             |
-| `npm run format` | Prettier                                            |
+| Command          | Purpose                                                        |
+| ---------------- | -------------------------------------------------------------- |
+| `npm start`      | Dev server on http://localhost:4200                            |
+| `npm run build`  | Prerendered build + sitemap to `dist/optimalpower-web/browser` |
+| `npm test`       | Unit tests (Vitest)                                            |
+| `npm run lint`   | ESLint (angular-eslint)                                        |
+| `npm run format` | Prettier                                                       |
 
 ## Source layout
 
@@ -42,6 +42,7 @@ All content is loaded at runtime from `public/content/*.json`; the shape of ever
 - `home.json` – hero, about / offer / service blocks, highlight cards
 - `references.json`, `gallery.json`, `faq.json`, `privacy.json`
 - `contact.json` – team members and contact form settings (see below)
+- `seo.json` – search titles and descriptions per page, share image, business details (see below)
 
 Icons are [Hugeicons](https://hugeicons.com). Names used in JSON (`"icon": "home"`) must be registered
 in `src/app/app.icons.ts`.
@@ -56,6 +57,22 @@ Routes are prefixed with the language: `/cs/...`, `/en/...`. `/` redirects to Cz
 To add a language: add it to `SUPPORTED_LANGUAGES` in `models/language.model.ts`, create
 `public/i18n/<lang>.json` and add the key to localized content.
 
+## SEO
+
+Every page is prerendered to static HTML in both languages at build time (`outputMode: "static"`,
+server routes in `app.routes.server.ts`), and Angular hydrates it in the browser. Code that touches
+browser-only APIs must not run during prerendering (use `afterNextRender`/`afterRenderEffect` or
+check `isPlatformBrowser`).
+
+- Each route in `app.routes.ts` names its entry in `seo.json` via `data: { seo: '<key>' }`; that entry
+  holds the page's title and meta description per language. A page without one gets `noindex`.
+- `SeoService` writes the title, description, canonical URL, hreflang links, Open Graph / Twitter
+  tags and JSON-LD (`LocalBusiness` from `company.json` + `seo.json`, `FAQPage` on the FAQ page).
+- Canonical URLs end with `/`, the form GitHub Pages serves the prerendered `…/index.html` under.
+- `npm run build` runs `scripts/generate-sitemap.mjs` afterwards, which writes `sitemap.xml` from
+  the prerendered pages. `public/robots.txt` points crawlers to it.
+- Old PHP URLs are prerendered as small pages that forward to the new ones.
+
 ## Contact form
 
 The form is sent through [Web3Forms](https://web3forms.com) and protected by hCaptcha, which
@@ -63,7 +80,8 @@ Web3Forms verifies server side. One-time setup:
 
 1. Create an access key on web3forms.com for the address that should receive messages.
 2. Save it as the repository secret `WEB3FORMS_ACCESS_KEY` (Settings → Secrets and variables →
-   Actions). CI writes it into the built `content/contact.json`; the repository copy stays empty.
+   Actions). CI writes it into `public/content/contact.json` before building (prerendered pages
+   embed the content they load); the repository copy stays empty.
    For a local test, put the key into `form.accessKey` temporarily and don't commit it.
 3. In the Web3Forms dashboard, enable hCaptcha as the spam protection for the form.
    `form.captchaSiteKey` holds Web3Forms' shared hCaptcha site key (free plan). Your own site
@@ -72,7 +90,8 @@ Web3Forms verifies server side. One-time setup:
 ## CI/CD
 
 `.github/workflows/ci.yml` runs format check, lint, tests and build on every push and PR, and
-deploys `main` to GitHub Pages. One-time setup:
+deploys `main` to GitHub Pages. Unknown paths are served `404.html`, a copy of the client rendered
+shell (`index.csr.html`) that shows the not found page. One-time setup:
 
 1. Repository → Settings → Pages → Source: **GitHub Actions**.
 2. Custom domain `optimalpower.cz` (file `public/CNAME`); point DNS to GitHub Pages
