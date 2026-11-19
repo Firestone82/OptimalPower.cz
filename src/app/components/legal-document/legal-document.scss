@@ -1,0 +1,53 @@
+:host {
+  display: block;
+}
+
+.legal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.legal-heading {
+  max-width: 70ch;
+}
+
+.legal-image {
+  flex: none;
+  width: clamp(7rem, 14vw, 11rem);
+  height: auto;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.legal-effective {
+  margin: -0.75rem 0 1.25rem;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.legal-intro {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.legal-body {
+  display: grid;
+  grid-template-columns: 16rem minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+
+  @media (max-width: 900px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.legal-sections {
+  display: grid;
+  gap: 1rem;
+}

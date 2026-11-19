@@ -1,0 +1,20 @@
+<h2 class="section-title">
+  <span class="section-number">{{ number() }}</span>
+  {{ section().title | localize }}
+</h2>
+
+@for (paragraph of section().paragraphs; track $index) {
+  <p>{{ paragraph | localize }}</p>
+}
+
+@if (section().items?.length) {
+  <ul class="section-items">
+    @for (item of section().items; track $index) {
+      <li>{{ item | localize }}</li>
+    }
+  </ul>
+}
+
+@if (section().showCompany && company(); as company) {
+  <app-contact-details class="section-company" [company]="company" />
+}

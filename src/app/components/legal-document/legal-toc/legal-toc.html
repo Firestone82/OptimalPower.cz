@@ -1,0 +1,10 @@
+<details class="toc" open>
+  <summary class="toc-title">{{ 'legal.contents' | t }}</summary>
+  <ol class="toc-list">
+    @for (section of sections(); track section.id) {
+      <li>
+        <a [routerLink]="[]" [fragment]="section.id">{{ section.title | localize }}</a>
+      </li>
+    }
+  </ol>
+</details>

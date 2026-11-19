@@ -16,6 +16,7 @@
     "faq": "FAQ",
     "contact": "Kontakt",
     "privacy": "Ochrana osobních údajů",
+    "terms": "Obchodní podmínky",
     "language": "Jazyk",
     "openMenu": "Otevřít menu",
     "closeMenu": "Zavřít menu"
@@ -90,5 +91,17 @@
     "title": "Stránka nenalezena",
     "text": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta.",
     "back": "Zpět na úvod"
+  },
+  "legal": {
+    "effectiveFrom": "Platné od",
+    "contents": "Obsah"
+  },
+  "cookies": {
+    "title": "Používáme cookies",
+    "text": "Rádi bychom pomocí Google Analytics zjišťovali, jak náš web používáte, abychom ho mohli zlepšovat. Analytické cookies uložíme jen s Vaším souhlasem.",
+    "more": "Více informací",
+    "accept": "Přijmout vše",
+    "reject": "Pouze nezbytné",
+    "settings": "Nastavení cookies"
   }
 }

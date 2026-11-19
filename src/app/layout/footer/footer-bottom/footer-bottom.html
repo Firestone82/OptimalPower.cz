@@ -1,5 +1,10 @@
 <div class="container footer-bottom">
   <span>© {{ companyName() }} {{ foundedYear() }}–{{ currentYear }}</span>
+  @if (consent.required()) {
+    <button type="button" class="cookie-settings" (click)="consent.reopen()">
+      {{ 'cookies.settings' | t }}
+    </button>
+  }
   @if (author()) {
     <span>{{ 'footer.madeBy' | t: { author: author() } }}</span>
   }

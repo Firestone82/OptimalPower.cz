@@ -132,8 +132,25 @@ export interface ContactContent {
   team: TeamMemberContent[];
 }
 
-export interface PrivacyContent {
-  feature: FeatureContent;
+export interface LegalSectionContent {
+  /** Anchor id, used by the table of contents. */
+  id: string;
+  title: LocalizedText;
+  paragraphs?: LocalizedText[];
+  items?: LocalizedText[];
+  /** Shows the company identification and contact details under the text. */
+  showCompany?: boolean;
+}
+
+/** A legal text page such as the privacy policy or the terms. */
+export interface LegalDocumentContent {
+  title: LocalizedText;
+  /** ISO date the current wording took effect. */
+  effectiveFrom: string;
+  /** Small illustration shown in the top right corner of the header. */
+  image?: ImageRef;
+  intro: LocalizedText[];
+  sections: LegalSectionContent[];
 }
 
 /** Maps every file in `public/content` to its shape. */
@@ -146,5 +163,6 @@ export interface ContentMap {
   gallery: GalleryContent;
   faq: FaqContent;
   contact: ContactContent;
-  privacy: PrivacyContent;
+  privacy: LegalDocumentContent;
+  terms: LegalDocumentContent;
 }

@@ -1,0 +1,60 @@
+:host {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 150;
+  padding: 0 var(--gutter) var(--gutter);
+  pointer-events: none;
+}
+
+.cookie-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  max-width: 60rem;
+  margin-inline: auto;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  pointer-events: auto;
+}
+
+.cookie-text {
+  flex: 1 1 22rem;
+
+  p {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+  }
+}
+
+.cookie-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  .button {
+    white-space: nowrap;
+  }
+
+  @media (max-width: 480px) {
+    gap: 0.5rem;
+
+    width: 100%;
+
+    .button {
+      flex: 1;
+      justify-content: center;
+      padding-inline: 0.75rem;
+    }
+  }
+}

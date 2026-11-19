@@ -1,0 +1,33 @@
+<header class="legal-header">
+  <div class="legal-heading">
+    <app-section-heading [text]="document().title | localize" [level]="1" />
+    <p class="legal-effective">
+      {{ 'legal.effectiveFrom' | t }}
+      <time [attr.datetime]="document().effectiveFrom">{{ effectiveFrom() }}</time>
+    </p>
+    @for (paragraph of document().intro; track $index) {
+      <p class="legal-intro">{{ paragraph | localize }}</p>
+    }
+  </div>
+
+  @if (document().image; as image) {
+    <img
+      class="legal-image"
+      [src]="image.src"
+      [alt]="image.alt | localize"
+      width="480"
+      height="480"
+      loading="lazy"
+    />
+  }
+</header>
+
+<div class="legal-body">
+  <app-legal-toc [sections]="document().sections" />
+
+  <div class="legal-sections">
+    @for (section of document().sections; track section.id) {
+      <app-legal-section [section]="section" [number]="$index + 1" [company]="company()" />
+    }
+  </div>
+</div>

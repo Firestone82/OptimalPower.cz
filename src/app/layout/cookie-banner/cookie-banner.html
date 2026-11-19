@@ -1,0 +1,17 @@
+<section class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-live="polite">
+  <div class="cookie-text">
+    <h2 id="cookie-title" class="cookie-title">{{ 'cookies.title' | t }}</h2>
+    <p>
+      {{ 'cookies.text' | t }}
+      <a [routerLink]="'privacy' | languageLink" fragment="cookies">{{ 'cookies.more' | t }}</a>
+    </p>
+  </div>
+  <div class="cookie-actions">
+    <button type="button" class="button button-outline" (click)="reject.emit()">
+      {{ 'cookies.reject' | t }}
+    </button>
+    <button type="button" class="button button-primary" (click)="accept.emit()">
+      {{ 'cookies.accept' | t }}
+    </button>
+  </div>
+</section>

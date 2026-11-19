@@ -44,6 +44,11 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/privacy/privacy-page'),
       },
       {
+        path: 'terms',
+        title: 'nav.terms',
+        loadComponent: () => import('./pages/terms/terms-page'),
+      },
+      {
         path: '**',
         title: 'notFound.title',
         loadComponent: () => import('./pages/not-found/not-found-page'),
