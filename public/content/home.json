@@ -9,6 +9,7 @@
       "en": "We design, build and connect your solar plant, handle the subsidy paperwork and take care of service."
     },
     "image": "images/hero.webp",
+    "imageSrcset": "images/hero-800.webp 800w, images/hero.webp 1600w",
     "primaryAction": {
       "path": "contact",
       "labelKey": "home.ctaContact",

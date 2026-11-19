@@ -43,6 +43,8 @@ export interface HeroContent {
   title: LocalizedText;
   subtitle: LocalizedText;
   image: string;
+  /** Optional `srcset` with smaller versions of `image`, e.g. `images/hero-800.webp 800w, …`. */
+  imageSrcset?: string;
   primaryAction: NavigationItem;
   secondaryAction: NavigationItem;
 }
