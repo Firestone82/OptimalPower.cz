@@ -84,8 +84,7 @@
   "footer": {
     "contact": "Kontakt",
     "links": "Odkazy",
-    "memberships": "Jsme členy",
-    "madeBy": "Vytvořil {{author}}"
+    "memberships": "Jsme členy"
   },
   "notFound": {
     "title": "Stránka nenalezena",

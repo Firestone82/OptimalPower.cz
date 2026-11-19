@@ -84,8 +84,7 @@
   "footer": {
     "contact": "Contact",
     "links": "Links",
-    "memberships": "Member of",
-    "madeBy": "Made by {{author}}"
+    "memberships": "Member of"
   },
   "notFound": {
     "title": "Page not found",

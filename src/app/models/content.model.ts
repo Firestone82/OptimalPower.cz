@@ -22,7 +22,6 @@ export interface CompanyContent {
   email: string;
   phone: string;
   foundedYear: number;
-  author: string;
   analyticsId?: string;
 }
 
