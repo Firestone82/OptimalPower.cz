@@ -1,5 +1,5 @@
 import { Component, ElementRef, computed, effect, input, model, viewChild } from '@angular/core';
-import { NgIcon } from '@ng-icons/core';
+import { Icon } from '../icon/icon';
 import { ImageRef } from '../../models/content.model';
 import { LocalizePipe } from '../../pipes/localize.pipe';
 import { TranslatePipe } from '../../pipes/translate.pipe';
@@ -12,7 +12,7 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
  */
 @Component({
   selector: 'app-lightbox',
-  imports: [NgIcon, LocalizePipe, TranslatePipe],
+  imports: [Icon, LocalizePipe, TranslatePipe],
   templateUrl: './lightbox.html',
   styleUrl: './lightbox.scss',
   host: { '(document:keydown)': 'onKeydown($event)' },

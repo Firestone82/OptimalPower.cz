@@ -9,7 +9,14 @@
 
     <div class="contact-form-card">
       <app-section-heading [text]="'contact.formTitle' | t" />
-      <app-contact-form [status]="status()" (submitted)="send($event)" />
+      @if (contact(); as contact) {
+        <app-contact-form
+          [status]="status()"
+          [captchaSiteKey]="contact.form.captchaSiteKey"
+          [language]="i18n.language()"
+          (submitted)="send($event)"
+        />
+      }
     </div>
   </div>
 </section>

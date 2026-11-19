@@ -6,5 +6,5 @@
   [attr.aria-label]="(open() ? 'nav.closeMenu' : 'nav.openMenu') | t"
   (click)="toggled.emit()"
 >
-  <ng-icon [name]="open() ? 'lucideX' : 'lucideMenu'" size="1.75rem" />
+  <app-icon [name]="open() ? 'close' : 'menu'" [size]="28" />
 </button>

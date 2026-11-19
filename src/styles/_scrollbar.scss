@@ -1,0 +1,23 @@
+// Slim scrollbar; Firefox uses the standard properties, Chromium/Safari the pseudo elements.
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-brand) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-brand) 70%, transparent);
+
+  &:hover {
+    background: var(--color-brand-strong);
+  }
+}

@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgIcon } from '@ng-icons/core';
+import { Icon } from '../../../components/icon/icon';
 import { FooterContent } from '../../../models/content.model';
 import { LanguageLinkPipe } from '../../../pipes/language-link.pipe';
 import { TranslatePipe } from '../../../pipes/translate.pipe';
@@ -12,7 +12,7 @@ import { TranslatePipe } from '../../../pipes/translate.pipe';
  */
 @Component({
   selector: 'app-footer-links',
-  imports: [RouterLink, NgIcon, TranslatePipe, LanguageLinkPipe],
+  imports: [RouterLink, Icon, TranslatePipe, LanguageLinkPipe],
   templateUrl: './footer-links.html',
   styleUrl: './footer-links.scss',
 })

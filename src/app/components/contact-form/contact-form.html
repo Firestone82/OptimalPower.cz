@@ -1,6 +1,6 @@
 @if (status() === 'sent') {
   <div class="form-result success" role="status">
-    <ng-icon name="lucideCheck" size="1.5rem" />
+    <app-icon name="check" [size]="24" />
     {{ 'contact.form.sent' | t }}
   </div>
 } @else {
@@ -61,13 +61,24 @@
       }
     </div>
 
+    <div class="full">
+      <app-captcha
+        [siteKey]="captchaSiteKey()"
+        [language]="language()"
+        (tokenChange)="setCaptchaToken($event)"
+      />
+      @if (errorOf('captcha'); as error) {
+        <p class="field-error">{{ 'contact.form.errors.captcha' | t }}</p>
+      }
+    </div>
+
     <div class="full form-actions">
       @if (status() === 'error') {
         <p class="form-result error" role="alert">{{ 'contact.form.error' | t }}</p>
       }
       <button type="submit" class="button button-primary" [disabled]="status() === 'sending'">
         {{ (status() === 'sending' ? 'contact.form.sending' : 'contact.form.submit') | t }}
-        <ng-icon name="lucideSend" />
+        <app-icon name="send" />
       </button>
     </div>
   </form>

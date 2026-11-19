@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
 import { languageGuard } from './guards/language.guard';
 import { Shell } from './layout/shell/shell';
-import { detectBrowserLanguage } from './utils/language.util';
+import { DEFAULT_LANGUAGE } from './models/language.model';
 
 /** Paths of the previous PHP site, kept so existing links and search results still work. */
 const LEGACY_REDIRECTS: Routes = [
-  { path: 'realizace', redirectTo: 'cs/projects' },
+  { path: 'realizace', redirectTo: 'cs/references' },
   { path: 'reference', redirectTo: 'cs/references' },
   { path: 'fotogalerie', redirectTo: 'cs/gallery' },
   { path: 'faq', redirectTo: 'cs/faq' },
@@ -14,7 +14,7 @@ const LEGACY_REDIRECTS: Routes = [
 ];
 
 export const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: () => detectBrowserLanguage() },
+  { path: '', pathMatch: 'full', redirectTo: DEFAULT_LANGUAGE },
   ...LEGACY_REDIRECTS,
   {
     path: ':lang',
@@ -22,11 +22,6 @@ export const routes: Routes = [
     component: Shell,
     children: [
       { path: '', title: 'nav.home', loadComponent: () => import('./pages/home/home-page') },
-      {
-        path: 'projects',
-        title: 'nav.projects',
-        loadComponent: () => import('./pages/projects/projects-page'),
-      },
       {
         path: 'references',
         title: 'nav.references',
@@ -55,5 +50,5 @@ export const routes: Routes = [
       },
     ],
   },
-  { path: '**', redirectTo: () => `${detectBrowserLanguage()}/not-found` },
+  { path: '**', redirectTo: `${DEFAULT_LANGUAGE}/not-found` },
 ];

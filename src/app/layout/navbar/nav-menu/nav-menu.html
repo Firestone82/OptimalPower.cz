@@ -9,7 +9,7 @@
         [routerLinkActiveOptions]="{ exact: !item.path }"
         (click)="navigated.emit()"
       >
-        <ng-icon [name]="item.icon" size="1.1rem" />
+        <app-icon [name]="item.icon" [size]="18" />
         {{ item.labelKey | t }}
       </a>
     </li>

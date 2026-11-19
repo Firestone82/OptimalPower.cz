@@ -18,6 +18,7 @@ export interface CompanyContent {
   ico: string;
   dic: string;
   bankAccount: string;
+  /** Encoded with `encodeEmail`, see `utils/email.util.ts`. */
   email: string;
   phone: string;
   foundedYear: number;
@@ -72,15 +73,6 @@ export interface HomeContent {
   highlights: HighlightContent[];
 }
 
-export interface RealizationMap {
-  year: number;
-  image: ImageRef;
-}
-
-export interface RealizationsContent {
-  maps: RealizationMap[];
-}
-
 export type ReferenceSpecType = 'power' | 'panels' | 'inverter' | 'battery';
 
 export interface ReferenceSpec {
@@ -119,15 +111,21 @@ export interface TeamMemberContent {
   name: string;
   position?: LocalizedText;
   phone?: string;
+  /** Encoded with `encodeEmail`, see `utils/email.util.ts`. */
   email?: string;
 }
 
+export interface ContactFormConfig {
+  /** Web3Forms submit URL. */
+  endpoint: string;
+  /** Public Web3Forms access key; messages are delivered to the e-mail it was created for. */
+  accessKey: string;
+  /** hCaptcha site key; the token is verified by Web3Forms. */
+  captchaSiteKey: string;
+}
+
 export interface ContactContent {
-  /**
-   * POST endpoint receiving the form as JSON (e.g. Formspree).
-   * When empty the form falls back to opening a `mailto:` link.
-   */
-  formEndpoint: string;
+  form: ContactFormConfig;
   team: TeamMemberContent[];
 }
 
@@ -141,7 +139,6 @@ export interface ContentMap {
   navigation: { items: NavigationItem[] };
   footer: FooterContent;
   home: HomeContent;
-  realizations: RealizationsContent;
   references: ReferencesContent;
   gallery: GalleryContent;
   faq: FaqContent;

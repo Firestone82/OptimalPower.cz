@@ -2,7 +2,7 @@
 <ul class="footer-list">
   @for (link of links(); track link.path) {
     <li>
-      <ng-icon [name]="link.icon" />
+      <app-icon [name]="link.icon" />
       @if (link.external) {
         <a [href]="link.path" target="_blank" rel="noopener">{{ link.labelKey | t }}</a>
       } @else {

@@ -40,25 +40,31 @@ All content is loaded at runtime from `public/content/*.json`; the shape of ever
 - `company.json` – name, address, IČO/DIČ, bank account, e-mail, phone, motto
 - `navigation.json` / `footer.json` – menu, footer links, membership logos
 - `home.json` – hero, about / offer / service blocks, highlight cards
-- `realizations.json` – installation maps per year
 - `references.json`, `gallery.json`, `faq.json`, `privacy.json`
-- `contact.json` – team members and `formEndpoint` (see below)
+- `contact.json` – team members and contact form settings (see below)
 
-Icons in JSON (`"icon": "lucideHouse"`) must be registered in `src/app/app.icons.ts`.
+Icons are [Hugeicons](https://hugeicons.com). Names used in JSON (`"icon": "home"`) must be registered
+in `src/app/app.icons.ts`.
+
+E-mails in JSON are obfuscated (reversed + Base64) and rendered by `ProtectedEmail`. Encode a new
+address with `npm run encode-email -- user@optimalpower.cz`.
 
 ## Languages
 
-Routes are prefixed with the language: `/cs/...`, `/en/...`. `/` redirects by browser language
-(default Czech). Old PHP URLs (`/kontakt`, `/reference`, …) redirect to their new Czech pages.
+Routes are prefixed with the language: `/cs/...`, `/en/...`. `/` redirects to Czech. Old PHP URLs (`/kontakt`, `/reference`, …) redirect to their new Czech pages.
 
 To add a language: add it to `SUPPORTED_LANGUAGES` in `models/language.model.ts`, create
 `public/i18n/<lang>.json` and add the key to localized content.
 
 ## Contact form
 
-Static hosting has no backend. Set `formEndpoint` in `contact.json` to a form service that
-accepts JSON POSTs (e.g. Formspree). While it is empty, the form opens the visitor's mail client
-addressed to the company e-mail.
+The form is sent through [Web3Forms](https://web3forms.com) and protected by hCaptcha, which
+Web3Forms verifies server side. One-time setup:
+
+1. Create an access key on web3forms.com for the address that should receive messages.
+2. Put it in `form.accessKey` in `public/content/contact.json` (the key is public by design).
+3. In the Web3Forms dashboard enable hCaptcha for the key. `form.captchaSiteKey` already holds
+   Web3Forms' shared hCaptcha site key.
 
 ## CI/CD
 

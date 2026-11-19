@@ -1,22 +1,32 @@
 {
-  "formEndpoint": "",
+  "form": {
+    "endpoint": "https://api.web3forms.com/submit",
+    "accessKey": "",
+    "captchaSiteKey": "50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+  },
   "team": [
     {
       "name": "Mgr. Zdeněk Štoček",
-      "position": { "cs": "Jednatel", "en": "Managing director" },
+      "position": {
+        "cs": "Jednatel",
+        "en": "Managing director"
+      },
       "phone": "+420 606 734 911",
-      "email": "zdenek.stocek@optimalpower.cz"
+      "email": "emMucmV3b3BsYW1pdHBvQGtlY290cy5rZW5lZHo="
     },
     {
       "name": "Ing. Hynek Vyhnálek",
-      "position": { "cs": "Jednatel", "en": "Managing director" },
+      "position": {
+        "cs": "Jednatel",
+        "en": "Managing director"
+      },
       "phone": "+420 602 734 789",
-      "email": "hynek.vyhnalek@optimalpower.cz"
+      "email": "emMucmV3b3BsYW1pdHBvQGtlbGFuaHl2Lmtlbnlo"
     },
     {
       "name": "Ing. Martin Mikula",
       "phone": "+420 736 721 614",
-      "email": "martin.mikula@optimalpower.cz"
+      "email": "emMucmV3b3BsYW1pdHBvQGFsdWtpbS5uaXRyYW0="
     },
     {
       "name": "Tomáš Klos",
