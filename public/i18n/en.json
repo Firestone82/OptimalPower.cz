@@ -78,7 +78,8 @@
   },
   "carousel": {
     "previous": "Previous",
-    "next": "Next"
+    "next": "Next",
+    "goTo": "Go to item {{number}}"
   },
   "lightbox": {
     "close": "Close",

@@ -2,8 +2,10 @@
   --carousel-per-view: 4;
   --carousel-gap: 1.5rem;
 
-  position: relative;
-  display: block;
+  display: grid;
+  // Lets the track shrink to the available width instead of growing with its content.
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
 
   @media (max-width: 1000px) {
     --carousel-per-view: 3;
@@ -17,6 +19,10 @@
   @media (max-width: 480px) {
     --carousel-per-view: 1.3;
   }
+}
+
+.carousel-viewport {
+  position: relative;
 }
 
 .carousel-track {
@@ -40,8 +46,8 @@
   }
 }
 
-// Projected items carry the parent's style scope, so they are reached with `::ng-deep`.
-:host ::ng-deep .carousel-track > * {
+.carousel-item {
+  display: grid;
   scroll-snap-align: start;
 }
 

@@ -1,7 +1,7 @@
 <app-section-heading [text]="title()" [centered]="true" />
 
-<app-carousel appReveal [autoplay]="4000">
-  @for (item of items(); track $index) {
+<app-carousel appReveal [items]="items()" [autoplay]="4000">
+  <ng-template let-item>
     <app-highlight-card [title]="item.title | localize" [icon]="item.icon" />
-  }
+  </ng-template>
 </app-carousel>

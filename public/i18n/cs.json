@@ -78,7 +78,8 @@
   },
   "carousel": {
     "previous": "Předchozí",
-    "next": "Další"
+    "next": "Další",
+    "goTo": "Přejít na položku {{number}}"
   },
   "lightbox": {
     "close": "Zavřít",

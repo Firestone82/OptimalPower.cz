@@ -1,0 +1,10 @@
+@for (index of indexes(); track index) {
+  <button
+    type="button"
+    class="dot"
+    [class.active]="index === active()"
+    [attr.aria-label]="'carousel.goTo' | t: { number: index + 1 }"
+    [attr.aria-current]="index === active() || null"
+    (click)="selected.emit(index)"
+  ></button>
+}
