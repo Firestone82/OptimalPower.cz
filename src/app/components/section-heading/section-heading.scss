@@ -11,8 +11,9 @@
   margin: 0;
   padding-bottom: 0.4rem;
   font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.25rem);
-  background: linear-gradient(var(--color-brand), var(--color-brand)) left bottom / 3rem 4px
-    no-repeat;
+  // Grows with the text, short headings keep the 3rem minimum.
+  background: linear-gradient(var(--color-brand), var(--color-brand)) left bottom / max(3rem, 40%)
+    4px no-repeat;
 }
 
 :host(.centered) .heading {
