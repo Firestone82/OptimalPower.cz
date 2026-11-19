@@ -3,6 +3,8 @@ import { LocalizedText } from './language.model';
 export interface ImageRef {
   src: string;
   alt: LocalizedText;
+  /** Optional `srcset` with smaller versions of `src`, e.g. `images/about-800.webp 800w, …`. */
+  srcset?: string;
 }
 
 export interface LinkRef {
