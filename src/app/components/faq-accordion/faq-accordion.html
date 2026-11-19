@@ -1,6 +1,7 @@
 <div class="faq-accordion">
   @for (item of items(); track $index) {
     <app-faq-item
+      appReveal
       [item]="item"
       [number]="$index + 1"
       [expanded]="expanded().has($index)"

@@ -1,6 +1,6 @@
 <div class="reference-list">
   @for (reference of items(); track reference.id) {
-    <app-reference-card [reference]="reference" (imageOpened)="open(reference, $event)" />
+    <app-reference-card appReveal [reference]="reference" (imageOpened)="open(reference, $event)" />
   }
 </div>
 

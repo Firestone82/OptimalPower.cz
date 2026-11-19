@@ -22,7 +22,6 @@ export interface CompanyContent {
   email: string;
   phone: string;
   foundedYear: number;
-  author: string;
   analyticsId?: string;
 }
 
@@ -63,7 +62,8 @@ export interface FeatureContent {
 
 export interface HighlightContent {
   title: LocalizedText;
-  image: string;
+  /** Registered icon name, see `app.icons.ts`. */
+  icon: string;
 }
 
 export interface HomeContent {

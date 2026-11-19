@@ -3,30 +3,35 @@
   inset: 0 0 auto;
   z-index: 200;
   height: 3px;
-  overflow: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 200ms ease;
-}
-
-:host(.active) {
-  opacity: 1;
-  transition-delay: 150ms;
 }
 
 .progress-bar {
-  width: 40%;
   height: 100%;
-  background: var(--color-brand);
-  animation: slide 1s ease-in-out infinite;
+  width: 0;
+  background: linear-gradient(90deg, var(--color-brand), var(--color-brand-strong));
+  box-shadow: 0 0 8px var(--color-brand);
+  border-radius: 0 3px 3px 0;
 }
 
-@keyframes slide {
-  from {
-    translate: -100% 0;
-  }
+// Fades in only after a short delay, so quick navigations finish unnoticed.
+:host(.running) {
+  opacity: 1;
+  transition: opacity 200ms ease 150ms;
 
-  to {
-    translate: 250% 0;
+  .progress-bar {
+    width: 85%;
+    transition: width 6s cubic-bezier(0.1, 0.6, 0.3, 1);
+  }
+}
+
+:host(.done) {
+  opacity: 0;
+  transition: opacity 250ms ease 150ms;
+
+  .progress-bar {
+    width: 100%;
+    transition: width 150ms ease-out;
   }
 }

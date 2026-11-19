@@ -17,14 +17,12 @@
   background: var(--color-surface-alt);
   cursor: zoom-in;
 
-  img {
-    width: 100%;
+  app-lazy-image {
     aspect-ratio: 4 / 3;
-    object-fit: cover;
     transition: transform 300ms ease;
   }
 
-  &:hover img {
+  &:hover app-lazy-image {
     transform: scale(1.05);
   }
 }

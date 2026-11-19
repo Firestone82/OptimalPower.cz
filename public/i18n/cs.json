@@ -76,6 +76,11 @@
       "captchaUnavailable": "Ověření se nepodařilo načíst. Obnovte stránku nebo nám zavolejte."
     }
   },
+  "carousel": {
+    "previous": "Předchozí",
+    "next": "Další",
+    "goTo": "Přejít na položku {{number}}"
+  },
   "lightbox": {
     "close": "Zavřít",
     "previous": "Předchozí",
@@ -84,8 +89,7 @@
   "footer": {
     "contact": "Kontakt",
     "links": "Odkazy",
-    "memberships": "Jsme členy",
-    "madeBy": "Vytvořil {{author}}"
+    "memberships": "Jsme členy"
   },
   "notFound": {
     "title": "Stránka nenalezena",

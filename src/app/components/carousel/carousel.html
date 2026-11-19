@@ -1,0 +1,28 @@
+<div class="carousel-viewport">
+  <div #track class="carousel-track" (scroll)="onScroll()">
+    @for (item of loopItems(); track $index) {
+      <div class="carousel-item" [inert]="$index >= items().length">
+        <ng-container *ngTemplateOutlet="template(); context: { $implicit: item }" />
+      </div>
+    }
+  </div>
+
+  <button
+    type="button"
+    class="carousel-button prev"
+    [attr.aria-label]="'carousel.previous' | t"
+    (click)="manualStep(-1)"
+  >
+    <app-icon name="chevron-left" [size]="24" />
+  </button>
+  <button
+    type="button"
+    class="carousel-button next"
+    [attr.aria-label]="'carousel.next' | t"
+    (click)="manualStep(1)"
+  >
+    <app-icon name="chevron-right" [size]="24" />
+  </button>
+</div>
+
+<app-carousel-dots [count]="items().length" [active]="active()" (selected)="goTo($event)" />

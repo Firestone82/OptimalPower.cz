@@ -3,7 +3,7 @@
 
   <div class="container features">
     @for (feature of content.features; track $index) {
-      <app-feature-block [feature]="feature" [reversed]="$odd" />
+      <app-feature-block appReveal [feature]="feature" [reversed]="$odd" />
     }
   </div>
 

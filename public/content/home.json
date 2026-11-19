@@ -157,21 +157,42 @@
         "cs": "Technické řešení na míru",
         "en": "Tailored technical design"
       },
-      "image": "images/icons/bulb.webp"
+      "icon": "idea"
     },
     {
       "title": {
         "cs": "Připojení FVE do distribuční sítě",
         "en": "Grid connection of your plant"
       },
-      "image": "images/icons/connection.webp"
+      "icon": "electric-tower"
     },
     {
       "title": {
         "cs": "Vyřízení dotace pro FVE",
         "en": "Subsidy application"
       },
-      "image": "images/icons/dotation.webp"
+      "icon": "savings"
+    },
+    {
+      "title": {
+        "cs": "Bateriové úložiště",
+        "en": "Battery storage"
+      },
+      "icon": "battery"
+    },
+    {
+      "title": {
+        "cs": "Wallbox pro elektromobil",
+        "en": "EV charger"
+      },
+      "icon": "ev-charger"
+    },
+    {
+      "title": {
+        "cs": "Servis a revize FVE",
+        "en": "Service and inspections"
+      },
+      "icon": "power-service"
     }
   ]
 }

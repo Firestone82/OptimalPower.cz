@@ -1,0 +1,8 @@
+<img
+  [src]="src()"
+  [alt]="alt()"
+  loading="lazy"
+  decoding="async"
+  (load)="loaded.set(true)"
+  (error)="loaded.set(true)"
+/>

@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-border-strong);
+  cursor: pointer;
+  transition:
+    width 250ms ease,
+    background-color 250ms ease;
+
+  &:hover {
+    background: var(--color-brand);
+  }
+
+  &.active {
+    width: 1.75rem;
+    background: var(--color-brand);
+  }
+}

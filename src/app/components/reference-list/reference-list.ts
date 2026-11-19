@@ -1,4 +1,5 @@
 import { Component, computed, input, signal } from '@angular/core';
+import { RevealDirective } from '../../directives/reveal.directive';
 import { ReferenceContent } from '../../models/content.model';
 import { Lightbox } from '../lightbox/lightbox';
 import { ReferenceCard } from './reference-card/reference-card';
@@ -10,7 +11,7 @@ import { ReferenceCard } from './reference-card/reference-card';
  */
 @Component({
   selector: 'app-reference-list',
-  imports: [ReferenceCard, Lightbox],
+  imports: [ReferenceCard, Lightbox, RevealDirective],
   templateUrl: './reference-list.html',
   styleUrl: './reference-list.scss',
 })

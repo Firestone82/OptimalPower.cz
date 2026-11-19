@@ -76,6 +76,11 @@
       "captchaUnavailable": "The verification could not load. Reload the page or give us a call."
     }
   },
+  "carousel": {
+    "previous": "Previous",
+    "next": "Next",
+    "goTo": "Go to item {{number}}"
+  },
   "lightbox": {
     "close": "Close",
     "previous": "Previous",
@@ -84,8 +89,7 @@
   "footer": {
     "contact": "Contact",
     "links": "Links",
-    "memberships": "Member of",
-    "madeBy": "Made by {{author}}"
+    "memberships": "Member of"
   },
   "notFound": {
     "title": "Page not found",
