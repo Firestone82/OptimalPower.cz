@@ -36,6 +36,17 @@
   border-radius: 0 0 var(--radius-md) var(--radius-md);
   background: var(--color-surface);
   box-shadow: 0 6px 16px -4px rgb(16 24 16 / 0.35);
+  // Hide the shadow where the tab overlaps the bar, so it only shows below the navbar.
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% var(--navbar-height),
+    calc(100% + 2rem) var(--navbar-height),
+    calc(100% + 2rem) calc(100% + 2rem),
+    -2rem calc(100% + 2rem),
+    -2rem var(--navbar-height),
+    0 var(--navbar-height)
+  );
   transition: padding 300ms ease;
 
   img {
