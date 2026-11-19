@@ -26,34 +26,10 @@
   border-radius: 50%;
   background: var(--color-brand);
   box-shadow: 0 8px 20px -8px var(--color-brand);
-
-  img {
-    width: 3.5rem;
-    height: 3.5rem;
-    object-fit: contain;
-  }
+  color: var(--color-on-brand);
 }
 
 .highlight-title {
   margin: 0;
   font-size: 1.15rem;
-}
-
-@media (max-width: 560px) {
-  :host {
-    flex-direction: row;
-    padding: 1rem 1.25rem;
-    text-align: left;
-  }
-
-  .highlight-icon {
-    flex: none;
-    width: 4rem;
-    height: 4rem;
-
-    img {
-      width: 2.25rem;
-      height: 2.25rem;
-    }
-  }
 }

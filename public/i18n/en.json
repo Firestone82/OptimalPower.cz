@@ -76,6 +76,10 @@
       "captchaUnavailable": "The verification could not load. Reload the page or give us a call."
     }
   },
+  "carousel": {
+    "previous": "Previous",
+    "next": "Next"
+  },
   "lightbox": {
     "close": "Close",
     "previous": "Previous",

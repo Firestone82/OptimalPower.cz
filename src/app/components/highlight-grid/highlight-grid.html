@@ -1,7 +1,7 @@
 <app-section-heading [text]="title()" [centered]="true" />
 
-<div class="highlight-grid">
+<app-carousel appReveal>
   @for (item of items(); track $index) {
-    <app-highlight-card appReveal [title]="item.title | localize" [image]="item.image" />
+    <app-highlight-card [title]="item.title | localize" [icon]="item.icon" />
   }
-</div>
+</app-carousel>

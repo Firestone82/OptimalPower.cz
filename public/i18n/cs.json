@@ -76,6 +76,10 @@
       "captchaUnavailable": "Ověření se nepodařilo načíst. Obnovte stránku nebo nám zavolejte."
     }
   },
+  "carousel": {
+    "previous": "Předchozí",
+    "next": "Další"
+  },
   "lightbox": {
     "close": "Zavřít",
     "previous": "Předchozí",
