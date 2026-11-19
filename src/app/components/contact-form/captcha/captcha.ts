@@ -2,7 +2,7 @@ import {
   Component,
   DestroyRef,
   ElementRef,
-  effect,
+  afterRenderEffect,
   inject,
   input,
   output,
@@ -30,6 +30,7 @@ declare global {
  *
  * @input siteKey - hCaptcha site key.
  * @input language - Widget language.
+ * @input active - The hCaptcha script (~0.5 MB) is loaded only once this is `true`.
  * @output tokenChange - Verification token, or `null` once it expires or errors.
  */
 @Component({
@@ -41,6 +42,7 @@ declare global {
 export class Captcha {
   readonly siteKey = input.required<string>();
   readonly language = input.required<Language>();
+  readonly active = input(true);
   readonly tokenChange = output<string | null>();
 
   private readonly scripts = inject(ScriptLoaderService);
@@ -50,7 +52,10 @@ export class Captcha {
   protected readonly failed = signal(false);
 
   constructor() {
-    effect(() => void this.render(this.siteKey(), this.language()));
+    // Browser only, so prerendered pages don't embed the hCaptcha script.
+    afterRenderEffect(() => {
+      if (this.active()) void this.render(this.siteKey(), this.language());
+    });
     inject(DestroyRef).onDestroy(() => this.removeWidget());
   }
 

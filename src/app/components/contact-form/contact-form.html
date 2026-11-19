@@ -4,7 +4,13 @@
     {{ 'contact.form.sent' | t }}
   </div>
 } @else {
-  <form class="contact-form" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+  <form
+    class="contact-form"
+    [formGroup]="form"
+    (ngSubmit)="submit()"
+    (focusin)="engaged.set(true)"
+    novalidate
+  >
     <app-form-field
       fieldId="first-name"
       [label]="'contact.form.firstName' | t"
@@ -65,6 +71,7 @@
       <app-captcha
         [siteKey]="captchaSiteKey()"
         [language]="language()"
+        [active]="engaged()"
         (tokenChange)="setCaptchaToken($event)"
       />
       @if (errorOf('captcha'); as error) {

@@ -1,10 +1,12 @@
-import { Component, computed, input, signal } from '@angular/core';
+import { Component, computed, inject, input, signal } from '@angular/core';
+import { I18nService } from '../../services/i18n.service';
 import { decodeEmail } from '../../utils/email.util';
 import { toMailHref } from '../../utils/contact.util';
 
 /**
  * Renders an encoded e-mail as a link. The address is split around a hidden decoy
- * in the DOM and `href` is only set once the visitor hovers or focuses the link.
+ * in the DOM and the `mailto:` link is only set once the visitor hovers or focuses it. Until then
+ * it points to the contact page, so crawlers still see a normal link.
  *
  * @input encoded - Value produced by `encodeEmail` (see `utils/email.util.ts`).
  */
@@ -21,9 +23,11 @@ export class ProtectedEmail {
     const [user = '', domain = ''] = this.email().split('@');
     return { user, domain };
   });
-  protected readonly href = signal<string | null>(null);
+  private readonly i18n = inject(I18nService);
+  private readonly mailHref = signal<string | null>(null);
+  protected readonly href = computed(() => this.mailHref() ?? `/${this.i18n.language()}/contact`);
 
   protected reveal(): void {
-    this.href.set(toMailHref(this.email()));
+    this.mailHref.set(toMailHref(this.email()));
   }
 }

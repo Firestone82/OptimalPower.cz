@@ -9,6 +9,7 @@
       "en": "We design, build and connect your solar plant, handle the subsidy paperwork and take care of service."
     },
     "image": "images/hero.webp",
+    "imageSrcset": "images/hero-800.webp 800w, images/hero.webp 1600w",
     "primaryAction": {
       "path": "contact",
       "labelKey": "home.ctaContact",
@@ -28,6 +29,7 @@
       },
       "image": {
         "src": "images/about.webp",
+        "srcset": "images/about-800.webp 800w, images/about.webp 1600w",
         "alt": {
           "cs": "Rodinný dům s naší fotovoltaikou ve Velopolí",
           "en": "Family house with our solar installation in Velopolí"
@@ -51,6 +53,7 @@
       },
       "image": {
         "src": "images/offer.webp",
+        "srcset": "images/offer-800.webp 800w, images/offer.webp 1600w",
         "alt": {
           "cs": "Montáž fotovoltaiky",
           "en": "Solar panel installation"
@@ -120,6 +123,7 @@
       },
       "image": {
         "src": "images/service.webp",
+        "srcset": "images/service-800.webp 800w, images/service.webp 1600w",
         "alt": {
           "cs": "Servis FVE",
           "en": "Solar plant service"

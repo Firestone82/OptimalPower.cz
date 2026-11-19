@@ -1,7 +1,8 @@
-import { DOCUMENT, NgTemplateOutlet } from '@angular/common';
+import { DOCUMENT, NgTemplateOutlet, isPlatformBrowser } from '@angular/common';
 import {
   Component,
   ElementRef,
+  PLATFORM_ID,
   TemplateRef,
   computed,
   contentChild,
@@ -59,6 +60,9 @@ export class Carousel<T> {
   private readonly interactions = signal(0);
 
   constructor() {
+    // No autoplay while prerendering: the server has no `matchMedia` and nothing to animate.
+    if (!isPlatformBrowser(inject(PLATFORM_ID))) return;
+
     effect((onCleanup) => {
       const delay = this.autoplay();
       this.interactions();

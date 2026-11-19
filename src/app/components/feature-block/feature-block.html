@@ -25,5 +25,11 @@
 </div>
 
 <figure class="feature-image">
-  <img [src]="feature().image.src" [alt]="feature().image.alt | localize" loading="lazy" />
+  <img
+    [src]="feature().image.src"
+    [attr.srcset]="feature().image.srcset"
+    sizes="(min-width: 701px) 50vw, 100vw"
+    [alt]="feature().image.alt | localize"
+    loading="lazy"
+  />
 </figure>

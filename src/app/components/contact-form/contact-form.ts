@@ -1,4 +1,4 @@
-import { Component, effect, inject, input, output, viewChild } from '@angular/core';
+import { Component, effect, inject, input, output, signal, viewChild } from '@angular/core';
 import { NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { Icon } from '../icon/icon';
@@ -46,6 +46,8 @@ export class ContactForm {
   readonly submitted = output<ContactFormSubmission>();
 
   private readonly captcha = viewChild(Captcha);
+  /** Set once the visitor starts filling in the form; the captcha loads only then. */
+  protected readonly engaged = signal(false);
 
   protected readonly form = inject(NonNullableFormBuilder).group({
     firstName: ['', Validators.required],
@@ -76,6 +78,7 @@ export class ContactForm {
   }
 
   protected submit(): void {
+    this.engaged.set(true);
     if (this.form.invalid) {
       this.form.markAllAsTouched();
       return;

@@ -26,17 +26,20 @@ jobs:
       - run: npm run format:check
       - run: npm run lint
       - run: npm test -- --watch=false
-      - run: npm run build
 
+      # Before the build: prerendered pages embed the content they loaded, contact.json included.
       - name: Inject Web3Forms access key
         if: github.event_name != 'pull_request'
         env:
           WEB3FORMS_ACCESS_KEY: ${{ secrets.WEB3FORMS_ACCESS_KEY }}
-        run: node scripts/inject-form-key.mjs dist/optimalpower-web/browser/content/contact.json
+        run: node scripts/inject-form-key.mjs public/content/contact.json
 
-      # GitHub Pages has no SPA rewrites; serving index.html as 404 lets the router handle deep links.
-      - name: Add SPA fallback
-        run: cp dist/optimalpower-web/browser/index.html dist/optimalpower-web/browser/404.html
+      # Prerenders every page and writes sitemap.xml (postbuild).
+      - run: npm run build
+
+      # Pages are prerendered; unknown paths get the client rendered shell, which shows the 404 page.
+      - name: Add 404 page
+        run: cp dist/optimalpower-web/browser/index.csr.html dist/optimalpower-web/browser/404.html
 
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
