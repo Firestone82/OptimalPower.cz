@@ -60,17 +60,10 @@
   box-shadow: var(--shadow-md);
   translate: 0 -50%;
   cursor: pointer;
-  transition:
-    opacity 200ms ease,
-    color 150ms ease;
+  transition: color 150ms ease;
 
-  &:hover:not(:disabled) {
+  &:hover {
     color: var(--color-brand);
-  }
-
-  &:disabled {
-    opacity: 0;
-    pointer-events: none;
   }
 
   &.prev {

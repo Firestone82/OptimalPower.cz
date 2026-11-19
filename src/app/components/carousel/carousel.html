@@ -6,18 +6,16 @@
   <button
     type="button"
     class="carousel-button prev"
-    [disabled]="atStart()"
     [attr.aria-label]="'carousel.previous' | t"
-    (click)="page(-1)"
+    (click)="previous()"
   >
     <app-icon name="chevron-left" [size]="24" />
   </button>
   <button
     type="button"
     class="carousel-button next"
-    [disabled]="atEnd()"
     [attr.aria-label]="'carousel.next' | t"
-    (click)="page(1)"
+    (click)="next()"
   >
     <app-icon name="chevron-right" [size]="24" />
   </button>
