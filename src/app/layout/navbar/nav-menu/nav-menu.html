@@ -1,0 +1,17 @@
+<ul class="nav-menu">
+  @for (item of items(); track item.path) {
+    <li>
+      <a
+        class="nav-link"
+        [routerLink]="item.path | languageLink"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        [routerLinkActiveOptions]="{ exact: !item.path }"
+        (click)="navigated.emit()"
+      >
+        <app-icon [name]="item.icon" [size]="18" />
+        {{ item.labelKey | t }}
+      </a>
+    </li>
+  }
+</ul>

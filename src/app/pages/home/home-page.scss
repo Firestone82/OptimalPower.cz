@@ -1,0 +1,10 @@
+.features {
+  display: grid;
+  gap: var(--space-section);
+  padding-block: var(--space-section);
+}
+
+.highlights {
+  padding-block: var(--space-section);
+  background: var(--color-surface-alt);
+}

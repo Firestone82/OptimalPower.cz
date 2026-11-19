@@ -1,0 +1,15 @@
+.footer-logo {
+  width: 13rem;
+  height: auto;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+
+.footer-motto {
+  margin: 1rem 0 0;
+  font-family: var(--font-accent);
+  font-size: 1.35rem;
+  white-space: pre-line;
+  color: var(--color-footer-heading);
+}

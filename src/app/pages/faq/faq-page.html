@@ -1,0 +1,7 @@
+<section class="container container-narrow page">
+  <app-section-heading [text]="'faq.title' | t" [level]="1" />
+
+  @if (content(); as content) {
+    <app-faq-accordion [items]="content.items" />
+  }
+</section>

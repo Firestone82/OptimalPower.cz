@@ -1,0 +1,177 @@
+{
+  "hero": {
+    "title": {
+      "cs": "Fotovoltaické elektrárny na klíč",
+      "en": "Turnkey photovoltaic power plants"
+    },
+    "subtitle": {
+      "cs": "Navrhneme, postavíme a připojíme vaši FVE. Vyřídíme i dotaci a postaráme se o servis.",
+      "en": "We design, build and connect your solar plant, handle the subsidy paperwork and take care of service."
+    },
+    "image": "images/hero.webp",
+    "primaryAction": {
+      "path": "contact",
+      "labelKey": "home.ctaContact",
+      "icon": "arrow-right"
+    },
+    "secondaryAction": {
+      "path": "references",
+      "labelKey": "home.ctaReferences",
+      "icon": "solar-panel"
+    }
+  },
+  "features": [
+    {
+      "title": {
+        "cs": "O nás",
+        "en": "About us"
+      },
+      "image": {
+        "src": "images/about.webp",
+        "alt": {
+          "cs": "Rodinný dům s naší fotovoltaikou ve Velopolí",
+          "en": "Family house with our solar installation in Velopolí"
+        }
+      },
+      "paragraphs": [
+        {
+          "cs": "Jsme společností disponující dostatkem zkušeností a odborných znalostí, což je zárukou kvalitních a vysoce profesionálních služeb našim zákazníkům, investorům do fotovoltaických elektráren. Jsme společností s dostatečným kapitálovým zázemím, které nám umožňuje investovat nemalé prostředky nejen do rozvoje společnosti, ale také do vlastních projektů výstavby fotovoltaických elektráren, čímž dáváme investorům osobní příklad.",
+          "en": "We are a company with plenty of experience and expertise, which guarantees high-quality, professional service to our customers, investors in photovoltaic power plants. Our solid capital base lets us invest not only in growing the company but also in our own photovoltaic projects, setting a personal example for investors."
+        },
+        {
+          "cs": "Dokazujeme tím, že investice do fotovoltaických systémů nepovažujeme pouze za módní vlnu, ale považujeme je za dlouhodobou konzervativní investici s minimálním rizikem a nadprůměrným výnosem.",
+          "en": "It shows that we do not see photovoltaics as a passing trend, but as a long-term, conservative investment with minimal risk and above-average returns."
+        }
+      ]
+    },
+    {
+      "title": {
+        "cs": "Co nabízíme",
+        "en": "What we offer"
+      },
+      "image": {
+        "src": "images/offer.webp",
+        "alt": {
+          "cs": "Montáž fotovoltaiky",
+          "en": "Solar panel installation"
+        }
+      },
+      "offer": [
+        {
+          "title": {
+            "cs": "Výstavba fotovoltaických elektráren FVE „na klíč“",
+            "en": "Turnkey construction of photovoltaic power plants"
+          },
+          "children": [
+            {
+              "cs": "V režimu mikrozdroje",
+              "en": "As a micro-source"
+            },
+            {
+              "cs": "V režimu s licencí",
+              "en": "As a licensed source"
+            }
+          ]
+        },
+        {
+          "title": {
+            "cs": "Zpracování energetických posudků pro",
+            "en": "Energy assessments for"
+          },
+          "children": [
+            {
+              "cs": "FVE",
+              "en": "Photovoltaic plants"
+            },
+            {
+              "cs": "Výstavbu nemovitostí",
+              "en": "Building construction"
+            }
+          ]
+        },
+        {
+          "title": {
+            "cs": "Dodávku a instalaci tepelných čerpadel IVT, klimatizací LG",
+            "en": "Supply and installation of IVT heat pumps and LG air conditioning"
+          }
+        },
+        {
+          "title": {
+            "cs": "Energetické poradenství v oblasti",
+            "en": "Energy consulting on"
+          },
+          "children": [
+            {
+              "cs": "Energetická legislativa",
+              "en": "Energy legislation"
+            },
+            {
+              "cs": "Technická řešení v oblasti vytápění objektů",
+              "en": "Technical solutions for building heating"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "cs": "Servis a naše komponenty",
+        "en": "Service and components"
+      },
+      "image": {
+        "src": "images/service.webp",
+        "alt": {
+          "cs": "Servis FVE",
+          "en": "Solar plant service"
+        }
+      },
+      "paragraphs": [
+        {
+          "cs": "Výstavbou samozřejmě naše péče o zákazníky nekončí. V případě požadavku na servis řešíme vše osobně, pokud si nevíme rady, obracíme se na servisní základnu, kterou poskytuje náš dodavatel dílů GBC Solino.",
+          "en": "Our care doesn't end with construction. We handle service requests in person, and for anything beyond us we rely on the service centre of our parts supplier, GBC Solino."
+        },
+        {
+          "cs": "Komponenty nakupujeme ve velkoskladu GBC Solino, vše tedy, co nabízí tento velkosklad, můžete mít. Montážní systém upevnění panelů na střechu používáme od renomované firmy Renusol.",
+          "en": "We buy components from the GBC Solino wholesaler, so anything they stock is available to you. For roof mounting we use systems from the renowned manufacturer Renusol."
+        }
+      ],
+      "links": [
+        {
+          "label": "gbc-solino.cz",
+          "url": "https://gbc-solino.cz/"
+        },
+        {
+          "label": "renusol.com",
+          "url": "https://renusol.com/en/"
+        }
+      ]
+    }
+  ],
+  "highlightsTitle": {
+    "cs": "Zajistíme",
+    "en": "We take care of"
+  },
+  "highlights": [
+    {
+      "title": {
+        "cs": "Technické řešení na míru",
+        "en": "Tailored technical design"
+      },
+      "image": "images/icons/bulb.webp"
+    },
+    {
+      "title": {
+        "cs": "Připojení FVE do distribuční sítě",
+        "en": "Grid connection of your plant"
+      },
+      "image": "images/icons/connection.webp"
+    },
+    {
+      "title": {
+        "cs": "Vyřízení dotace pro FVE",
+        "en": "Subsidy application"
+      },
+      "image": "images/icons/dotation.webp"
+    }
+  ]
+}

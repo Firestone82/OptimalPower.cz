@@ -1,0 +1,85 @@
+@if (status() === 'sent') {
+  <div class="form-result success" role="status">
+    <app-icon name="check" [size]="24" />
+    {{ 'contact.form.sent' | t }}
+  </div>
+} @else {
+  <form class="contact-form" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+    <app-form-field
+      fieldId="first-name"
+      [label]="'contact.form.firstName' | t"
+      [required]="true"
+      [error]="errorOf('firstName') | t"
+    >
+      <input id="first-name" type="text" formControlName="firstName" autocomplete="given-name" />
+    </app-form-field>
+
+    <app-form-field
+      fieldId="last-name"
+      [label]="'contact.form.lastName' | t"
+      [required]="true"
+      [error]="errorOf('lastName') | t"
+    >
+      <input id="last-name" type="text" formControlName="lastName" autocomplete="family-name" />
+    </app-form-field>
+
+    <app-form-field
+      fieldId="phone"
+      [label]="'contact.form.phone' | t"
+      [required]="true"
+      [error]="errorOf('phone') | t"
+    >
+      <input id="phone" type="tel" formControlName="phone" autocomplete="tel" />
+    </app-form-field>
+
+    <app-form-field
+      fieldId="email"
+      [label]="'contact.form.email' | t"
+      [required]="true"
+      [error]="errorOf('email') | t"
+    >
+      <input id="email" type="email" formControlName="email" autocomplete="email" />
+    </app-form-field>
+
+    <app-form-field class="full" fieldId="message" [label]="'contact.form.message' | t">
+      <textarea id="message" formControlName="message" rows="5"></textarea>
+    </app-form-field>
+
+    <div class="full consent">
+      <label>
+        <input type="checkbox" formControlName="consent" />
+        <span>
+          {{ 'contact.form.consent' | t }}
+          <a [routerLink]="'privacy' | languageLink" target="_blank">{{
+            'contact.form.consentLink' | t
+          }}</a>
+          <span class="required" aria-hidden="true">*</span>
+        </span>
+      </label>
+      @if (errorOf('consent'); as error) {
+        <p class="field-error">{{ error | t }}</p>
+      }
+    </div>
+
+    <div class="full">
+      <app-captcha
+        [siteKey]="captchaSiteKey()"
+        [language]="language()"
+        (tokenChange)="setCaptchaToken($event)"
+      />
+      @if (errorOf('captcha'); as error) {
+        <p class="field-error">{{ 'contact.form.errors.captcha' | t }}</p>
+      }
+    </div>
+
+    <div class="full form-actions">
+      @if (status() === 'error') {
+        <p class="form-result error" role="alert">{{ 'contact.form.error' | t }}</p>
+      }
+      <button type="submit" class="button button-primary" [disabled]="status() === 'sending'">
+        {{ (status() === 'sending' ? 'contact.form.sending' : 'contact.form.submit') | t }}
+        <app-icon name="send" />
+      </button>
+    </div>
+  </form>
+}

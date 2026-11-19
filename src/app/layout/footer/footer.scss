@@ -1,0 +1,21 @@
+.footer {
+  margin-top: var(--space-section);
+  padding-top: 3.5rem;
+  background: var(--color-footer);
+  color: var(--color-footer-text);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr auto auto 1fr;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+}

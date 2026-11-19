@@ -1,0 +1,16 @@
+<nav class="navbar container" [attr.aria-label]="companyName()">
+  <a class="navbar-brand" [routerLink]="'' | languageLink" (click)="menuOpen.set(false)">
+    <img [src]="logo()" [alt]="companyName()" width="176" height="99" />
+  </a>
+
+  <app-menu-toggle
+    class="navbar-toggle"
+    [open]="menuOpen()"
+    (toggled)="menuOpen.set(!menuOpen())"
+  />
+
+  <div class="navbar-panel" [class.open]="menuOpen()" id="main-menu">
+    <app-nav-menu [items]="items()" (navigated)="menuOpen.set(false)" />
+    <app-language-switcher />
+  </div>
+</nav>

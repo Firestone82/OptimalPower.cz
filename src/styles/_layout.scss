@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.container-narrow {
+  max-width: 54rem;
+}
+
+.page {
+  // Clears the logo tab hanging below the navbar.
+  padding-top: clamp(4rem, 8vw, 5.5rem);
+}
+
+.lead {
+  max-width: 60ch;
+  margin: -0.75rem 0 2rem;
+  color: var(--color-text-muted);
+  font-size: 1.15rem;
+}
+
+// Footer columns are separate components sharing these styles.
+.footer-title {
+  margin: 0 0 1rem;
+  color: var(--color-footer-heading);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.footer-list {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    white-space: nowrap;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--color-brand);
+    }
+  }
+}

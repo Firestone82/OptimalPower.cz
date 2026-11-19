@@ -1,0 +1,19 @@
+<a class="skip-link" href="#main">{{ 'a11y.skipToContent' | t }}</a>
+
+@if (company(); as company) {
+  <app-navbar
+    [logo]="company.logo"
+    [companyName]="company.name"
+    [items]="navigation()?.items ?? []"
+  />
+}
+
+<main id="main" class="shell-main">
+  <router-outlet />
+</main>
+
+@if (company(); as company) {
+  @if (footer(); as footer) {
+    <app-footer [company]="company" [content]="footer" />
+  }
+}

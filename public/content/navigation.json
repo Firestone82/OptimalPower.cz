@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "path": "",
+      "labelKey": "nav.home",
+      "icon": "home"
+    },
+    {
+      "path": "references",
+      "labelKey": "nav.references",
+      "icon": "solar-panel"
+    },
+    {
+      "path": "gallery",
+      "labelKey": "nav.gallery",
+      "icon": "gallery"
+    },
+    {
+      "path": "faq",
+      "labelKey": "nav.faq",
+      "icon": "help"
+    },
+    {
+      "path": "contact",
+      "labelKey": "nav.contact",
+      "icon": "contact"
+    }
+  ]
+}

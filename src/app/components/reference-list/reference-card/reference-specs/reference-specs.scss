@@ -1,0 +1,25 @@
+.specs {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0;
+}
+
+.spec {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  gap: 0.5rem;
+
+  dt {
+    color: var(--color-text-muted);
+  }
+
+  dd {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  &.highlight dd {
+    color: var(--color-brand-strong);
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,29 @@
+<h2 class="faq-question">
+  <button
+    type="button"
+    [attr.aria-expanded]="expanded()"
+    [attr.aria-controls]="'faq-answer-' + number()"
+    (click)="expanded.set(!expanded())"
+  >
+    <span class="faq-number">{{ number() }}</span>
+    <span class="faq-text">{{ item().question | localize }}</span>
+    <app-icon class="faq-chevron" name="arrow-down" [size]="20" />
+  </button>
+</h2>
+
+<div class="faq-answer" [id]="'faq-answer-' + number()" role="region">
+  <div class="faq-answer-inner">
+    <div class="faq-answer-content">
+      @for (paragraph of item().paragraphs; track $index) {
+        <p>{{ paragraph | localize }}</p>
+      }
+      @if (item().bullets?.length) {
+        <ul>
+          @for (bullet of item().bullets; track $index) {
+            <li>{{ bullet | localize }}</li>
+          }
+        </ul>
+      }
+    </div>
+  </div>
+</div>

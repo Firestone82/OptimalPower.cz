@@ -1,0 +1,24 @@
+<article class="reference-card">
+  @if (reference().images[0]; as cover) {
+    <button type="button" class="reference-cover" (click)="imageOpened.emit(0)">
+      <img [src]="cover.src" [alt]="cover.alt | localize" loading="lazy" />
+      @if (reference().images.length > 1) {
+        <span class="reference-count">{{
+          'references.photos' | t: { count: reference().images.length }
+        }}</span>
+      }
+    </button>
+  }
+
+  <div class="reference-body">
+    <h2 class="reference-title">{{ reference().location }}</h2>
+    <app-reference-specs [specs]="reference().specs" />
+
+    @if (reference().testimonial; as testimonial) {
+      <blockquote class="reference-quote">
+        {{ testimonial.text | localize }}
+        <cite>{{ testimonial.author | localize }}</cite>
+      </blockquote>
+    }
+  </div>
+</article>

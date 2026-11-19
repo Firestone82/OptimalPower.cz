@@ -1,0 +1,37 @@
+{
+  "form": {
+    "endpoint": "https://api.web3forms.com/submit",
+    "accessKey": "",
+    "captchaSiteKey": "75000b0a-cb20-4ee0-a94a-4d0e0ecada3c"
+  },
+  "team": [
+    {
+      "name": "Mgr. Zdeněk Štoček",
+      "position": {
+        "cs": "Jednatel",
+        "en": "Managing director"
+      },
+      "phone": "+420 606 734 911",
+      "email": "emMucmV3b3BsYW1pdHBvQGtlY290cy5rZW5lZHo="
+    },
+    {
+      "name": "Ing. Hynek Vyhnálek",
+      "position": {
+        "cs": "Jednatel",
+        "en": "Managing director"
+      },
+      "phone": "+420 602 734 789",
+      "email": "emMucmV3b3BsYW1pdHBvQGtlbGFuaHl2Lmtlbnlo"
+    },
+    {
+      "name": "Ing. Martin Mikula",
+      "phone": "+420 736 721 614",
+      "email": "emMucmV3b3BsYW1pdHBvQGFsdWtpbS5uaXRyYW0="
+    },
+    {
+      "name": "Tomáš Klos",
+      "phone": "+420 606 777 961",
+      "email": "emMucmV3b3BsYW1pdHBvQHNvbGsuc2Ftb3Q="
+    }
+  ]
+}

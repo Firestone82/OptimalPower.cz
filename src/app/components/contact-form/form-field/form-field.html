@@ -1,0 +1,12 @@
+<label class="field-label" [for]="fieldId()">
+  {{ label() }}
+  @if (required()) {
+    <span class="required" aria-hidden="true">*</span>
+  }
+</label>
+
+<ng-content />
+
+@if (error()) {
+  <p class="field-error" [id]="fieldId() + '-error'">{{ error() }}</p>
+}

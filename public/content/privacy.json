@@ -1,0 +1,25 @@
+{
+  "feature": {
+    "title": {
+      "cs": "Ochrana osobních údajů",
+      "en": "Privacy policy"
+    },
+    "image": {
+      "src": "images/gdpr.webp",
+      "alt": {
+        "cs": "Ochrana osobních údajů",
+        "en": "Data protection"
+      }
+    },
+    "paragraphs": [
+      {
+        "cs": "Ujišťujeme Vás, že spravovaná osobní data jsme v minulosti nikomu a nikdy neprodali, nepředali ani neumožnili data využívat a i v budoucnu se zachováme stejně odpovědně. Vaše osobní údaje jsou u nás chráněny před zneužitím.",
+        "en": "We assure you that we have never sold, passed on or allowed anyone to use the personal data we manage, and we will act just as responsibly in the future. Your personal data is protected against misuse."
+      },
+      {
+        "cs": "Výjimku tvoří státní úřady a instituce, které mají na toto ze zákona právo.",
+        "en": "The only exception are state authorities and institutions that are entitled to it by law."
+      }
+    ]
+  }
+}

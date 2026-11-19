@@ -1,0 +1,14 @@
+<ol class="offer-list">
+  @for (item of items(); track $index) {
+    <li>
+      <strong>{{ item.title | localize }}</strong>
+      @if (item.children?.length) {
+        <ol type="a">
+          @for (child of item.children; track $index) {
+            <li>{{ child | localize }}</li>
+          }
+        </ol>
+      }
+    </li>
+  }
+</ol>

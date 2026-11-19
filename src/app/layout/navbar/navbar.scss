@@ -1,0 +1,103 @@
+:host {
+  --navbar-height: 4.25rem;
+  --brand-width: 11rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: block;
+  background: var(--color-surface);
+  border-bottom: 3px solid var(--color-brand);
+  box-shadow: var(--shadow-sm);
+}
+
+:host(.scrolled) {
+  --brand-width: 7.5rem;
+
+  box-shadow: var(--shadow-md);
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  min-height: var(--navbar-height);
+}
+
+// White tab hanging below the bar, shrinks once the page is scrolled.
+.navbar-brand {
+  position: absolute;
+  top: 0;
+  left: var(--gutter);
+  z-index: 1;
+  padding: 0.6rem 0.9rem 0.75rem;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: 0 6px 16px -4px rgb(16 24 16 / 0.35);
+  // Hide the shadow where the tab overlaps the bar, so it only shows below the navbar.
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% var(--navbar-height),
+    calc(100% + 2rem) var(--navbar-height),
+    calc(100% + 2rem) calc(100% + 2rem),
+    -2rem calc(100% + 2rem),
+    -2rem var(--navbar-height),
+    0 var(--navbar-height)
+  );
+  transition: padding 300ms ease;
+
+  img {
+    display: block;
+    width: var(--brand-width);
+    height: auto;
+    filter: drop-shadow(1px 1px 1px rgb(100 100 40 / 0.3));
+    transition: width 300ms ease;
+  }
+
+  :host(.scrolled) & {
+    padding: 0.4rem 0.7rem 0.5rem;
+  }
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-panel {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1060px) {
+  :host {
+    --brand-width: 8rem;
+  }
+
+  :host(.scrolled) {
+    --brand-width: 6.5rem;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-panel {
+    position: absolute;
+    inset: calc(100% + 3px) 0 auto;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 4rem var(--gutter) 1.5rem;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+
+    &.open {
+      display: flex;
+    }
+  }
+}

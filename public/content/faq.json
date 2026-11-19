@@ -1,0 +1,180 @@
+{
+  "items": [
+    {
+      "question": {
+        "cs": "Jak probíhá přípravný proces výstavby FVE?",
+        "en": "How does the preparation of a solar plant work?"
+      },
+      "paragraphs": [
+        {
+          "cs": "Navštíví Vás jeden z našich kolegů, probereme spolu celý záměr a vymyslíme komplexní technické řešení, kde zohledníme orientaci střechy, celkový potřebný výkon elektrárny s ohledem na spotřebu domu, umístění měniče, úpravu elektroinstalace, prostě vše, co je třeba. Obvykle úvodní konzultace trvá 2 hodiny a je ukončená závaznou nabídkou, buď ihned, nebo do druhého dne.",
+          "en": "One of our colleagues visits you, we go through your plans and design a complete technical solution that takes into account roof orientation, the plant output needed for your consumption, inverter placement, wiring changes and everything else. The first consultation usually takes 2 hours and ends with a binding offer, either on the spot or by the next day."
+        }
+      ]
+    },
+    {
+      "question": {
+        "cs": "Jak dlouho to vše trvá?",
+        "en": "How long does it all take?"
+      },
+      "paragraphs": [
+        {
+          "cs": "Přestože v ideálních podmínkách samotná výstavba FVE trvá několik dnů, celý proces zabere 4 až 6 měsíců.",
+          "en": "Although the construction itself takes only a few days in ideal conditions, the whole process takes 4 to 6 months."
+        },
+        {
+          "cs": "Zahájení montáže nastupuje nejdříve 1 měsíc od podepsání smlouvy, vždy na základě kladného stanoviska distributora, tj. podepsáním Smlouvy o připojení (SOP), kterou samozřejmě zařídíme.",
+          "en": "Installation starts no earlier than one month after the contract is signed, always after the distributor approves it by signing the connection agreement, which we arrange for you."
+        }
+      ]
+    },
+    {
+      "question": {
+        "cs": "Co si mám připravit, než mě poprvé navštíví Váš odborník?",
+        "en": "What should I prepare before your expert's first visit?"
+      },
+      "paragraphs": [
+        {
+          "cs": "Možná to bude znít, jako že jsme obchodníci s elektřinou nebo pojištěním, ale budeme chtít nahlédnout do poslední faktury za elektrickou energii. Pro zvolení nejlepšího technického řešení potřebujeme znát roční objem spotřeby.",
+          "en": "It may sound like we sell electricity or insurance, but we will want to see your latest electricity bill. To choose the best technical solution we need to know your annual consumption."
+        },
+        {
+          "cs": "V dalším kole budeme z faktury potřebovat již jen identifikační údaje pro komunikaci s distributorem (číslo odběrného místa, EAN kód, sazbu, jistič atd.).",
+          "en": "Later we only need the identification details from the bill to deal with the distributor (supply point number, EAN code, tariff, main breaker, etc.)."
+        }
+      ]
+    },
+    {
+      "question": {
+        "cs": "Co se po mně bude chtít, když se dohodneme?",
+        "en": "What will you need from me once we agree?"
+      },
+      "bullets": [
+        {
+          "cs": "Plnou moc pro jednání s distributorem",
+          "en": "Power of attorney for dealing with the distributor"
+        },
+        {
+          "cs": "Plnou moc pro vyřízení dotace na SFŽP",
+          "en": "Power of attorney for the subsidy application at the State Environmental Fund"
+        },
+        {
+          "cs": "Souhlas spoluvlastníků objektu k výstavbě FVE",
+          "en": "Consent of any co-owners of the building"
+        },
+        {
+          "cs": "Číslo bankovního účtu",
+          "en": "Bank account number"
+        },
+        {
+          "cs": "Rodné číslo",
+          "en": "Personal identification number"
+        },
+        {
+          "cs": "Zřízení účtu na SFŽP pomocí e-identity a předání kódu",
+          "en": "Setting up an account at the State Environmental Fund via e-identity and sharing the code"
+        },
+        {
+          "cs": "Potvrzení o vlastnictví bankovního účtu, na který bude později zaslána dotace",
+          "en": "Proof of ownership of the bank account that will receive the subsidy"
+        },
+        {
+          "cs": "Spolupráci a součinnost při výstavbě",
+          "en": "Cooperation during construction"
+        },
+        {
+          "cs": "Potvrzení o skutečném uhrazení faktur (PDF výpisy z banky)",
+          "en": "Proof of invoice payment (PDF bank statements)"
+        }
+      ]
+    },
+    {
+      "question": {
+        "cs": "Co od Vás dostanu?",
+        "en": "What do I get from you?"
+      },
+      "bullets": [
+        {
+          "cs": "Nabídku na realizaci FVE",
+          "en": "An offer for your solar plant"
+        },
+        {
+          "cs": "Zajištění legislativního procesu připojení FVE do sítě distributora, a tím legalizaci FVE",
+          "en": "The legal process of connecting the plant to the distribution grid"
+        },
+        {
+          "cs": "Vyřízení akceptace záměru výstavby FVE na SFŽP",
+          "en": "Approval of the project by the State Environmental Fund"
+        },
+        {
+          "cs": "Výstavbu FVE na klíč",
+          "en": "Turnkey construction"
+        },
+        {
+          "cs": "Dokončení procesu prvního paralelního připojení s distributorem",
+          "en": "First parallel connection with the distributor"
+        },
+        {
+          "cs": "Zpracování dokumentace skutečného stavu",
+          "en": "As-built documentation"
+        },
+        {
+          "cs": "Dokončení procesu dotace na FVE ze strany SFŽP",
+          "en": "Completion of the subsidy process"
+        }
+      ]
+    },
+    {
+      "question": {
+        "cs": "Může se navýšit cena FVE?",
+        "en": "Can the price go up?"
+      },
+      "paragraphs": [
+        {
+          "cs": "Zatím jsme vždy dodrželi rozpočet na FVE. Pokud k navýšení dojde, je to dáno vždy ze strany zákazníka. Na věty typu „chlapi, když už jste tady, předělejte ještě to a tamto“ jsme zvyklí a připravení.",
+          "en": "So far we have always kept to the budget. Any increase has always come from the customer's side, and we're used to and ready for \"since you're here, could you also redo this and that\"."
+        }
+      ]
+    },
+    {
+      "question": {
+        "cs": "Údajně se musí předělávat i elektroměrová skříň a to stojí peníze navíc…",
+        "en": "I heard the meter box has to be rebuilt at extra cost…"
+      },
+      "paragraphs": [
+        {
+          "cs": "Známe požadavky distributora, a pokud elektroměrová skříň nevyhovuje, automaticky ji předěláme. Tento náklad je od začátku v ceně.",
+          "en": "We know the distributor's requirements. If the meter box doesn't comply, we rebuild it, and the cost is included in the price from the start."
+        }
+      ]
+    },
+    {
+      "question": {
+        "cs": "Jak mi garantujete, že mi střechou nepoteče?",
+        "en": "How do you guarantee my roof won't leak?"
+      },
+      "paragraphs": [
+        {
+          "cs": "Střešní úchytné konstrukce jsme nevymysleli my. Nakupujeme je od renomované firmy Renusol, která vyvinula spolehlivé řešení pro každý typ střechy. Jedině snad starý eternit neumíme, proto FVE na tyto střechy neumísťujeme.",
+          "en": "We didn't invent roof mounting systems. We buy them from the renowned manufacturer Renusol, which has a reliable solution for every roof type. The only exception is old asbestos-cement roofing, so we don't install on those."
+        }
+      ]
+    },
+    {
+      "question": {
+        "cs": "Nemůžete mi střechu při montáži poškodit?",
+        "en": "Could you damage my roof during installation?"
+      },
+      "paragraphs": [
+        {
+          "cs": "Je fakt, že neumíme létat a po střeše se aktivně pohybujeme. Může se stát, že střešní tašky typu Bramac prasknou, ale maximálně 1 nebo 2. Zatím všichni majitelé měli náhradní tašku pro výměnu schovanou.",
+          "en": "We can't fly, so we do walk on the roof. A Bramac tile may crack, but no more than one or two, and so far every owner has had a spare tile."
+        },
+        {
+          "cs": "Pokud objevíme nějakou prasklou tašku ještě před naším vstupem, ve spolupráci s majitelem ji samozřejmě vyměníme.",
+          "en": "If we find a cracked tile before we start, we of course replace it together with the owner."
+        }
+      ]
+    }
+  ]
+}

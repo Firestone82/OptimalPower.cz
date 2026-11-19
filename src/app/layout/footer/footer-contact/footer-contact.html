@@ -1,0 +1,12 @@
+<h2 class="footer-title">{{ 'footer.contact' | t }}</h2>
+<ul class="footer-list">
+  <li><app-icon name="location" /> {{ company().address }}</li>
+  <li>
+    <app-icon name="mail" />
+    <app-protected-email [encoded]="company().email" />
+  </li>
+  <li>
+    <app-icon name="phone" />
+    <a [href]="toPhoneHref(company().phone)">{{ company().phone }}</a>
+  </li>
+</ul>

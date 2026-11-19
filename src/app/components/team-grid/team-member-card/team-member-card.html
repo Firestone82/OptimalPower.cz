@@ -1,0 +1,21 @@
+<div class="avatar" aria-hidden="true">{{ initials() }}</div>
+
+<div class="member">
+  <h3 class="member-name">{{ member().name }}</h3>
+  <p class="member-position">{{ member().position | localize }}</p>
+
+  <ul class="member-contacts">
+    <li>
+      @if (member().phone; as phone) {
+        <app-icon name="phone" [size]="16" />
+        <a [href]="toPhoneHref(phone)">{{ phone }}</a>
+      }
+    </li>
+    <li>
+      @if (member().email; as email) {
+        <app-icon name="mail" [size]="16" />
+        <app-protected-email [encoded]="email" />
+      }
+    </li>
+  </ul>
+</div>

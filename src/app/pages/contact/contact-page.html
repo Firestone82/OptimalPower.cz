@@ -1,0 +1,29 @@
+<section class="container page">
+  <div class="contact-grid">
+    <div>
+      <app-section-heading [text]="'contact.detailsTitle' | t" [level]="1" />
+      @if (company(); as company) {
+        <app-contact-details [company]="company" />
+      }
+    </div>
+
+    <div class="contact-form-card">
+      <app-section-heading [text]="'contact.formTitle' | t" />
+      @if (contact(); as contact) {
+        <app-contact-form
+          [status]="status()"
+          [captchaSiteKey]="contact.form.captchaSiteKey"
+          [language]="i18n.language()"
+          (submitted)="send($event)"
+        />
+      }
+    </div>
+  </div>
+</section>
+
+@if (contact(); as contact) {
+  <section class="container team">
+    <app-section-heading [text]="'contact.teamTitle' | t" />
+    <app-team-grid [members]="contact.team" />
+  </section>
+}
