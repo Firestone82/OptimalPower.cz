@@ -2,7 +2,7 @@ import {
   Component,
   DestroyRef,
   ElementRef,
-  effect,
+  afterRenderEffect,
   inject,
   input,
   output,
@@ -50,7 +50,8 @@ export class Captcha {
   protected readonly failed = signal(false);
 
   constructor() {
-    effect(() => void this.render(this.siteKey(), this.language()));
+    // Browser only, so prerendered pages don't embed the hCaptcha script.
+    afterRenderEffect(() => void this.render(this.siteKey(), this.language()));
     inject(DestroyRef).onDestroy(() => this.removeWidget());
   }
 

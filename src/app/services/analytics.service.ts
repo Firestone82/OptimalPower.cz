@@ -1,5 +1,5 @@
-import { DOCUMENT } from '@angular/common';
-import { Injectable, effect, inject, signal } from '@angular/core';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { Injectable, PLATFORM_ID, effect, inject, signal } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
 import { ConsentService } from './consent.service';
@@ -24,6 +24,7 @@ export class AnalyticsService {
   private readonly router = inject(Router);
   private readonly consent = inject(ConsentService);
   private readonly scripts = inject(ScriptLoaderService);
+  private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
   private readonly measurementId = signal<string | null>(null);
   private loaded = false;
   private lastTrackedUrl: string | null = null;
@@ -44,9 +45,12 @@ export class AnalyticsService {
       .subscribe(() => setTimeout(() => this.trackPageView()));
   }
 
-  /** Enables analytics for the given GA4 measurement ID (`G-…`). Empty disables it. */
+  /**
+   * Enables analytics for the given GA4 measurement ID (`G-…`). Empty disables it.
+   * Ignored while prerendering, so the static HTML has no cookie banner baked in.
+   */
   init(measurementId: string | undefined): void {
-    if (!measurementId || this.measurementId()) return;
+    if (!this.isBrowser || !measurementId || this.measurementId()) return;
     this.consent.required.set(true);
     this.measurementId.set(measurementId);
   }
