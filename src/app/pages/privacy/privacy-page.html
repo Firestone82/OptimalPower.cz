@@ -1,0 +1,5 @@
+<section class="container page">
+  @if (content(); as content) {
+    <app-feature-block [feature]="content.feature" [headingLevel]="1" />
+  }
+</section>

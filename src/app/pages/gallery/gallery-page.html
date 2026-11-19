@@ -1,0 +1,8 @@
+<section class="container page">
+  <app-section-heading [text]="'gallery.title' | t" [level]="1" />
+
+  @if (content(); as content) {
+    <app-image-grid [images]="content.images" (opened)="lightboxIndex.set($event)" />
+    <app-lightbox [images]="content.images" [(index)]="lightboxIndex" />
+  }
+</section>

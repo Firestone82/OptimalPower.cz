@@ -1,0 +1,8 @@
+<section class="container page">
+  <app-section-heading [text]="'references.title' | t" [level]="1" />
+  <p class="lead">{{ 'references.intro' | t }}</p>
+
+  @if (content(); as content) {
+    <app-reference-list [items]="content.items" />
+  }
+</section>

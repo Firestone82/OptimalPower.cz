@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "src": "images/references/opava/1.webp",
+      "alt": {
+        "cs": "Realizace Opava",
+        "en": "Installation in Opava"
+      }
+    },
+    {
+      "src": "images/references/opava/2.webp",
+      "alt": {
+        "cs": "Realizace Opava",
+        "en": "Installation in Opava"
+      }
+    },
+    {
+      "src": "images/references/baska/1.webp",
+      "alt": {
+        "cs": "Realizace Baška",
+        "en": "Installation in Baška"
+      }
+    },
+    {
+      "src": "images/references/horni-sucha/1.webp",
+      "alt": {
+        "cs": "Realizace Horní Suchá",
+        "en": "Installation in Horní Suchá"
+      }
+    },
+    {
+      "src": "images/references/velopoli-1/1.webp",
+      "alt": {
+        "cs": "Realizace Velopolí",
+        "en": "Installation in Velopolí"
+      }
+    },
+    {
+      "src": "images/references/velopoli-2/1.webp",
+      "alt": {
+        "cs": "Realizace Velopolí",
+        "en": "Installation in Velopolí"
+      }
+    }
+  ]
+}

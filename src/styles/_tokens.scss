@@ -1,0 +1,33 @@
+:root {
+  --color-brand: #3ba936;
+  --color-brand-strong: #2a7f26;
+  --color-brand-soft: rgb(59 169 54 / 0.12);
+  --color-on-brand: #fff;
+  --color-danger: #c62828;
+
+  --color-bg: #f6f8f5;
+  --color-surface: #fff;
+  --color-surface-alt: #eef3ec;
+  --color-border: #e1e7df;
+  --color-border-strong: #c9d2c6;
+  --color-text: #1b241a;
+  --color-text-muted: #5b665a;
+
+  --color-footer: #121812;
+  --color-footer-text: #b5bfb3;
+  --color-footer-heading: #fff;
+  --color-footer-border: rgb(255 255 255 / 0.08);
+
+  --font-body: 'Titillium Web', system-ui, sans-serif;
+  --font-accent: 'Kalam', cursive;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+
+  --shadow-sm: 0 1px 3px rgb(16 24 16 / 0.08);
+  --shadow-md: 0 12px 32px -12px rgb(16 24 16 / 0.25);
+
+  --gutter: clamp(1rem, 4vw, 2rem);
+  --space-section: clamp(3.5rem, 8vw, 6rem);
+}

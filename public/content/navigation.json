@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "path": "", "labelKey": "nav.home", "icon": "lucideHouse" },
+    { "path": "projects", "labelKey": "nav.projects", "icon": "lucideMap" },
+    { "path": "references", "labelKey": "nav.references", "icon": "lucideSolarPanel" },
+    { "path": "gallery", "labelKey": "nav.gallery", "icon": "lucideImages" },
+    { "path": "faq", "labelKey": "nav.faq", "icon": "lucideCircleHelp" },
+    { "path": "contact", "labelKey": "nav.contact", "icon": "lucideContact" }
+  ]
+}

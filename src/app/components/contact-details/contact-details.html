@@ -1,0 +1,15 @@
+<dl class="contact-details">
+  @for (row of rows(); track row.labelKey) {
+    <div class="contact-row">
+      <span class="contact-icon"><ng-icon [name]="row.icon" size="1.15rem" /></span>
+      <dt>{{ row.labelKey | t }}</dt>
+      <dd>
+        @if (row.href) {
+          <a [href]="row.href">{{ row.value }}</a>
+        } @else {
+          {{ row.value }}
+        }
+      </dd>
+    </div>
+  }
+</dl>

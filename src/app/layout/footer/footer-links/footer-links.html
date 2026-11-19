@@ -1,0 +1,13 @@
+<h2 class="footer-title">{{ 'footer.links' | t }}</h2>
+<ul class="footer-list">
+  @for (link of links(); track link.path) {
+    <li>
+      <ng-icon [name]="link.icon" />
+      @if (link.external) {
+        <a [href]="link.path" target="_blank" rel="noopener">{{ link.labelKey | t }}</a>
+      } @else {
+        <a [routerLink]="link.path | languageLink">{{ link.labelKey | t }}</a>
+      }
+    </li>
+  }
+</ul>

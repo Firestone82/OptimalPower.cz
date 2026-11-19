@@ -1,0 +1,18 @@
+@if (content(); as content) {
+  <app-hero [content]="content.hero" />
+
+  <div class="container features">
+    @for (feature of content.features; track $index) {
+      <app-feature-block [feature]="feature" [reversed]="$odd" />
+    }
+  </div>
+
+  <section class="highlights">
+    <div class="container">
+      <app-highlight-grid
+        [title]="content.highlightsTitle | localize"
+        [items]="content.highlights"
+      />
+    </div>
+  </section>
+}

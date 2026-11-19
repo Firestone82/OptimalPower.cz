@@ -1,0 +1,14 @@
+.menu-toggle {
+  display: grid;
+  place-items: center;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--color-brand-soft);
+  }
+}

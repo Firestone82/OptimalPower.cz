@@ -1,0 +1,9 @@
+<section class="container page not-found">
+  <p class="code">404</p>
+  <h1>{{ 'notFound.title' | t }}</h1>
+  <p>{{ 'notFound.text' | t }}</p>
+  <a class="button button-primary" [routerLink]="'' | languageLink">
+    {{ 'notFound.back' | t }}
+    <ng-icon name="lucideArrowRight" />
+  </a>
+</section>

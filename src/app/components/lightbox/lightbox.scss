@@ -1,0 +1,91 @@
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 3.5rem 4.5rem;
+  animation: fade-in 150ms ease;
+
+  @media (max-width: 640px) {
+    padding: 3.5rem 0.5rem 5rem;
+  }
+}
+
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgb(0 0 0 / 0.9);
+  cursor: zoom-out;
+}
+
+.lightbox-figure {
+  position: relative;
+  margin: 0;
+  max-height: 100%;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    max-height: calc(100dvh - 9rem);
+    border-radius: var(--radius-md);
+  }
+
+  figcaption {
+    margin-top: 0.75rem;
+    color: rgb(255 255 255 / 0.85);
+  }
+}
+
+.lightbox-counter {
+  margin-left: 0.75rem;
+  opacity: 0.6;
+}
+
+.lightbox-button {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.1);
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(255 255 255 / 0.2);
+  }
+
+  &.close {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  &.prev,
+  &.next {
+    top: 50%;
+    translate: 0 -50%;
+
+    @media (max-width: 640px) {
+      top: auto;
+      bottom: 1rem;
+      translate: none;
+    }
+  }
+
+  &.prev {
+    left: 1rem;
+  }
+
+  &.next {
+    right: 1rem;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
