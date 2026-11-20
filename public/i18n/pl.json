@@ -1,0 +1,112 @@
+{
+  "site": {
+    "name": "Optimal Power"
+  },
+  "a11y": {
+    "skipToContent": "Przejdź do treści"
+  },
+  "languages": {
+    "cs": "Čeština",
+    "en": "English",
+    "pl": "Polski"
+  },
+  "nav": {
+    "home": "Strona główna",
+    "references": "Realizacje",
+    "gallery": "Galeria",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "privacy": "Polityka prywatności",
+    "terms": "Ogólne warunki handlowe",
+    "language": "Język",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu"
+  },
+  "home": {
+    "ctaContact": "Bezpłatna wycena",
+    "ctaReferences": "Nasze realizacje"
+  },
+  "references": {
+    "title": "Realizacje",
+    "intro": "Wybór elektrowni fotowoltaicznych, które zbudowaliśmy.",
+    "photos": "Zdjęcia: {{count}}",
+    "specs": {
+      "power": "Moc",
+      "panels": "Panele",
+      "inverter": "Falownik",
+      "battery": "Magazyn energii"
+    }
+  },
+  "gallery": {
+    "title": "Galeria"
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania"
+  },
+  "contact": {
+    "detailsTitle": "Dane kontaktowe",
+    "formTitle": "Napisz do nas",
+    "teamTitle": "Nasz zespół",
+    "details": {
+      "company": "Firma",
+      "address": "Adres",
+      "ico": "Numer firmy (IČO)",
+      "dic": "Numer VAT (DIČ)",
+      "bank": "Rachunek bankowy",
+      "email": "E-mail",
+      "phone": "Telefon"
+    },
+    "form": {
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "phone": "Numer telefonu",
+      "email": "E-mail",
+      "message": "Twoje oczekiwania, wymagania lub pytania",
+      "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z",
+      "consentLink": "tymi zasadami",
+      "submit": "Wyślij",
+      "sending": "Wysyłanie…",
+      "sent": "Dziękujemy, otrzymaliśmy Twoją wiadomość i wkrótce się odezwiemy.",
+      "error": "Nie udało się wysłać wiadomości. Spróbuj ponownie lub zadzwoń do nas.",
+      "errors": {
+        "required": "To pole jest wymagane.",
+        "email": "Podaj prawidłowy adres e-mail.",
+        "pattern": "Podaj prawidłowy numer telefonu.",
+        "captcha": "Potwierdź, że nie jesteś robotem."
+      },
+      "captchaUnavailable": "Nie udało się załadować weryfikacji. Odśwież stronę lub zadzwoń do nas."
+    }
+  },
+  "carousel": {
+    "previous": "Poprzedni",
+    "next": "Następny",
+    "goTo": "Przejdź do elementu {{number}}"
+  },
+  "lightbox": {
+    "close": "Zamknij",
+    "previous": "Poprzednie",
+    "next": "Następne"
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "links": "Odnośniki",
+    "memberships": "Jesteśmy członkiem"
+  },
+  "notFound": {
+    "title": "Nie znaleziono strony",
+    "text": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+    "back": "Wróć na stronę główną"
+  },
+  "legal": {
+    "effectiveFrom": "Obowiązuje od",
+    "contents": "Spis treści"
+  },
+  "cookies": {
+    "title": "Używamy plików cookies",
+    "text": "Chcielibyśmy korzystać z Google Analytics, aby zrozumieć, jak używasz naszej strony, i móc ją ulepszać. Analityczne pliki cookies zapisujemy wyłącznie za Twoją zgodą.",
+    "more": "Zasady dotyczące cookies",
+    "accept": "Akceptuj wszystkie",
+    "reject": "Tylko niezbędne",
+    "settings": "Ustawienia cookies"
+  }
+}
